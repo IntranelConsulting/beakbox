@@ -1,7 +1,6 @@
 @import "mixins";
 
 .hero {
-  background-color: $royal-blue;
   padding: 6rem 0;
 
   .container {
@@ -39,20 +38,16 @@
     }
 
     h1 {
-      color: $golden-tainoi;
-      font-size: 4.5rem;
-      font-weight: 800;
+      font-size: var(--font-size-3xl);
 
       @include breakpoint-up("large") {
-        font-size: 7.5rem;
-        line-height: 7rem;
+        font-size: var(--font-size-5xl);
         padding: 0;
       }
     }
 
     p {
-      color: rgba(250, 250, 250, 0.89);
-      line-height: 1.5;
+      color: var(--color-text-darkbg);
     }
   }
 

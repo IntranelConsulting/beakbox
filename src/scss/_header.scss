@@ -1,7 +1,72 @@
 header {
-  background-color: $royal-blue;
+  background: linear-gradient(
+    20deg,
+    hsl(261deg 91% 42%) 0%,
+    hsl(260deg 81% 44%) 11%,
+    hsl(260deg 74% 46%) 24%,
+    hsl(260deg 69% 48%) 38%,
+    hsl(260deg 65% 49%) 55%,
+    hsl(260deg 64% 51%) 69%,
+    hsl(260deg 64% 52%) 77%,
+    hsl(260deg 64% 54%) 83%,
+    hsl(260deg 64% 55%) 87%,
+    hsl(260deg 64% 57%) 92%,
+    hsl(260deg 64% 58%) 96%,
+    hsl(261deg 64% 59%) 100%
+  );
+
+  @include breakpoint-up("large") {
+    background: linear-gradient(
+      20deg,
+      hsl(261deg 91% 42%) 0%,
+      hsl(260deg 81% 44%) 11%,
+      hsl(260deg 74% 46%) 24%,
+      hsl(260deg 69% 48%) 38%,
+      hsl(260deg 65% 49%) 55%,
+      hsl(260deg 64% 51%) 69%,
+      hsl(260deg 64% 52%) 77%,
+      hsl(260deg 64% 54%) 83%,
+      hsl(260deg 64% 55%) 87%,
+      hsl(260deg 64% 57%) 92%,
+      hsl(260deg 64% 58%) 96%,
+      hsl(261deg 64% 59%) 100%
+    );
+  }
 }
-/* Navigation */
+
+.header-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 0;
+  width: 100%;
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
+}
+
+//* Navigation *//
+
+.dark-bg {
+  a {
+    font-weight: var(--font-weight-light);
+  }
+
+  a:focus {
+    outline-color: white;
+  }
+
+  .shop-nav {
+    margin-left: 3em;
+
+    @media only screen and (max-width: 854px) {
+      margin-left: 0;
+    }
+  }
+}
+
 header > nav {
   position: relative;
   display: flex;
@@ -14,9 +79,7 @@ header > nav {
   min-width: 320px;
   height: 5rem;
   max-height: 5rem;
-  letter-spacing: 0.04em;
-  background-color: $royal-blue;
-  /*east bay with transparency*/
+
   > a {
     margin: 0 2.5rem;
   }
@@ -44,7 +107,14 @@ header > nav {
   > ul li {
     margin: 0 1.2em;
   }
-  /* Mobile nav icon*/
+
+  > ul li a {
+    font-size: var(--font-size-lg);
+    color: var(--color-heading-darkbg);
+  }
+
+  //* Mobile nav icon *//
+
   > input {
     display: none;
     margin: 0;
@@ -71,57 +141,32 @@ header > nav {
 
 //* Header *//
 
-.header-banner {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 5em 0;
-  height: 35rem;
-  width: 100%;
-  width: 80rem;
-  max-width: 100%;
-  margin: 0 auto;
+.header {
+  background-color: var(--color-primary);
+  padding: 6rem 0;
 
-  h1 {
-    color: $golden-tainoi;
-    text-align: center;
-  }
-
-  h2 {
-    text-align: center;
-    margin: 0.5rem 0;
-  }
-}
-
-@media only screen and (max-width: 854px) {
-  /* Homepage Header */
-  .home-header {
-    height: 50rem;
+  @include breakpoint-up("large") {
+    display: flex;
     align-items: center;
-    justify-content: flex-start;
-    background-position-y: bottom;
-    h1 {
-      top: 9rem;
-      text-align: center;
-    }
-    .header-button-container {
-      align-self: center;
-      justify-content: center;
-    }
-    a.button {
-      margin-left: auto;
+  }
+
+  &__text {
+    @include breakpoint-up("large") {
+      flex: 2;
+      order: 1;
+      text-align: left;
+      padding: 0;
     }
   }
 }
+
 @media only screen and (max-width: 640px) {
-  /* Navigation */
+  //* Navigation *//
   header > nav {
     a {
       margin: 0 0.5rem;
     }
-    /* Mobile navigation (dropdown) */
+    //* Mobile navigation (dropdown) *//
     > ul {
       position: absolute;
       flex-direction: column;
@@ -130,7 +175,17 @@ header > nav {
       left: 0;
       margin: 0;
       padding: 2rem 0;
-      background: linear-gradient(rgba(72, 61, 119, 0.9), rgb(28, 22, 51));
+      background: linear-gradient(
+        185deg,
+        hsl(8deg 75% 59%) 0%,
+        hsl(13deg 78% 59%) 32%,
+        hsl(18deg 80% 59%) 56%,
+        hsl(23deg 83% 59%) 73%,
+        hsl(28deg 85% 59%) 84%,
+        hsl(33deg 88% 59%) 91%,
+        hsl(38deg 91% 59%) 95%,
+        hsl(43deg 93% 59%) 100%
+      );
       width: 100%;
       height: 0;
       max-width: 100%;
@@ -142,7 +197,7 @@ header > nav {
       -o-transition: all 0.26s ease-in-out;
       transition: all 0.26s ease-in-out;
     }
-    /* set the menu as a block list item */
+    //* Set the menu as a block list item *//
     > ul > li {
       font-size: 1em;
     }
@@ -153,6 +208,7 @@ header > nav {
       top: 1.5rem;
       right: 2rem;
       display: block;
+      color: var(--color-text-darkbg);
     }
     > input {
       z-index: 4;
