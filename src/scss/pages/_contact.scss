@@ -1,0 +1,21 @@
+/* ---------------------------------------------------- CONTACT */
+.page-contact {
+  main {
+    margin: 0;
+  }
+  .contact {
+    background-color: $east-bay;
+    margin: 0;
+    height: 30rem;
+    display: flex;
+    justify-content: center;
+
+    h2,
+    h4 {
+      text-align: center;
+    }
+    > div {
+      padding: 1rem 0;
+    }
+  }
+}

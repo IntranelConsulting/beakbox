@@ -1,0 +1,81 @@
+@import "mixins";
+
+.newsletter {
+  width: 100%;
+  padding: 8rem 0;
+  background-color: $pippin;
+
+  h2 {
+    color: $purple;
+    line-height: 1em;
+    text-align: center;
+  }
+
+  p {
+    text-align: center;
+    margin-left: 0;
+
+    @include breakpoint-up("large") {
+      tex-align: left;
+    }
+  }
+
+  .button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    bottom: 0.5rem;
+    margin: 0;
+    padding: 0;
+    width: 30%;
+  }
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 1rem;
+  }
+
+  &__container {
+    position: relative;
+    margin-bottom: 3rem;
+    margin-top: 3rem;
+
+    input {
+      background-color: #fce6ef;
+      border: 1px solid #ffc5dd;
+    }
+  }
+
+  &__response {
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 1.5rem;
+    text-align: left;
+  }
+
+  &__error-response {
+    background: $error-background;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px 0 rgba(92, 71, 133, 0.25);
+    border-left: 0.7rem solid $error-border;
+    color: $response-text;
+    width: 95%;
+
+    @include breakpoint-up("large") {
+      width: 100%;
+    }
+  }
+
+  &__success-response {
+    background: $success-background;
+    padding: 2.5rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 15px 0 rgba(92, 71, 133, 0.25);
+    border-left: 0.7rem solid #139115;
+    color: $response-text;
+  }
+}

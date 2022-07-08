@@ -1,0 +1,13 @@
+.policy {
+  @extend %center-column;
+
+  li {
+    margin-left: 3rem;
+  }
+
+  .returns-address p {
+    text-align: center;
+    font-size: 0.8em;
+    margin: 0;
+  }
+}

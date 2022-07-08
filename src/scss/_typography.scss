@@ -1,0 +1,96 @@
+@import "mixins";
+
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", "Roboto", sans-serif;
+}
+
+body {
+  font-size: 1.6em;
+}
+
+h1 {
+  font-size: 3.8rem;
+  font-weight: 500;
+
+  @include breakpoint-up("large") {
+    font-size: 5.8rem;
+  }
+}
+
+h2,
+h3 {
+  color: $purple;
+}
+
+h2 {
+  font-size: 2.8rem;
+  font-weight: 400;
+
+  @include breakpoint-up("large") {
+    font-size: 4.4rem;
+  }
+}
+
+h3 {
+  font-size: 2.2rem;
+  font-weight: 400;
+
+  @include breakpoint-up("large") {
+    font-size: 2.7rem;
+  }
+}
+
+h4 {
+  color: $east-bay;
+}
+
+label {
+  color: $white;
+}
+
+p,
+li {
+  color: $east-bay-opacity;
+}
+
+p {
+  font-size: 1.9rem;
+}
+
+a {
+  color: $royal-blue;
+  text-decoration: none;
+  border-bottom: 2px solid currentColor;
+}
+
+.dark-bg {
+  h3 {
+    color: $titan-white;
+  }
+
+  a {
+    font-weight: 300;
+    color: $white-smoke;
+    border-bottom: none;
+  }
+
+  a:hover {
+    color: $lightsteelblue;
+  }
+
+  .shop-nav {
+    color: $macaroni-and-cheese;
+    margin-left: 3em;
+
+    @media only screen and (max-width: 854px) {
+      margin-left: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  h2 {
+    font-size: 0.8em;
+  }
+}

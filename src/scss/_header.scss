@@ -1,0 +1,168 @@
+header {
+  background-color: $royal-blue;
+}
+/* Navigation */
+header > nav {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  z-index: 999;
+  top: 0;
+  width: 100%;
+  min-width: 320px;
+  height: 5rem;
+  max-height: 5rem;
+  letter-spacing: 0.04em;
+  background-color: $royal-blue;
+  /*east bay with transparency*/
+  > a {
+    margin: 0 2.5rem;
+  }
+  > a.home-button {
+    margin-right: auto;
+  }
+  > a.home-button > img {
+    width: 10rem;
+    opacity: 1;
+  }
+  > ul {
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    @media only screen and (max-width: 854px) {
+      li {
+        margin: 0 0.5rem;
+      }
+    }
+  }
+  > ul li {
+    margin: 0 1.2em;
+  }
+  /* Mobile nav icon*/
+  > input {
+    display: none;
+    margin: 0;
+    padding: 0;
+    width: 2rem;
+    height: 2rem;
+    opacity: 0;
+    cursor: pointer;
+  }
+  > label {
+    display: none;
+    font-size: 200%;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+  }
+}
+
+.shop-nav > svg {
+  height: 1em;
+  vertical-align: bottom;
+}
+
+//* Header *//
+
+.header-banner {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5em 0;
+  height: 35rem;
+  width: 100%;
+  width: 80rem;
+  max-width: 100%;
+  margin: 0 auto;
+
+  h1 {
+    color: $golden-tainoi;
+    text-align: center;
+  }
+
+  h2 {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+@media only screen and (max-width: 854px) {
+  /* Homepage Header */
+  .home-header {
+    height: 50rem;
+    align-items: center;
+    justify-content: flex-start;
+    background-position-y: bottom;
+    h1 {
+      top: 9rem;
+      text-align: center;
+    }
+    .header-button-container {
+      align-self: center;
+      justify-content: center;
+    }
+    a.button {
+      margin-left: auto;
+    }
+  }
+}
+@media only screen and (max-width: 640px) {
+  /* Navigation */
+  header > nav {
+    a {
+      margin: 0 0.5rem;
+    }
+    /* Mobile navigation (dropdown) */
+    > ul {
+      position: absolute;
+      flex-direction: column;
+      top: 5rem;
+      right: 0;
+      left: 0;
+      margin: 0;
+      padding: 2rem 0;
+      background: linear-gradient(rgba(72, 61, 119, 0.9), rgb(28, 22, 51));
+      width: 100%;
+      height: 0;
+      max-width: 100%;
+      visibility: hidden;
+      overflow: hidden;
+      -webkit-transition: all 0.26s ease-in-out;
+      -moz-transition: all 0.26s ease-in-out;
+      -ms-transition: all 0.26s ease-in-out;
+      -o-transition: all 0.26s ease-in-out;
+      transition: all 0.26s ease-in-out;
+    }
+    /* set the menu as a block list item */
+    > ul > li {
+      font-size: 1em;
+    }
+    /* show the checkbox and label element in mobile device */
+    > input,
+    > label {
+      position: absolute;
+      top: 1.5rem;
+      right: 2rem;
+      display: block;
+    }
+    > input {
+      z-index: 4;
+    }
+    > input:checked + label {
+      color: white;
+    }
+    > input:checked ~ ul {
+      height: 30rem;
+      visibility: visible;
+    }
+  }
+}

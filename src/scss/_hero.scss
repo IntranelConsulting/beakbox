@@ -1,0 +1,64 @@
+@import "mixins";
+
+.hero {
+  background-color: $royal-blue;
+  padding: 6rem 0;
+
+  .container {
+    @include breakpoint-up("large") {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__image {
+    position: relative;
+    background-image: url("/imgs/header-img.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 35rem;
+
+    @include breakpoint-up("large") {
+      flex: 3;
+      order: 2;
+      height: 49rem;
+      margin-left: 3rem;
+    }
+  }
+
+  &__text {
+    text-align: center;
+    padding: 0 2rem;
+
+    @include breakpoint-up("large") {
+      flex: 2;
+      order: 1;
+      text-align: left;
+      padding: 0;
+    }
+
+    h1 {
+      color: $golden-tainoi;
+      font-size: 4.5rem;
+      font-weight: 800;
+
+      @include breakpoint-up("large") {
+        font-size: 7.5rem;
+        line-height: 7rem;
+        padding: 0;
+      }
+    }
+
+    p {
+      color: rgba(250, 250, 250, 0.89);
+      line-height: 1.5;
+    }
+  }
+
+  &__cta {
+    @include breakpoint-up("large") {
+      margin: 6.5rem 0 0;
+    }
+  }
+}

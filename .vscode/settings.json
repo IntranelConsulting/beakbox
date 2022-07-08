@@ -1,0 +1,53 @@
+{
+  "cSpell.words": [
+    "Chika",
+    "GIFS",
+    "allowfullscreen",
+    "beakbox",
+    "birb",
+    "caique",
+    "caiques",
+    "conures",
+    "delim",
+    "falseknees",
+    "falsekneescartoon",
+    "firestore",
+    "frameborder",
+    "galahs",
+    "insta",
+    "mailchimp",
+    "mybeakbox",
+    "playsinline",
+    "productslisting",
+    "signup",
+    "signups",
+    "slaney",
+    "tabindex",
+    "templatesjs",
+    "webm",
+    "wifi",
+    "wildlifehospital",
+    "wozza",
+    "youtube",
+    "zloto"
+  ],
+  "liveServer.settings.root": "/dev",
+  "html.format.indentHandlebars": true,
+  "htmlhint.options": {
+    "tagname-lowercase": true,
+    "attr-lowercase": true,
+    "attr-value-double-quotes": true,
+    "doctype-first": false,
+    "tag-pair": true,
+    "spec-char-escape": true,
+    "id-unique": true,
+    "src-not-empty": true,
+    "attr-no-duplication": true,
+    "title-require": true
+  },
+  "editor.formatOnSave": true,
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}

@@ -1,0 +1,7 @@
+.meet-team > img {
+  margin: 5rem 0;
+
+  @media only screen and (max-width: 854px) {
+    margin: 2rem 0;
+  }
+}

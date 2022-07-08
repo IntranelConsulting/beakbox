@@ -1,0 +1,10 @@
+{% assign countOfItems = collections[collection].length %}
+{% for post in collections[collection] %}
+    {% if post.url == page.url %}
+        {% assign previousItemIdx = forloop.index0 | minus: 1 %}
+        {% assign nextItemIdx = forloop.index0 | plus: 1 %}
+    {% endif %}
+{% endfor %}
+
+{% assign previousItem = collections[collection][previousItemIdx] %}
+{% assign nextItem = collections[collection][nextItemIdx] %}

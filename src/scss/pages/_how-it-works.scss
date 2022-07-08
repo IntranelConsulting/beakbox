@@ -1,0 +1,164 @@
+.page-how-it-works {
+  .half-screen-image-background {
+    margin: 5rem auto;
+
+    > .image-container {
+      background-image: url(/imgs/diagram.gif);
+      background-size: 15rem;
+    }
+
+    > div {
+      padding: 0 6rem 0 2rem;
+      @media only screen and (max-width: 854px) {
+        padding: 0;
+      }
+    }
+  }
+
+  .fraggle-image {
+    margin: 10rem auto;
+
+    > .image-container {
+      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), $white), url(/imgs/fraggle.JPG);
+      background-size: cover;
+      width: 50%;
+      max-width: 50%;
+
+      @media only screen and (max-width: 854px) {
+        background-image: linear-gradient(to right, $white, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), $white), url(/imgs/fraggle.JPG);
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+
+    > div {
+      padding: 0 2rem 0 6rem;
+      width: 50%;
+
+      @media only screen and (max-width: 854px) {
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+
+  .how-it-works {
+    > div {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto;
+      background-image: url("/imgs/split-view.jpg");
+      background-repeat: no-repeat;
+      background-position-x: center;
+      background-position-y: top;
+      background-size: contain;
+      padding: 4rem 0;
+
+      > div {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        min-height: 20rem;
+
+        ul {
+          margin: 1.5rem 0 0 3rem;
+        }
+
+        h2,
+        h3 {
+          margin: 0 0 0 2rem;
+        }
+      }
+
+      > div.right-side {
+        h2,
+        h3 {
+          margin: 0 2rem 0 0;
+          text-align: right;
+        }
+
+        ul {
+          margin: 1.5rem 3rem 0 0;
+        }
+      }
+    }
+
+    @media only screen and (max-width: 640px) {
+      > div {
+        background-image: url(/imgs/split-view.jpg);
+        background-size: 20rem;
+        padding: 13rem 0 0 0;
+        min-height: 10rem;
+
+        > div {
+          ul {
+            margin: 1.5rem 0 0 1rem;
+          }
+
+          h2 {
+            font-size: 1.3rem;
+          }
+
+          h3 {
+            font-size: 1.1em;
+          }
+        }
+
+        > div.right-side {
+          ul {
+            margin: 1.5rem 1rem 0 0;
+          }
+        }
+      }
+    }
+  }
+
+  /* ---------------------------------------------------- Specs section */
+  .specs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #f4f2f4;
+    padding: 5rem 0;
+
+    video {
+      width: 30rem;
+      height: 30rem;
+    }
+
+    ul {
+      margin-left: 3rem;
+      padding: 0 1rem;
+
+      li {
+        font-size: 1em;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 640px) {
+    .fraggle-image {
+      margin: 6rem auto;
+    }
+
+    .specs {
+      video {
+        width: 20rem;
+        height: 20rem;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+    .how-it-work {
+      > div:first-child > div {
+        justify-content: flex-start;
+      }
+      > div:first-child {
+        background-size: 12rem;
+        background-position-y: center;
+      }
+    }
+  }
+}
