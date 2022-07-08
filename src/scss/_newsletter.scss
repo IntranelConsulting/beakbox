@@ -3,30 +3,30 @@
 .newsletter {
   width: 100%;
   padding: 8rem 0;
-  background-color: $pippin;
+  background: var(--color-primary-tint-10);
 
   h2 {
-    color: $purple;
-    line-height: 1em;
-    text-align: center;
+    color: var(--color-heading-darkbg);
   }
 
   p {
     text-align: center;
     margin-left: 0;
+    color: var(--color-text-darkbg);
 
     @include breakpoint-up("large") {
-      tex-align: left;
+      text-align: left;
     }
   }
 
   .button {
     position: absolute;
-    top: 0.5rem;
-    right: 0.5rem;
-    bottom: 0.5rem;
+    top: 0.8rem;
+    right: 0.8rem;
+    bottom: 0.8rem;
     margin: 0;
     padding: 0;
+    border: none;
     width: 30%;
   }
 
@@ -43,9 +43,20 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
 
-    input {
-      background-color: #fce6ef;
-      border: 1px solid #ffc5dd;
+    input:focus {
+      outline-color: rgb(var(--color-white-rgb));
+    }
+
+    @include breakpoint-up("large") {
+      margin-top: 6rem;
+    }
+
+    #mce-EMAIL {
+      background-color: rgba(var(--color-primary-tint-30), 0.35);
+      border: 1px solid rgba(var(--color-primary-tint-80), 0.2);
+      border-radius: 3.125em;
+      padding: 3rem 2rem;
+      color: rgba(var(--color-white-rgb), 0.4);
     }
   }
 
@@ -57,12 +68,12 @@
   }
 
   &__error-response {
-    background: $error-background;
+    background: var(--color-error-background);
     padding: 1.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 15px 0 rgba(92, 71, 133, 0.25);
-    border-left: 0.7rem solid $error-border;
-    color: $response-text;
+    border-left: 0.7rem solid var(--color-error-border);
+    color: var(--color-response-text);
     width: 95%;
 
     @include breakpoint-up("large") {
@@ -71,11 +82,11 @@
   }
 
   &__success-response {
-    background: $success-background;
+    background: var(--color-success-background);
     padding: 2.5rem;
     border-radius: 0.5rem;
     box-shadow: 0 4px 15px 0 rgba(92, 71, 133, 0.25);
-    border-left: 0.7rem solid #139115;
-    color: $response-text;
+    border-left: 0.7rem solid var(--color-success-border);
+    color: var(--color-response-text);
   }
 }

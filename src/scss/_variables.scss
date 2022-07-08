@@ -1,33 +1,26 @@
-/* Logo/Primary Brand Colours */
-
-$salmon: #fb835f;
-$macaroni-and-cheese: #ffbe70;
-
-//* Backgrounds/Text *//
-
-$white-smoke: #ece8ff;
-$east-bay: #483d77;
-$cold-purple: #9594d8;
-$titan-white: #f8f7ff;
-$white: #ffffff;
-$black: #000000;
-$macaroni-and-cheese-light: #ffe6c8;
-$amethyst-smoke: #9890bb;
-$lightsteelblue: #bcb5dd;
-$light-purple: #e0dcf3;
-$pippin: #ffe4dc;
-$purple: #4d0aca;
-$east-bay-opacity: rgba(72, 61, 119);
-$royal-blue: #6951dc;
-$persimmonn: #fb6952;
-$french-lilac: #f6e8f8;
-$golden-tainoi: #fdc55f;
-$grey: #9698a6;
-$martinique: #2d314d;
-
-//* Sign Up Form *//
-$error-background: #f4afaf;
-$error-border: #c10f0f;
-$success-background: #89e1a0;
-$success-border: #139115;
-$response-text: rgba(0, 0, 0, 0.71);
+:root {
+  --color-text: #463b59;
+  --color-white-rgb: 255, 255, 255;
+  --color-text-opacity-70: rgba(70, 59, 89, 0.7);
+  --color-text-button: #744e2e;
+  --color-heading-darkbg: #fbe4ff;
+  --color-text-darkbg: #dcc6e0;
+  --color-primary: #4d0aca;
+  --color-primary-tint-10: #5f23cf;
+  --color-primary-tint-30: 130, 84, 218;
+  --color-primary-tint-80: 219, 206, 244;
+  --color-secondary: #6951dc;
+  --color-tertiary: #ffe4dc;
+  --color-decorative: #f6e8f8;
+  --color-background: #fff4e8;
+  --color-red: #d70000;
+  --color-accent-1: #f8c236;
+  --color-accent-1-tint-10: #fdcb6f;
+  --color-accent-2: #fb6952;
+  --color-accent-opacity-30: rgba(248, 194, 54, 0.3);
+  --color-error-background: #f4afaf;
+  --color-error-border: #c10f0f;
+  --color-success-background: #89e1a0;
+  --color-success-border: #139115;
+  --color-response-text: rgba(0, 0, 0, 0.71);
+}

@@ -14,15 +14,15 @@ pagination:
 <section class="blog-posts">
   {%- for post in pagination.items -%}
   <article>
-    <header class="article-header">
-      <span class="date">{{ post.date | formatDate }}</span>
-      <h1>
+    <div class="article-header">
+      <img src="{{ post.data.thumbnail }}" alt="{{ post.data.alt }}" />
+      <div class="date">{{ post.date | formatDate }}</div>
+      <h2>
         <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </h1>
-    </header>
-    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.alt }}" />
-    {{ post.data.description }}
-    <p><a href="{{ post.url }}">Continue reading...</a></p>
+      </h2>
+    </div>
+    <p>{{ post.data.description }}</p>
+    <p><a href="{{ post.url }}">Read more</a></p>
   </article>
   {%- endfor -%}
 

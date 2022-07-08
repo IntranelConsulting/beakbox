@@ -1,20 +1,34 @@
-header.article-header {
-  background: none;
-
-  h1 {
-    font-size: 3.8rem;
-  }
+article {
+  padding: 1rem 0;
 }
 
 article p img {
   box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 6px 0 rgba(0, 0, 0, 0.1), 0 2px 2px -2px;
 }
 
+blockquote {
+  padding: 0.5rem 1.5rem;
+  margin: 2rem 0;
+  border-image: linear-gradient(to bottom, var(--color-accent-1), var(--color-accent-2)) 1;
+  border-width: 0 0 0 7px;
+  border-style: solid;
+  background-color: var(--color-background);
+  position: relative;
+}
+
+.date {
+  font-size: var(--font-size-lg);
+  margin-top: 3rem;
+}
+
 section.blog-posts,
 section.blog-post {
-  width: 70rem;
   margin: 0 auto;
   padding: 5rem 2rem 2rem;
+
+  img {
+    width: 100%;
+  }
 
   .nav-and-share {
     display: flex;
@@ -46,94 +60,34 @@ section.blog-post {
   > article {
     margin-bottom: 4rem;
     padding-bottom: 4rem;
-    border-bottom: 1px solid $cold-purple;
-    color: $east-bay-opacity;
-    h1 {
-      text-align: left;
-    }
+  }
 
-    h2 {
-      font-size: 3.4rem;
-      margin-top: 6rem;
-      line-height: 4rem;
-      margin: 5rem 0 2.5rem;
-    }
+  &:last-child {
+    border-bottom: none;
+  }
+}
 
-    h2 a {
-      color: inherit;
-      border-bottom: none;
-    }
+nav {
+  display: flex;
+  justify-content: center;
 
-    h3 {
-      font-size: 2.2rem;
-      line-height: 3.4rem;
-      font-weight: 700;
-      margin: 3.5rem 0 2rem;
-      font-weight: 400;
-    }
+  a.button {
+    margin: 2rem;
+  }
 
-    h5 {
-      font-size: 1.2rem;
-      font-weight: 400;
-      color: #333;
-    }
+  span {
+    display: none;
+  }
+}
 
-    header {
-      margin-bottom: 3rem;
-      padding-bottom: 1rem;
-      border-bottom: 1px solid $white-smoke;
-
-      h1 {
-        margin: 0.25em 0;
-        line-height: 1.2;
-      }
-
-      a {
-        font-size: 2.8rem;
-        border-bottom: none;
-      }
-
-      > .date {
-        font-size: 1.5rem;
-        color: $east-bay;
-      }
-    }
-
-    &:last-child {
-      border-bottom: none;
-    }
+@media only screen and (max-width: 854px) {
+  ul,
+  ol {
+    padding-left: 2rem;
   }
 
   nav {
-    display: flex;
-    justify-content: center;
-
-    a.button {
-      margin: 2rem;
-      width: 16rem;
-    }
-
-    span {
-      display: none;
-    }
-  }
-
-  @media only screen and (max-width: 854px) {
-    width: 100%;
-    padding: 0 0 2rem;
-
-    ul,
-    ol {
-      padding-left: 2rem;
-    }
-
-    nav {
-      padding: 0 1rem;
-
-      a.button {
-        width: 10rem;
-      }
-    }
+    padding: 0 1rem;
   }
 }
 
@@ -155,24 +109,6 @@ section.blog-post {
       > div {
         width: 100%;
       }
-    }
-  }
-}
-
-.blog-mailchimp {
-  width: 100%;
-  margin: 5rem 0 0;
-  padding: 0;
-
-  div.mailchimp-form {
-    input.button {
-      background-color: $east-bay;
-      border-color: $east-bay;
-    }
-
-    input.button:hover {
-      background-color: $white;
-      color: $east-bay;
     }
   }
 }

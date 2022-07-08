@@ -1,18 +1,35 @@
 * {
+  line-height: calc(4px + 2ex);
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
+html,
 body {
-  background-color: $white;
-  min-width: 320px;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
-img {
+body {
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  overflow-x: hidden;
+}
+
+img:not(.dark-bg *, .footer *, .blog-posts *),
+svg:not(.dark-bg *, .footer *, .blog-posts *) {
+  display: block;
   max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 main {
@@ -24,4 +41,69 @@ main {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a {
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+a:not(.footer *, .dark-bg *, .share *, .article-header *, .articles *, h2 *):hover {
+  opacity: 0.66;
+}
+
+a:not(.footer *, .button, .dark-bg *, .share *, .article-header *, .articles *, h2 *)::before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  left: 0;
+  height: 3px;
+  border-radius: 2px;
+  background: linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
+}
+
+//   background-image: linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
+//   background-repeat: no-repeat;
+//   background-size: 100% 0.2em;
+//   background-position: 0 88%;
+//   transition: background-size 250ms ease-in;
+// }
+
+a:not([class*="button"]):hover {
+  background-size: 100% 88%;
+}
+
+h1 {
+  color: var(--color-text-darkbg);
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+ul > li + li,
+ol > li + li {
+  margin-top: 2rem;
+}
+
+::marker {
+  color: var(--color-red);
+}
+
+*:focus {
+  outline: 4px dashed #000;
+  outline-offset: 5px;
 }
