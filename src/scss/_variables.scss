@@ -1,26 +1,66 @@
 :root {
-  --color-text: #463b59;
   --color-white-rgb: 255, 255, 255;
-  --color-text-opacity-70: rgba(70, 59, 89, 0.7);
-  --color-text-button: #744e2e;
-  --color-heading-darkbg: #fbe4ff;
+  --color-text: rgb(70, 59, 89);
+  --color-text-rgb: 70, 59, 89;
+
   --color-text-darkbg: #dcc6e0;
-  --color-primary: #4d0aca;
-  --color-primary-tint-10: #5f23cf;
-  --color-primary-tint-30: 130, 84, 218;
-  --color-primary-tint-80: 219, 206, 244;
+  --color-text-button: #744e2e;
+
+  --color-heading-darkbg: #fbe4ff;
+
+  --color-primary: rgb(78, 10, 205);
+  //for color functions
+  --color-primary-r: 78;
+  --color-primary-g: 10;
+  --color-primary-b: 205;
+
   --color-secondary: #6951dc;
-  --color-tertiary: #ffe4dc;
+  --color-tertiary: #fff4e8;
   --color-decorative: #f6e8f8;
-  --color-background: #fff4e8;
   --color-red: #d70000;
-  --color-accent-1: #f8c236;
-  --color-accent-1-tint-10: #fdcb6f;
-  --color-accent-2: #fb6952;
-  --color-accent-opacity-30: rgba(248, 194, 54, 0.3);
+
+  --color-accent-1: rgb(248, 194, 54);
+  // for color functions
+  --color-accent-1-r: 248;
+  --color-accent-1-g: 194;
+  --color-accent-1-b: 54;
+
+  --color-accent-2: rgb(251, 105, 82);
+  --color-accent-2-r: 251;
+  --color-accent-2-g: 105;
+  --color-accent-2-b: 82;
+
+  /* Newsletter form */
   --color-error-background: #f4afaf;
   --color-error-border: #c10f0f;
   --color-success-background: #89e1a0;
   --color-success-border: #139115;
   --color-response-text: rgba(0, 0, 0, 0.71);
+}
+
+// replace substring with another string
+// credits: https://css-tricks.com/snippets/sass/str-replace-function/
+@function str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+  @return $string;
+}
+
+// Generate a tint and return a rgba color variable
+
+@function tint($color, $tintFactor, $opacity) {
+  $color: str-replace($color, "var(");
+  $color: str-replace($color, ")");
+  $color-r: var(#{$color + "-r"});
+  $color-g: var(#{$color + "-g"});
+  $color-b: var(#{$color + "-b"});
+
+  @return rgba(
+    calc(#{$color-r} + ((255 - #{$color-r}) * #{$tintFactor})),
+    calc(#{$color-g} + ((255 - #{$color-g}) * #{$tintFactor})),
+    calc(#{$color-b} + ((255 - #{$color-b}) * #{$tintFactor})),
+    $opacity
+  );
 }
