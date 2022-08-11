@@ -25,16 +25,14 @@
 
     &:hover {
       transform: scale(1.05);
-      // background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-accent-1), var(--color-accent-2)) border-box;
-      border-bottom: 5px solid transparent;
     }
   }
 
   &__image {
-    height: 36rem;
-    background-size: contain;
+    height: 30rem;
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center;
   }
 
   &__item + &__item {
@@ -47,6 +45,10 @@
   &__description {
     text-align: left;
     padding: 0 1rem;
+
+    li {
+      font-size: calc(var(--font-size-md) + 0.3rem);
+    }
   }
 
   &__cta {
