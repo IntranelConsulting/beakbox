@@ -1,10 +1,10 @@
 @import "mixins";
+@import "_variables.scss";
 
 .newsletter {
   width: 100%;
   padding: 8rem 0;
-  background: var(--color-primary-tint-10);
-
+  background-color: tint(var(--color-primary), 0.1, 1);
   h2 {
     color: var(--color-heading-darkbg);
   }
@@ -52,11 +52,11 @@
     }
 
     #mce-EMAIL {
-      background-color: rgba(var(--color-primary-tint-30), 0.35);
-      border: 1px solid rgba(var(--color-primary-tint-80), 0.2);
+      background-color: tint(var(--color-primary), 0.3, 0.35);
+      border: 1px solid tint(var(--color-primary), 0.8, 0.2);
       border-radius: 3.125em;
       padding: 3rem 2rem;
-      color: rgba(var(--color-white-rgb), 0.4);
+      color: rgb(var(--color-white-rgb));
     }
   }
 
