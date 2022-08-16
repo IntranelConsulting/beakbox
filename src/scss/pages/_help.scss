@@ -16,6 +16,10 @@
     border-style: solid;
     background-color: var(--color-tertiary);
     position: relative;
+
+    p {
+      color: var(--color-notecard-bg);
+    }
   }
 
   details summary > * {
