@@ -1,5 +1,5 @@
 * {
-  line-height: calc(4px + 2ex);
+  line-height: calc(10px + 2ex);
 }
 
 *,
@@ -46,38 +46,24 @@ main {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a {
   font-weight: 700;
   position: relative;
   display: inline-block;
 }
 
 a:not(.footer *, .dark-bg *, .share *, .article-header *, .articles *, h2 *):hover {
-  opacity: 0.66;
+  opacity: 0.7;
 }
 
 a:not(.footer *, .button, .dark-bg *, .share *, .article-header *, .articles *, h2 *)::before {
   content: "";
   position: absolute;
-  top: 100%;
+  top: 85%;
   width: 100%;
   left: 0;
   height: 3px;
   border-radius: 2px;
   background: linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
-}
-
-//   background-image: linear-gradient(to right, var(--color-accent-1), var(--color-accent-2));
-//   background-repeat: no-repeat;
-//   background-size: 100% 0.2em;
-//   background-position: 0 88%;
-//   transition: background-size 250ms ease-in;
-// }
-
-a:not([class*="button"]):hover {
-  background-size: 100% 88%;
 }
 
 h1 {
@@ -104,6 +90,13 @@ ol > li + li {
 }
 
 *:focus {
-  outline: 4px dashed #000;
-  outline-offset: 5px;
+  outline: 3px dashed #000;
+  outline-offset: 2px;
 }
+
+::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+

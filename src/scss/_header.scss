@@ -1,6 +1,6 @@
 header {
   background: linear-gradient(
-    20deg,
+    180deg,
     hsl(261deg 91% 42%) 0%,
     hsl(260deg 81% 44%) 11%,
     hsl(260deg 74% 46%) 24%,
@@ -14,6 +14,10 @@ header {
     hsl(260deg 64% 58%) 96%,
     hsl(261deg 64% 59%) 100%
   );
+
+  a:focus {
+    outline-color: rgb(var(--color-white-rgb));
+  }
 
   @include breakpoint-up("large") {
     background: linear-gradient(
@@ -40,11 +44,15 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 5em 0;
+  padding: 5em 2em;
   width: 100%;
   width: 80rem;
   max-width: 100%;
   margin: 0 auto;
+
+  @include breakpoint-up("large") {
+    padding: 5em 0;
+  }
 }
 
 //* Navigation *//
@@ -52,10 +60,6 @@ header {
 .dark-bg {
   a {
     font-weight: var(--font-weight-light);
-  }
-
-  a:focus {
-    outline-color: white;
   }
 
   .shop-nav {
@@ -174,18 +178,23 @@ header > nav {
       right: 0;
       left: 0;
       margin: 0;
-      padding: 2rem 0;
+      padding: 18rem 0;
       background: linear-gradient(
-        185deg,
-        hsl(8deg 75% 59%) 0%,
-        hsl(13deg 78% 59%) 32%,
-        hsl(18deg 80% 59%) 56%,
-        hsl(23deg 83% 59%) 73%,
-        hsl(28deg 85% 59%) 84%,
-        hsl(33deg 88% 59%) 91%,
-        hsl(38deg 91% 59%) 95%,
-        hsl(43deg 93% 59%) 100%
+        180deg,
+        hsl(261deg 91% 42%) 0%,
+        hsl(260deg 81% 44%) 11%,
+        hsl(260deg 74% 46%) 24%,
+        hsl(260deg 69% 48%) 38%,
+        hsl(260deg 65% 49%) 55%,
+        hsl(260deg 64% 51%) 69%,
+        hsl(260deg 64% 52%) 77%,
+        hsl(260deg 64% 54%) 83%,
+        hsl(260deg 64% 55%) 87%,
+        hsl(260deg 64% 57%) 92%,
+        hsl(260deg 64% 58%) 96%,
+        hsl(261deg 64% 59%) 100%
       );
+
       width: 100%;
       height: 0;
       max-width: 100%;
@@ -217,7 +226,7 @@ header > nav {
       color: white;
     }
     > input:checked ~ ul {
-      height: 30rem;
+      height: 100vh;
       visibility: visible;
     }
   }

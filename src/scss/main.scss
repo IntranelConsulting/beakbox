@@ -66,26 +66,11 @@ input.button {
   transition: transform 250ms ease 0s, filter 250ms ease 0s;
   overflow: hidden;
   width: fit-content;
+  border: none;
   margin: 2em 0;
   text-decoration: none;
   box-shadow: 0 1px 1px rgba(255, 216, 7, 0.07), 0 1px 1px rgba(236, 151, 19, 0.12), inset 0 -4px 4px rgba(251, 90, 12, 0.08), inset 0 -3px 4px rgba(235, 88, 16, 0.12);
 }
-
-a.button:hover,
-input.button:hover {
-  background-color: var(--color-accent-1-tint-10);
-}
-
-// a.transparent,
-// input.transparent {
-//   background-color: #fff8ec;
-//   color: #985e52;
-// }
-
-// a.transparent:hover {
-//   background-color: var(--color-accent);
-//   color: var(--color-text);
-// }
 
 .button-container {
   display: flex;
@@ -98,16 +83,7 @@ input.button:hover {
   }
 }
 
-// Gallery
-
-.clickable {
-  opacity: 0.8;
-}
-
-.clickable:hover {
-  opacity: 1;
-}
-
+//* Inputs *//
 input {
   display: block;
 }
@@ -118,12 +94,24 @@ input[type="email"] {
   max-width: 100%;
   padding: 0.5rem 1rem;
   text-align: left;
-  background: #ffffff;
+  background: rgb(var(--color-white-rgb));
   border-radius: 3rem;
+  font-size: calc(var(--font-size-md) + 0.2rem);
 
   @include breakpoint-up("large") {
     width: 56rem;
+    font-size: inherit;
   }
+}
+
+// Gallery
+
+.clickable {
+  opacity: 0.8;
+}
+
+.clickable:hover {
+  opacity: 1;
 }
 
 //* Styles for main element on each page *//
@@ -377,7 +365,7 @@ section.reviews {
         padding-top: 1.4rem;
         margin: 0;
         font-size: 3rem;
-        font-weight: bold;
+        font-weight: var(--font-weight-bold);
         box-shadow: 0 4px 15px 0 rgba(92, 71, 133, 0.25);
       }
 
@@ -417,8 +405,12 @@ section.reviews {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  max-width: 33rem;
   padding: 1rem 0;
+
+  @include breakpoint-up("large") {
+    max-width: 54rem;
+  }
 }
 
 .gallery-thumbnails {
@@ -437,20 +429,22 @@ section.reviews {
 
   > div.gallery-content {
     justify-content: space-around;
+
     > div {
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
       width: 40rem;
       height: 40rem;
-      max-width: 80%;
+      margin: 0 5rem;
+      max-width: 100%;
       border-radius: 5px;
     }
 
     @media only screen and (max-width: 640px) {
       max-width: 40rem;
       > div {
-        height: 20rem;
+        height: 40rem;
       }
     }
 
@@ -459,6 +453,11 @@ section.reviews {
       width: 6rem;
       height: 6rem;
       cursor: pointer;
+      display: none;
+
+      @include breakpoint-up("large") {
+        display: block;
+      }
     }
   }
 
@@ -471,7 +470,7 @@ section.reviews {
   }
 
   > .gallery-thumbnails > img.selected-image {
-    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-accent), var(--color-accent-orange)) border-box;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-accent-1), var(--color-accent-2)) border-box;
   }
 }
 
@@ -559,7 +558,7 @@ section.not-found {
 
 .articles {
   @include breakpoint-up("large") {
-    width: 118rem;
+    width: 138rem;
   }
 }
 
@@ -567,6 +566,7 @@ section.not-found {
   display: grid;
   grid-template-columns: 1fr;
   gap: 1.875rem;
+  grid-auto-rows: 1fr;
 
   @include breakpoint-up("medium") {
     grid-template-columns: repeat(2, 1fr);
@@ -604,8 +604,6 @@ section.not-found {
 
 .article__item:hover {
   transform: scale(1.05);
-  background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-accent), var(--color-accent-orange)) border-box;
-  border-bottom: 5px solid transparent;
 }
 
 .article__image {
@@ -615,7 +613,7 @@ section.not-found {
   background-position: top center;
 
   @include breakpoint-up("large") {
-    height: 18rem;
+    height: 20rem;
   }
 }
 
@@ -628,12 +626,13 @@ section.not-found {
 }
 
 .article__title {
-  font-size: var(--font-size-lg);
+  font-size: var(--font-size-xl);
   font-weight: var(--font-weight-medium);
   margin-bottom: 2rem;
 }
 
 .article__description {
   font-size: calc(var(--font-size-md) + 0.2rem);
-  color: var(--color-text-opacity-70);
+  color: rgba(var(--color-text-rgb), 0.8);
+  font-weight: var(--font-weight-light);
 }

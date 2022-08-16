@@ -15,7 +15,7 @@
   }
 
   img {
-    width: 20%;
+    width: 4rem;
     height: auto;
   }
 
@@ -34,11 +34,8 @@
     }
 
     img {
-      @include breakpoint-up("medium") {
-        width: 15%;
-      }
       @include breakpoint-up("large") {
-        width: 10%;
+        width: 5rem;
       }
     }
   }
@@ -59,10 +56,10 @@
 
     img {
       @include breakpoint-up("medium") {
-        width: 5%;
+        width: 3rem;
       }
       @include breakpoint-up("large") {
-        width: 10%;
+        width: 4rem;
       }
     }
   }
@@ -101,6 +98,10 @@
 
     @include breakpoint-up("large") {
       grid-area: copyright;
+    }
+
+    p {
+      font-weight: var(--font-weight-medium);
     }
 
     img,

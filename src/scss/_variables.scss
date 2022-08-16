@@ -4,11 +4,12 @@
   --color-text-rgb: 70, 59, 89;
 
   --color-text-darkbg: #dcc6e0;
-  --color-text-button: #744e2e;
+  --color-text-button: #ae5445;
 
   --color-heading-darkbg: #fbe4ff;
 
   --color-primary: rgb(78, 10, 205);
+
   //for color functions
   --color-primary-r: 78;
   --color-primary-g: 10;
@@ -25,7 +26,7 @@
   --color-accent-1-g: 194;
   --color-accent-1-b: 54;
 
-  --color-accent-2: rgb(251, 105, 82);
+  --color-accent-2: rgb(252, 119, 67);
   --color-accent-2-r: 251;
   --color-accent-2-g: 105;
   --color-accent-2-b: 82;
@@ -36,6 +37,8 @@
   --color-success-background: #89e1a0;
   --color-success-border: #139115;
   --color-response-text: rgba(0, 0, 0, 0.71);
+
+  --color-notecard-bg: #c34900;
 }
 
 // replace substring with another string
