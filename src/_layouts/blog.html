@@ -13,7 +13,6 @@ boldedHeading: Blog Posts
   <article>
     <div class="nav-and-share">
       <span class="date">{{ page.date | formatDate }}</span>
-
       <div class="share">
         Share on:
         <div class="email-share">
@@ -43,7 +42,7 @@ boldedHeading: Blog Posts
     {% else %}
     <span></span>
     {%- endif -%}
-    <a class="button transparent" href="/blog/">Blog Home</a>
+    <a class="button" href="/blog/">Blog Home</a>
     {%- if nextItem -%}
     <a class="button" href="{{ nextItem.url }}" class="next">Older &#x21E2;</a>{% else %}
     <span></span>
