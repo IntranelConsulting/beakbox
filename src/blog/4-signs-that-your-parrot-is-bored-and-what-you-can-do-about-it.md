@@ -1,6 +1,6 @@
 ---
 title: 4 Signs That Your Parrot Is Bored (And What You Can Do About It)
-permalink: "/blog/signs-of-parrot-boredom/"
+permalink: /blog/signs-of-parrot-boredom/
 date: 2022-02-18T01:37:49.056Z
 description: "Learn how to recognise and cope with parrot boredom. "
 thumbnail: /blog/imgs/parrot-boredom.png
@@ -67,7 +67,7 @@ If your parrot is typically very active and bouncing around like an Energizer Bu
 
 ### Rotate parrot toys
 
-Rotating and re-arranging a few parrot toys each week is a good way to keep your flock occupied and stimulated. You can find lots of interactive parrot toys out there like puzzles, wooden foraging toys with bird-safe ropes, or [BeakBox](http://mybeakbox.com/). Keep in mind [safety tips when choosing a new parrot](https://mybeakbox.com/blog/how-to-choose-a-safe-bird-toy/) toy for your flock.
+Rotating and re-arranging a few parrot toys each week is a good way to keep your flock occupied and stimulated. You can find lots of interactive parrot toys out there like puzzles, wooden foraging toys with bird-safe ropes, or [BeakBox](https://mybeakbox.com/). Keep in mind [safety tips when choosing a new parrot](https://mybeakbox.com/blog/how-to-choose-a-safe-bird-toy/) toy for your flock.
 
 However, introducing new toys to your parrots might be a nightmare – you buy all these fancy toys, put them in your parrot’s cage and the next thing you know, your parrot is bursting out of the cage squawking in fear. 
 
