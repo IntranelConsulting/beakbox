@@ -3,14 +3,14 @@
 .newsletter {
   width: 100%;
   padding: 8rem 0;
-  background-color: tint(var(--color-primary), 0.1, 1);
+  background-color: var(--color-primary-darker);
   h2 {
-    color: var(--color-heading-darkbg);
+    color: white;
   }
   p {
     text-align: center;
     margin-left: 0;
-    color: var(--color-text-darkbg);
+    color: var(--color-text-on-primary);
     @include breakpoint-up("large") {
       text-align: left;
     }
@@ -37,20 +37,20 @@
     margin-bottom: 3rem;
     margin-top: 3rem;
     input:focus {
-      outline-color: rgb(var(--color-white-rgb));
+      outline-color: white;
     }
     @include breakpoint-up("large") {
       margin-top: 6rem;
     }
     #mce-EMAIL {
-      background-color: tint(var(--color-primary), 0.3, 0.35);
-      border: 1px solid tint(var(--color-primary), 0.8, 0.2);
+      background-color: white;
+      // border: 1px solid tint(var(--color-primary), 0.8, 0.2);
       border-radius: 3.125em;
       padding: 3rem 2rem;
-      color: rgb(var(--color-white-rgb));
+      color: var(--color-text);
     }
     label {
-      color: var(--color-text-darkbg);
+      color: var(--color-text-on-primary);
       margin-bottom: 2rem;
       display: inline-block;
     }

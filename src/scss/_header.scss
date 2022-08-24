@@ -16,7 +16,7 @@ header {
   );
 
   a:focus {
-    outline-color: rgb(var(--color-white-rgb));
+    outline-color: white;
   }
 
   @include breakpoint-up("large") {
@@ -114,7 +114,7 @@ header > nav {
 
   > ul li a {
     font-size: var(--font-size-lg);
-    color: var(--color-heading-darkbg);
+    color: var(--color-text-on-primary);
   }
 
   //* Mobile nav icon *//
@@ -146,7 +146,7 @@ header > nav {
 //* Header *//
 
 .header {
-  background-color: var(--color-primary);
+  background-color: var(--color-primary-light);
   padding: 6rem 0;
 
   @include breakpoint-up("large") {
@@ -217,7 +217,7 @@ header > nav {
       top: 1.5rem;
       right: 2rem;
       display: block;
-      color: var(--color-text-darkbg);
+      color: var(--color-text-on-primary);
     }
     > input {
       z-index: 4;

@@ -1,35 +1,31 @@
 :root {
-  --color-white-rgb: 255, 255, 255;
-  --color-text: rgb(70, 59, 89);
-  --color-text-rgb: 70, 59, 89;
+  //* text colors *//
+  --color-text: #000000;
+  --color-text-on-primary: hsl(250, 55%, 85%);
+  --color-text-on-secondary: #574944;
+  --color-text-on-secondary-light: #6a5e5a;
+  --color-text-on-secondary-dark: #1e0901;
 
-  --color-text-darkbg: #dcc6e0;
-  --color-text-button: #ae5445;
+  //* primary brand color *//
+  --color-primary: hsl(261, 91%, 42%);
+  --color-primary-light: hsl(250, 37%, 51%);
+  --color-primary-lighter: hsl(250, 38%, 55%);
 
-  --color-heading-darkbg: #fbe4ff;
+  --color-primary-dark: hsl(250, 42%, 38%);
+  --color-primary-darker: hsl(251, 45%, 32%);
 
-  --color-primary: rgb(78, 10, 205);
+  //* secondary brand color *//
+  --color-secondary: hsl(17, 97%, 63%);
+  --color-secondary-light: hsl(17, 100%, 94%);
+  --color-secondary-lighter: hsl(16, 100%, 97%);
 
-  //for color functions
-  --color-primary-r: 78;
-  --color-primary-g: 10;
-  --color-primary-b: 205;
+  //* tertiary brand color *//
+  --color-tertiary: hsl(262, 87%, 94%);
+  --color-tertiary-dark: hsl(263, 100%, 92%);
 
-  --color-secondary: #6951dc;
-  --color-tertiary: #fff4e8;
-  --color-decorative: #f6e8f8;
-  --color-red: #d70000;
-
-  --color-accent-1: rgb(248, 194, 54);
-  // for color functions
-  --color-accent-1-r: 248;
-  --color-accent-1-g: 194;
-  --color-accent-1-b: 54;
-
-  --color-accent-2: rgb(252, 119, 67);
-  --color-accent-2-r: 251;
-  --color-accent-2-g: 105;
-  --color-accent-2-b: 82;
+  //* accent brand colors *//
+  --color-accent: #f5ab00;
+  --color-text-on-accent: #634602;
 
   /* Newsletter form */
   --color-error-background: #f4afaf;
@@ -37,33 +33,61 @@
   --color-success-background: #89e1a0;
   --color-success-border: #139115;
   --color-response-text: rgba(0, 0, 0, 0.71);
-
   --color-notecard-bg: #c34900;
 }
 
 // replace substring with another string
 // credits: https://css-tricks.com/snippets/sass/str-replace-function/
-@function str-replace($string, $search, $replace: "") {
-  $index: str-index($string, $search);
-  @if $index {
-    @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
-  }
-  @return $string;
-}
+// @function str-replace($string, $search, $replace: "") {
+//   $index: str-index($string, $search);
+//   @if $index {
+//     @return str-slice($string, 1, $index - 1) + $replace + str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+//   }
+//   @return $string;
+// }
 
-// Generate a tint and return a rgba color variable
+// // Generate a tint and return a rgba color variable
 
-@function tint($color, $tintFactor, $opacity) {
-  $color: str-replace($color, "var(");
-  $color: str-replace($color, ")");
-  $color-r: var(#{$color + "-r"});
-  $color-g: var(#{$color + "-g"});
-  $color-b: var(#{$color + "-b"});
+// @function tint($color, $tintFactor, $opacity) {
+//   $color: str-replace($color, "var(");
+//   $color: str-replace($color, ")");
+//   $color-r: var(#{$color + "-r"});
+//   $color-g: var(#{$color + "-g"});
+//   $color-b: var(#{$color + "-b"});
 
-  @return rgba(
-    calc(#{$color-r} + ((255 - #{$color-r}) * #{$tintFactor})),
-    calc(#{$color-g} + ((255 - #{$color-g}) * #{$tintFactor})),
-    calc(#{$color-b} + ((255 - #{$color-b}) * #{$tintFactor})),
-    $opacity
-  );
-}
+//   @return rgba(
+//     calc(#{$color-r} + ((255 - #{$color-r}) * #{$tintFactor})),
+//     calc(#{$color-g} + ((255 - #{$color-g}) * #{$tintFactor})),
+//     calc(#{$color-b} + ((255 - #{$color-b}) * #{$tintFactor})),
+//     $opacity
+//   );
+// }
+
+// --color-text-rgb: 70, 59, 89;
+// --color-text-darkbg: #dcc6e0;
+// --color-text-button: #ae5445;
+
+// --color-heading-darkbg: #fbe4ff;
+
+// //for color functions
+// --color-primary-r: 78;
+// --color-primary-g: 10;
+// --color-primary-b: 205;
+
+// --color-secondary: hsl(250, 37%, 51%);
+// --color-tertiary: #fff4e8;
+// --color-decorative: #f6e8f8;
+// --color-red: #d70000;
+
+// --color-accent-1: rgb(248, 194, 54);
+// // for color functions
+// --color-accent-1-r: 248;
+// --color-accent-1-g: 194;
+// --color-accent-1-b: 54;
+
+// --color-accent-2: rgb(252, 119, 67);
+// --color-accent-2-r: 251;
+// --color-accent-2-g: 105;
+// --color-accent-2-b: 82;
+
+// --color-white-rgb: 255, 255, 255;

@@ -1,7 +1,8 @@
 @import "mixins";
 
 .footer {
-  color: var(--color-text);
+  background-color: var(--color-primary-darker);
+  color: white;
   padding: 10rem 0;
   text-align: center;
 

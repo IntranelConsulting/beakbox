@@ -24,7 +24,7 @@ html {
 
 h1 {
   font-size: var(--font-size-3xl);
-  color: var(--color-heading-darkbg);
+  color: white;
 
   @include breakpoint-up("large") {
     font-size: var(--font-size-5xl);
@@ -42,9 +42,9 @@ h2 {
 h3 {
   font-size: var(--font-size-xl);
 
-  @include breakpoint-up("large") {
-    font-size: var(--font-size-2xl);
-  }
+  // @include breakpoint-up("large") {
+  //   font-size: var(--font-size-xl);
+  // }
 }
 
 h4 {

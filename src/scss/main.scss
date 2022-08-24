@@ -56,10 +56,10 @@ input.button {
   position: relative;
   display: inline-block;
   padding: 2rem 3rem;
-  background-color: var(--color-accent-1);
+  background-color: var(--color-accent);
   border-radius: 3.125em;
   cursor: pointer;
-  color: var(--color-text-button);
+  color: var(--color-text-on-accent);
   font-weight: var(--font-weight-bold);
   font-size: var(--font-size-lg);
   text-align: center;
@@ -94,7 +94,8 @@ input[type="email"] {
   max-width: 100%;
   padding: 0.5rem 1rem;
   text-align: left;
-  background: rgb(var(--color-white-rgb));
+  background: white;
+  border: none;
   border-radius: 3rem;
   font-size: calc(var(--font-size-md) + 0.2rem);
 
@@ -154,7 +155,7 @@ main {
         background-position: center bottom;
         background-repeat: no-repeat;
         background-size: contain;
-        background-color: var(--color-decorative);
+        background-color: var(--color-tertiary);
         border-radius: 9rem;
       }
 
@@ -470,7 +471,7 @@ section.reviews {
   }
 
   > .gallery-thumbnails > img.selected-image {
-    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-accent-1), var(--color-accent-2)) border-box;
+    background: linear-gradient(#fff, #fff) padding-box, linear-gradient(to right, var(--color-accent), var(--color-secondary)) border-box;
   }
 }
 
@@ -633,6 +634,6 @@ section.not-found {
 
 .article__description {
   font-size: calc(var(--font-size-md) + 0.2rem);
-  color: rgba(var(--color-text-rgb), 0.8);
+  color: var(--color-text);
   font-weight: var(--font-weight-light);
 }
