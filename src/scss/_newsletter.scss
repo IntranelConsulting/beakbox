@@ -4,6 +4,7 @@
   width: 100%;
   padding: 8rem 0;
   background-color: var(--color-primary-darker);
+  border-bottom: 1px solid var(--color-primary-lighter);
   h2 {
     color: white;
   }
@@ -11,6 +12,8 @@
     text-align: center;
     margin-left: 0;
     color: var(--color-text-on-primary);
+    font-size: calc(var(--font-size-md) + 3px);
+
     @include breakpoint-up("large") {
       text-align: left;
     }
@@ -39,19 +42,19 @@
     input:focus {
       outline-color: white;
     }
-    @include breakpoint-up("large") {
-      margin-top: 6rem;
-    }
+
     #mce-EMAIL {
       background-color: white;
-      // border: 1px solid tint(var(--color-primary), 0.8, 0.2);
       border-radius: 3.125em;
       padding: 3rem 2rem;
       color: var(--color-text);
     }
     label {
       color: var(--color-text-on-primary);
+      font-weight: var(--font-weight-xlight);
+      font-size: calc(var(--font-size-md) + 3px);
       margin-bottom: 2rem;
+      margin-left: 3rem;
       display: inline-block;
     }
   }

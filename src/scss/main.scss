@@ -69,7 +69,6 @@ input.button {
   border: none;
   margin: 2em 0;
   text-decoration: none;
-  box-shadow: 0 1px 1px rgba(255, 216, 7, 0.07), 0 1px 1px rgba(236, 151, 19, 0.12), inset 0 -4px 4px rgba(251, 90, 12, 0.08), inset 0 -3px 4px rgba(235, 88, 16, 0.12);
 }
 
 .button-container {
@@ -164,8 +163,8 @@ main {
           margin: 4.2rem auto 0 auto;
         }
         > div {
-          width: 6rem;
-          height: 6rem;
+          width: 5rem;
+          height: 5rem;
         }
       }
     }
@@ -430,6 +429,7 @@ section.reviews {
 
   > div.gallery-content {
     justify-content: space-around;
+    max-width: 64rem;
 
     > div {
       background-repeat: no-repeat;
@@ -627,13 +627,13 @@ section.not-found {
 }
 
 .article__title {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-l);
   font-weight: var(--font-weight-medium);
   margin-bottom: 2rem;
 }
 
 .article__description {
   font-size: calc(var(--font-size-md) + 0.2rem);
-  color: var(--color-text);
+  color: var(--color-text-light);
   font-weight: var(--font-weight-light);
 }

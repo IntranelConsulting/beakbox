@@ -3,8 +3,8 @@
 :root {
   --font-size-xs: 0.75rem;
   --font-size-sm: 1rem;
-  --font-size-md: 1.333rem;
-  --font-size-lg: 1.9rem;
+  --font-size-md: 1.4rem;
+  --font-size-lg: 2rem;
   --font-size-xl: 2.369rem;
   --font-size-2xl: 3.157rem;
   --font-size-3xl: 4.209rem;
@@ -23,36 +23,20 @@ html {
 }
 
 h1 {
-  font-size: var(--font-size-3xl);
+  font-size: var(--font-size-5xl);
   color: white;
-
-  @include breakpoint-up("large") {
-    font-size: var(--font-size-5xl);
-  }
 }
 
 h2 {
   font-size: var(--font-size-2xl);
-
-  @include breakpoint-up("large") {
-    font-size: var(--font-size-4xl);
-  }
 }
 
 h3 {
   font-size: var(--font-size-xl);
-
-  // @include breakpoint-up("large") {
-  //   font-size: var(--font-size-xl);
-  // }
 }
 
 h4 {
-  font-size: var(--font-size-sm);
-
-  @include breakpoint-up("large") {
-    font-size: var(--font-size-xl);
-  }
+  font-size: var(--font-size-m);
 }
 
 h5 {

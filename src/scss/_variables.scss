@@ -1,7 +1,9 @@
 :root {
   //* text colors *//
-  --color-text: #000000;
+  --color-text: hsl(0, 0%, 20%);
+  --color-text-light: hsl(0, 0%, 40%);
   --color-text-on-primary: hsl(250, 55%, 85%);
+  --color-text-on-primary-lighter: hsl(249.2, 65%, 92.2%);
   --color-text-on-secondary: #574944;
   --color-text-on-secondary-light: #6a5e5a;
   --color-text-on-secondary-dark: #1e0901;
@@ -24,16 +26,18 @@
   --color-tertiary-dark: hsl(263, 100%, 92%);
 
   //* accent brand colors *//
-  --color-accent: #f5ab00;
-  --color-text-on-accent: #634602;
+  --color-accent: #f8c236;
+  --color-text-on-accent: #43330b;
 
-  /* Newsletter form */
+  //* Newsletter form *//
   --color-error-background: #f4afaf;
   --color-error-border: #c10f0f;
   --color-success-background: #89e1a0;
   --color-success-border: #139115;
   --color-response-text: rgba(0, 0, 0, 0.71);
   --color-notecard-bg: #c34900;
+
+  --color-red: #d93939;
 }
 
 // replace substring with another string
