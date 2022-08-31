@@ -1,7 +1,5 @@
 .page-how-it-works {
   .half-screen-image-background {
-    margin: 5rem auto;
-
     > .image-container {
       background-image: url(/imgs/diagram.gif);
       background-size: 15rem;
@@ -16,10 +14,8 @@
   }
 
   .fraggle-image {
-    margin: 10rem auto;
-
     > .image-container {
-      background-image: linear-gradient(to right, rgba(255, 255, 255, 0.2), rgba(255, 255, 255, 0.2), #ffffff), url(/imgs/fraggle.JPG);
+      background-image: url(/imgs/fraggle.JPG);
       background-size: cover;
       width: 50%;
       max-width: 50%;
@@ -81,15 +77,6 @@
         }
       }
     }
-
-    @media only screen and (max-width: 640px) {
-      > div {
-        background-image: url(/imgs/split-view.jpg);
-        background-size: 20rem;
-        padding: 13rem 0 0 0;
-        min-height: 10rem;
-      }
-    }
   }
 
   //* Specs section *//
@@ -109,10 +96,6 @@
   }
 
   @media only screen and (max-width: 640px) {
-    .fraggle-image {
-      margin: 6rem auto;
-    }
-
     .specs {
       video {
         width: 20rem;
@@ -134,9 +117,21 @@
   }
 }
 
-//* Safety card container *//
+//* Safety section*//
 
 .safety {
+  h2 {
+    margin: 0;
+    min-height: 2.3rem;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+
+  p {
+    text-align: center;
+  }
+
+  //*Safety card container*//
   > div {
     display: flex;
     flex-direction: row;
@@ -144,29 +139,30 @@
     justify-content: center;
     width: 100%;
     margin: 0 0 0 auto;
+    padding: 1.5rem 0;
+    background-color: var(--color-secondary-light);
 
-    // *Safety cards (3 horizontal cards each containing image, heading and short list) *//
+    /*Safety cards (3 horizontal cards each containing image, heading and short list)*/
     > div {
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+      height: 33rem;
       align-self: flex-start;
       align-items: center;
       padding: 2rem;
 
       @include breakpoint-up("large") {
-        margin: 0 3rem;
+        max-width: 33rem;
+        margin: 2rem;
       }
     }
 
     > div > img {
-      height: 8rem;
-      width: 8rem;
-      padding: 0.5rem;
-      border-radius: 8rem;
-      background-color: var(--color-secondary-light);
+      width: 9rem;
+      padding: 1rem;
+      max-height: 7rem;
     }
-
     > div > div {
       margin: 1rem 0.2rem 0.2rem 0.2rem;
       border-radius: 0.3rem;
@@ -177,13 +173,17 @@
   }
 
   @media only screen and (max-width: 854px) {
+    > div {
+      background-color: white;
+    }
+
     > div > div {
-      height: 27rem;
+      height: 29rem;
+      background-color: var(--color-secondary-light);
     }
 
     > div > div > img {
-      height: 5rem;
-      width: 5rem;
+      width: 7rem;
     }
   }
 
@@ -191,5 +191,11 @@
     > div {
       flex-direction: column;
     }
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .how-it-works {
+    display: none;
   }
 }

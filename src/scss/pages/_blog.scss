@@ -9,14 +9,14 @@ article p img {
 blockquote {
   padding: 0.5rem 1.5rem;
   margin: 2rem 0;
-  border-image: linear-gradient(to bottom, var(--color-accent-1), var(--color-accent-2)) 1;
+  border-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary)) 1;
   border-width: 0 0 0 7px;
   border-style: solid;
-  background-color: var(--color-tertiary);
+  background-color: var(--color-secondary-light);
   position: relative;
 
   p {
-    color: var(--color-notecard-bg);
+    color: var(--color-text-on-secondary-light);
   }
 }
 

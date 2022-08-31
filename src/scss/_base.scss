@@ -46,28 +46,17 @@ main {
 a {
   text-decoration: none;
   color: inherit;
+}
+
+a:not(.header *, .footer *, .dark-bg *, .share *, .article-header *, .articles *, h2 *) {
+  color: inherit;
   font-weight: 700;
   position: relative;
   display: inline-block;
 }
 
-a:not(.header *, .footer *, .dark-bg *, .share *, .article-header *, .articles *, h2 *):hover {
+a:not(.button, .header *, .footer *, .dark-bg *, .share *, .article-header *, .articles *, h2 *):hover {
   opacity: 0.7;
-}
-
-a:not(.footer *, .button, .dark-bg *, .share *, .article-header *, .articles *, h2 *)::before {
-  content: "";
-  position: absolute;
-  top: 85%;
-  width: 100%;
-  left: 0;
-  height: 2px;
-  border-radius: 2px;
-  background: linear-gradient(to right, var(--color-accent), var(--color-secondary));
-}
-
-h1 {
-  color: var(--color-text-darkbg);
 }
 
 p,
@@ -91,9 +80,4 @@ li + li {
 *:focus {
   outline: 3px dashed #000;
   outline-offset: 2px;
-}
-
-::placeholder {
-  color: white;
-  opacity: 1;
 }
