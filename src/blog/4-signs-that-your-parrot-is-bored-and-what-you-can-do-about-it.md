@@ -20,7 +20,7 @@ In this article, we’ll cover four most common signs of parrot boredom and eigh
 
 Let’s go! 
 
-## Watch out for these 4 signs
+## Watch out for these signs
 
 ### Feather plucking or picking 🪶
 
