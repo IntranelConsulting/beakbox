@@ -46,16 +46,12 @@ main {
 a {
   text-decoration: none;
   color: inherit;
-}
-
-a:not(.header *, .footer *, .dark-bg *, .share *, .article-header *, .articles *, h2 *) {
-  color: inherit;
   font-weight: 700;
   position: relative;
   display: inline-block;
 }
 
-a:not(.button, .header *, .footer *, .dark-bg *, .share *, .article-header *, .articles *, h2 *):hover {
+a:hover {
   opacity: 0.7;
 }
 
