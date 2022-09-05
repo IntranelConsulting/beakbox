@@ -1,10 +1,11 @@
 @import "mixins";
 
 .footer {
-  background-color: $east-bay;
-  color: $white;
-  padding: 5rem;
+  background-color: var(--color-primary-darker);
+  color: white;
+  padding: 10rem 0;
   text-align: center;
+  line-height: 0;
 
   @include breakpoint-up("large") {
     display: grid;
@@ -15,26 +16,13 @@
       "socials links1 links2 copyright";
   }
 
-  h3 {
-    margin-bottom: 1em;
-    font-size: 1.4em;
-    font-weight: 500;
-    color: $macaroni-and-cheese;
+  a:focus {
+    outline-color: white;
   }
 
   img {
-    width: 15%;
+    width: 4rem;
     height: auto;
-  }
-
-  a {
-    color: $white;
-    font-size: 1.2em;
-    border-bottom: none;
-  }
-
-  a:hover {
-    color: $lightsteelblue;
   }
 
   &__logo {
@@ -45,17 +33,15 @@
       margin-bottom: 1em;
       align-self: end;
     }
+
     @include breakpoint-up("large") {
       align-self: end;
       grid-area: logo;
     }
 
     img {
-      @include breakpoint-up("medium") {
-        width: 15%;
-      }
       @include breakpoint-up("large") {
-        width: 10%;
+        width: 5rem;
       }
     }
   }
@@ -76,10 +62,10 @@
 
     img {
       @include breakpoint-up("medium") {
-        width: 5%;
+        width: 3rem;
       }
       @include breakpoint-up("large") {
-        width: 10%;
+        width: 4rem;
       }
     }
   }
@@ -88,12 +74,20 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    gap: 1rem;
+
+    @include breakpoint-up("large") {
+      align-items: start;
+    }
 
     a {
-      line-height: 2em;
-      border-bottom: none;
-      font-weight: 300;
+      color: var(--color-text-on-primary);
+      font-weight: var(--font-weight-xlight);
+    }
+
+    p {
+      text-transform: uppercase;
+      font-weight: var(--font-weight-medium);
     }
 
     &.col1 {
@@ -118,8 +112,9 @@
       grid-area: copyright;
     }
 
-    h3 {
-      margin-bottom: 0;
+    p {
+      text-transform: uppercase;
+      font-weight: var(--font-weight-medium);
     }
 
     img,
@@ -131,19 +126,14 @@
     }
 
     div {
-      font-weight: 300;
+      font-weight: var(--font-weight-xlight);
 
       @include breakpoint-up("medium") {
         margin-top: 1.2em;
       }
+
       @include breakpoint-up("large") {
         margin-top: auto;
-      }
-    }
-
-    h3 {
-      @include breakpoint-up("medium") {
-        margin-bottom: 1em;
       }
     }
 
@@ -151,10 +141,12 @@
       @include breakpoint-up("medium") {
         width: 10%;
       }
+
       @include breakpoint-up("large") {
         width: 15%;
         margin: auto;
       }
+
       @include breakpoint-up("xlarge") {
         width: 7%;
         margin: auto;

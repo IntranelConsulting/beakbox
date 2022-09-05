@@ -1,96 +1,68 @@
 @import "mixins";
 
-html {
-  font-size: 62.5%;
-  font-family: "Open Sans", "Roboto", sans-serif;
+:root {
+  --font-size-xs: 0.75rem;
+  --font-size-sm: 1.2rem;
+  --font-size-md: 1.6rem;
+  --font-size-lg: 2rem;
+  --font-size-xl: 2.369rem;
+  --font-size-2xl: 3.157rem;
+  --font-size-3xl: 4.209rem;
+  --font-size-4xl: 5.61rem;
+  --font-size-5xl: 7.478rem;
+
+  --font-weight-xbold: 800;
+  --font-weight-bold: 600;
+  --font-weight-medium: 500;
+  --font-weight-light: 400;
+  --font-weight-xlight: 300;
 }
 
-body {
-  font-size: 1.6em;
+html {
+  font-size: 62.5%;
+  font-family: "Open Sans", sans-serif;
 }
 
 h1 {
-  font-size: 3.8rem;
-  font-weight: 500;
+  font-size: var(--font-size-2xl);
+  color: white;
 
   @include breakpoint-up("large") {
-    font-size: 5.8rem;
+    font-size: var(--font-size-4xl);
   }
-}
-
-h2,
-h3 {
-  color: $purple;
 }
 
 h2 {
-  font-size: 2.8rem;
-  font-weight: 400;
-
-  @include breakpoint-up("large") {
-    font-size: 4.4rem;
-  }
+  font-size: var(--font-size-2xl);
 }
 
 h3 {
-  font-size: 2.2rem;
-  font-weight: 400;
-
-  @include breakpoint-up("large") {
-    font-size: 2.7rem;
-  }
+  font-size: var(--font-size-xl);
 }
 
 h4 {
-  color: $east-bay;
+  font-size: var(--font-size-m);
 }
 
-label {
-  color: $white;
+h5 {
+  font-size: var(--font-size-xs);
+
+  @include breakpoint-up("large") {
+    font-size: var(--font-size-lg);
+  }
 }
 
 p,
 li {
-  color: $east-bay-opacity;
+  font-size: var(--font-size-lg);
 }
 
-p {
-  font-size: 1.9rem;
-}
-
-a {
-  color: $royal-blue;
-  text-decoration: none;
-  border-bottom: 2px solid currentColor;
-}
-
-.dark-bg {
-  h3 {
-    color: $titan-white;
-  }
-
-  a {
-    font-weight: 300;
-    color: $white-smoke;
-    border-bottom: none;
-  }
-
-  a:hover {
-    color: $lightsteelblue;
-  }
-
-  .shop-nav {
-    color: $macaroni-and-cheese;
-    margin-left: 3em;
-
-    @media only screen and (max-width: 854px) {
-      margin-left: 0;
-    }
-  }
-}
-
-@media only screen and (max-width: 320px) {
-  h2 {
-    font-size: 0.8em;
-  }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong {
+  font-weight: var(--font-weight-bold);
 }

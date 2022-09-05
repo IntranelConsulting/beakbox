@@ -13,7 +13,6 @@ boldedHeading: Blog Posts
   <article>
     <div class="nav-and-share">
       <span class="date">{{ page.date | formatDate }}</span>
-
       <div class="share">
         Share on:
         <div class="email-share">
@@ -34,9 +33,6 @@ boldedHeading: Blog Posts
         </div>
       </div>
     </div>
-    <header class="article-header">
-      <h1>{{ title }}</h1>
-    </header>
     {{ content }}
   </article>
 
@@ -46,7 +42,7 @@ boldedHeading: Blog Posts
     {% else %}
     <span></span>
     {%- endif -%}
-    <a class="button transparent" href="/blog/">Blog Home</a>
+    <a class="button" href="/blog/">Blog Home</a>
     {%- if nextItem -%}
     <a class="button" href="{{ nextItem.url }}" class="next">Older &#x21E2;</a>{% else %}
     <span></span>
@@ -54,7 +50,7 @@ boldedHeading: Blog Posts
   </nav>
 </section>
 
-<section class="blog-mailchimp">{% include newsletter-signup.html %}</section>
+{% include newsletter-signup.html %}
 
 <div id="fb-root"></div>
 <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=384689504879765&autoLogAppEvents=1"></script>

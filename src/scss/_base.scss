@@ -1,18 +1,35 @@
 * {
+  line-height: calc(10px + 2ex);
+}
+
+*,
+::before,
+::after {
   box-sizing: border-box;
 }
 
+html,
 body {
-  background-color: $white;
-  min-width: 320px;
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  height: 100%;
 }
 
-img {
+body {
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+  overflow-x: hidden;
+}
+
+img:not(.dark-bg *, .footer *, .blog-posts *),
+svg:not(.dark-bg *, .footer *, .blog-posts *) {
+  display: block;
   max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
 main {
@@ -24,4 +41,39 @@ main {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1em;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  font-weight: 700;
+  position: relative;
+  display: inline-block;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+li + li {
+  margin-top: 2rem;
+}
+
+::marker {
+  color: var(--color-red);
+}
+
+*:focus {
+  outline: 3px dashed #000;
+  outline-offset: 2px;
 }

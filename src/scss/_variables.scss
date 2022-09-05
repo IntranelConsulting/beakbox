@@ -1,33 +1,41 @@
-/* Logo/Primary Brand Colours */
+:root {
+  //* text colors *//
+  --color-text: hsl(0, 0%, 20%);
+  --color-text-light: hsl(0, 0%, 40%);
+  --color-text-on-primary: hsl(250, 55%, 85%);
+  --color-text-on-primary-lighter: hsl(249.2, 65%, 92.2%);
+  --color-text-on-secondary: #574944;
+  --color-text-on-secondary-light: #6a5e5a;
+  --color-text-on-secondary-dark: #1e0901;
 
-$salmon: #fb835f;
-$macaroni-and-cheese: #ffbe70;
+  //* primary brand color *//
+  --color-primary: hsl(261, 91%, 42%);
+  --color-primary-light: hsl(250, 37%, 51%);
+  --color-primary-lighter: hsl(250, 38%, 55%);
 
-//* Backgrounds/Text *//
+  --color-primary-dark: hsl(250, 42%, 38%);
+  --color-primary-darker: hsl(251, 45%, 32%);
 
-$white-smoke: #ece8ff;
-$east-bay: #483d77;
-$cold-purple: #9594d8;
-$titan-white: #f8f7ff;
-$white: #ffffff;
-$black: #000000;
-$macaroni-and-cheese-light: #ffe6c8;
-$amethyst-smoke: #9890bb;
-$lightsteelblue: #bcb5dd;
-$light-purple: #e0dcf3;
-$pippin: #ffe4dc;
-$purple: #4d0aca;
-$east-bay-opacity: rgba(72, 61, 119);
-$royal-blue: #6951dc;
-$persimmonn: #fb6952;
-$french-lilac: #f6e8f8;
-$golden-tainoi: #fdc55f;
-$grey: #9698a6;
-$martinique: #2d314d;
+  //* secondary brand color *//
+  --color-secondary: hsl(17, 97%, 63%);
+  --color-secondary-light: hsl(17, 100%, 94%);
+  --color-secondary-lighter: hsl(16, 100%, 97%);
 
-//* Sign Up Form *//
-$error-background: #f4afaf;
-$error-border: #c10f0f;
-$success-background: #89e1a0;
-$success-border: #139115;
-$response-text: rgba(0, 0, 0, 0.71);
+  //* tertiary brand color *//
+  --color-tertiary: hsl(262, 87%, 94%);
+  --color-tertiary-dark: hsl(263, 100%, 92%);
+
+  //* accent brand colors *//
+  --color-accent: #f8c236;
+  --color-text-on-accent: #43330b;
+
+  //* Newsletter form *//
+  --color-error-background: #f4afaf;
+  --color-error-border: #c10f0f;
+  --color-success-background: #89e1a0;
+  --color-success-border: #139115;
+  --color-response-text: rgba(0, 0, 0, 0.71);
+  --color-notecard-bg: #c34900;
+
+  --color-red: #d93939;
+}

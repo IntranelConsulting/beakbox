@@ -1,81 +1,57 @@
 @import "mixins";
 
 .products {
-  text-align: center;
-
   @include breakpoint-up("large") {
-    width: 100%;
-    align-items: center;
-  }
-
-  a {
-    border-bottom: none;
-  }
-
-  p {
-    @include breakpoint-up("large") {
-      margin-bottom: 6rem;
-    }
-  }
-
-  li {
-    list-style: none;
-    margin: 0;
-    color: $east-bay;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
-    padding: 2rem 0;
-  }
-
-  li:not(:last-child) {
-    border-bottom: 1px solid #55428994;
-  }
-
-  ul {
-    margin-left: 0;
+    width: 118rem;
   }
 
   &__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.875rem;
+    margin-top: 4rem;
+
     @include breakpoint-up("large") {
-      display: flex;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4.875rem;
     }
   }
 
   &__item {
-    padding: 5rem 3rem;
-    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    box-shadow: 0px 3px 12px rgba(0, 0, 0, 0.15);
+    transition: all 150ms ease-in-out;
     border-radius: 1rem;
+    overflow: hidden;
 
-    &::not(:last-child) {
-      @include breakpoint-up("large") {
-        margin-right: 4rem;
-      }
+    &:hover {
+      transform: scale(1.05);
     }
+  }
 
-    @include breakpoint-up("large") {
-      width: 36rem;
-    }
+  &__image {
+    height: 26rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__item + &__item {
     margin-top: 4rem;
     @include breakpoint-up("large") {
       margin-top: 0;
-      margin-left: 4rem;
     }
-  }
-
-  &__title {
-    font-size: 2.6rem;
-    margin: 2rem;
-    color: $purple;
   }
 
   &__description {
-    color: $east-bay-opacity;
     text-align: left;
-    @include breakpoint-up("large") {
-      height: 30rem;
+    padding: 0 1rem;
+
+    li {
+      font-size: calc(var(--font-size-md) + 0.3rem);
     }
+  }
+
+  &__cta {
+    margin: 4rem;
   }
 }
