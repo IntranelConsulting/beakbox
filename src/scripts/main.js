@@ -1,5 +1,29 @@
 console.clear();
 
+//* Hamburger mobile menu *//
+
+const btnHamburger = document.querySelector("#btnHamburger");
+const navMenu = document.querySelector(".nav__links");
+const body = document.querySelector("body");
+
+btnHamburger.addEventListener("click", function () {
+  console.log("click hamburger menu");
+
+  if (btnHamburger.classList.contains("open")) {
+    //* Open hamburger menu
+    btnHamburger.classList.remove("open");
+    body.classList.remove("no-scroll");
+    navMenu.classList.replace("mobile-menu", "hide-for-mobile");
+  } else {
+    //* Closerhamburger menu
+    btnHamburger.classList.add("open");
+    body.classList.add("no-scroll");
+    navMenu.classList.replace("hide-for-mobile", "mobile-menu");
+  }
+});
+
+//* Image gallery *//
+
 var app = function () {
   let leftButton;
   let rightButton;
