@@ -91,17 +91,19 @@ subheading: Transform your bird's cage into an enriched and interactive playgrou
 
     <header>
       <nav class="nav">
+        <input id="menu-toggle" type="checkbox" />
         <a href="/" class="nav__logo">
           <img src="/imgs/logo.svg" alt="Logo" />
         </a>
 
-        <a id="btnHamburger" href="#" class="nav__menu hide-for-desktop">
+        <label for="menu-toggle" class="nav__menu">
           <span></span>
           <span></span>
           <span></span>
-        </a>
+          <div>Menu</div>
+        </label>
 
-        <div class="nav__links hide-for-mobile">
+        <div class="nav__links">
           <a href="/about-us/">Our Story</a>
           <a href="/how-it-works/">How It Works</a>
           <a href="https://shop.mybeakbox.com/pages/review">Reviews</a>
