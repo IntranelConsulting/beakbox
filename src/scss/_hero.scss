@@ -40,9 +40,9 @@
 
     h1 {
       font-size: var(--font-size-2xl);
-      text-align: left;
 
       @include breakpoint-up("large") {
+        text-align: left;
         font-size: var(--font-size-4xl);
         padding: 0;
       }
@@ -50,8 +50,11 @@
 
     p {
       color: var(--color-text-on-primary);
-      font-size: calc(var(--font-size-md) + 3px);
-      text-align: left;
+      font-size: var(--font-size-md);
+
+      @include breakpoint-up("large") {
+        text-align: left;
+      }
     }
   }
 
