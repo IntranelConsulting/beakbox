@@ -23,8 +23,8 @@ body {
   }
 }
 
-img:not(.dark-bg *, .footer *, .blog-posts *),
-svg:not(.dark-bg *, .footer *, .blog-posts *) {
+img:not(.nav *, .footer *, .blog-posts *),
+svg:not(.nav *, .footer *, .blog-posts *) {
   display: block;
   max-width: 100%;
 }
@@ -41,15 +41,15 @@ main {
   flex-grow: 1;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 %center-column {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1em;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
 }
 
 p,
@@ -68,9 +68,4 @@ li + li {
 
 ::marker {
   color: var(--color-red);
-}
-
-*:focus {
-  outline: 3px dashed #000;
-  outline-offset: 2px;
 }
