@@ -25,9 +25,13 @@
   --color-tertiary: hsl(262, 87%, 94%);
   --color-tertiary-dark: hsl(263, 100%, 92%);
 
-  //* accent brand colors *//
-  --color-accent: #f8c236;
-  --color-text-on-accent: #43330b;
+  //* cta colors *//
+  --color-accent: hsl(43, 93%, 59%);
+  --color-cta-border: hsl(43, 72%, 15%);
+  --color-cta-text: hsl(43, 72%, 15%);
+
+  //* link colors *//
+  --color-link-blog: hsl(260.9, 89.8%, 46.3%);
 
   //* Newsletter form *//
   --color-error-background: #f4afaf;
