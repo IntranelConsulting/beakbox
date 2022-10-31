@@ -17,10 +17,6 @@ body {
   color: var(--color-text);
   font-size: var(--font-size-lg);
   overflow-x: hidden;
-
-  &.no-scroll {
-    overflow: hidden;
-  }
 }
 
 img:not(.nav *, .footer *, .blog-posts *),
