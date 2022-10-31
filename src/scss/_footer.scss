@@ -81,8 +81,14 @@
     }
 
     a {
+      font-size: var(--font-size-md);
       color: var(--color-text-on-primary);
       font-weight: var(--font-weight-xlight);
+      text-decoration: none;
+    }
+
+    a:hover {
+      box-shadow: 0 3px 0 0 var(--color-secondary);
     }
 
     p {
@@ -104,6 +110,7 @@
   }
 
   &__copyright {
+    font-size: var(--font-size-md);
     display: flex;
     flex-direction: column;
     align-items: center;
