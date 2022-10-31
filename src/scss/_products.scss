@@ -47,11 +47,15 @@
     padding: 0 1rem;
 
     li {
-      font-size: calc(var(--font-size-md) + 0.3rem);
+      font-size: var(--font-size-md);
     }
   }
 
   &__cta {
     margin: 4rem;
+
+    a.button {
+      background-color: transparent;
+    }
   }
 }
