@@ -150,6 +150,10 @@ header {
       a:not(.button):visited {
         box-shadow: 0 3px 0 0 var(--color-secondary);
       }
+
+      .button {
+        color: var(--color-cta-text);
+      }
     }
 
     &__menu {
