@@ -40,7 +40,6 @@ header {
     align-items: center;
     justify-content: center;
     padding: 5em 2em;
-    width: 100%;
     width: 80rem;
     max-width: 100%;
     margin: 0 auto;
@@ -74,18 +73,30 @@ header {
 
   input[type="checkbox"] {
     display: none;
+    cursor: pointer;
 
-    &:checked ~ .nav__links {
-      visibility: visible;
-      height: 100vh;
-      top: 9rem;
-      left: 0;
-      background: linear-gradient(180deg, #4e0acd 0%, #5215cb 11%, #581ecc 24%, #5e26cf 38%, #622cce 55%, #6732d2 69%, #6a36d3 77%, #713fd5 83%, #7443d6 87%, #7a4bd8 92%, #7d4fd8 96%, #8254d9 100%);
+    &:checked ~ .main-nav__links {
+      display: flex;
+    }
+
+    &:checked ~ .main-nav__menu {
+      span:nth-child(1) {
+        transform: translateY(13px) rotate(45deg);
+      }
+
+      span:nth-child(2) {
+        opacity: 0;
+      }
+
+      span:nth-child(3) {
+        transform: translateY(-3px) rotate(-45deg);
+      }
     }
   }
 
   label[for="menu-toggle"] {
     display: block;
+    cursor: pointer;
 
     @include breakpoint-up("large") {
       display: none;
@@ -93,15 +104,16 @@ header {
   }
 
   //* Navigation Menu *//
-  .nav {
+  .main-nav {
     display: flex;
-    position: relative;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
 
     @include breakpoint-up("large") {
       flex-direction: row;
+      flex-wrap: nowrap;
       justify-content: space-between;
       align-items: center;
     }
@@ -111,19 +123,24 @@ header {
     }
 
     &__links {
-      display: flex;
+      display: none;
       flex-direction: column;
-      position: absolute;
+      flex-basis: 100%;
+      flex-grow: 1;
       align-items: center;
-      justify-content: center;
-      visibility: hidden;
-      right: 0;
-      z-index: 999;
+      padding: 5rem 0;
+      margin-top: 3rem;
+      border-radius: 1rem;
+      background: linear-gradient(180deg, #4e0acd 0%, #5215cb 11%, #581ecc 24%, #5e26cf 38%, #622cce 55%, #6732d2 69%, #6a36d3 77%, #713fd5 83%, #7443d6 87%, #7a4bd8 92%, #7d4fd8 96%, #8254d9 100%);
 
       @include breakpoint-up("large") {
-        flex-direction: row;
-        visibility: visible;
+        padding: 0;
+        margin-top: 0;
+        display: flex;
         justify-content: end;
+        align-items: center;
+        flex-direction: row;
+        background: none;
       }
 
       a {
@@ -169,6 +186,7 @@ header {
         height: 2px;
         background-color: white;
         border-radius: 3rem;
+        transition: all 0.5s ease-out;
 
         &:not(:last-child) {
           margin-bottom: 6px;
