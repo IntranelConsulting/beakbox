@@ -51,8 +51,7 @@
 
 //* Buttons *//
 
-a.button,
-input.button,
+.button,
 button {
   display: inline-block;
   position: relative;
@@ -68,8 +67,7 @@ button {
   font-weight: var(--font-weight-bold);
 }
 
-a.button:hover,
-input.button:hover,
+.button:hover,
 button:hover {
   box-shadow: 5px 5px 0 -2px var(--color-secondary), 5px 5px 0 0 var(--color-cta-border);
 }
