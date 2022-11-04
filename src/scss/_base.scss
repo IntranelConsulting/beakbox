@@ -85,10 +85,6 @@ li + li {
   outline-offset: var(--outline-offset, var(--outline-size));
 }
 
-:is(a, button, input, textarea, summary):focus:not(:focus-visible) {
-  outline: none;
-}
-
 //* Focus customisations *//
 
 header a,
