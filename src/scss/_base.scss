@@ -19,8 +19,8 @@ body {
   overflow-x: hidden;
 }
 
-img:not(.nav *, .footer *, .blog-posts *),
-svg:not(.nav *, .footer *, .blog-posts *) {
+img:not(.main-nav *, .footer *, .blog-posts *),
+svg:not(.main-nav *, .footer *, .blog-posts *) {
   display: block;
   max-width: 100%;
 }
@@ -64,4 +64,50 @@ li + li {
 
 ::marker {
   color: var(--color-red);
+}
+
+//* Focus set up *//
+
+:is(a, button, input, textarea, summary) {
+  --outline-size: max(2px, 0.08em);
+  --outline-style: dashed;
+  --outline-color: currentColor;
+  --outline-offset: 0.5em;
+}
+
+:is(a, button, input, textarea, summary):focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:is(a, button, input, textarea, summary, [type="submit"]):focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:is(a, button, input, textarea, summary):focus:not(:focus-visible) {
+  outline: none;
+}
+
+//* Focus customisations *//
+
+header a,
+header .button,
+.newsletter input,
+footer a {
+  --outline-color: white;
+}
+
+.newsletter button[type="submit"] {
+  --outline-color: black;
+  --outline-offset: 0.2em;
+  --outline-size: 2px;
+}
+
+//* Reduce motion styles *//
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
 }
