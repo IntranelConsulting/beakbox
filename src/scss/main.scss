@@ -51,23 +51,25 @@
 
 //* Buttons *//
 
-a.button,
-input.button {
-  position: relative;
+.button,
+button {
   display: inline-block;
-  padding: 1.3rem 3rem;
-  background-color: var(--color-accent);
-  border-radius: 3.125em;
+  position: relative;
+  padding: 1rem 3rem;
+  font-size: var(--font-size-md);
+  background-color: var(--color-cta-bg);
+  border-radius: 3rem;
   cursor: pointer;
-  color: var(--color-text-on-accent);
+  color: var(--color-cta-text);
   text-align: center;
-  overflow: hidden;
-  width: fit-content;
-  border: none;
-  margin: 2em 0;
+  border: 2px solid var(--color-cta-border);
   text-decoration: none;
-  font-weight: inherit;
-  transition: 0.5s ease-in-out;
+  font-weight: var(--font-weight-bold);
+}
+
+.button:hover,
+button:hover {
+  box-shadow: 5px 5px 0 -2px var(--color-secondary), 5px 5px 0 0 var(--color-cta-border);
 }
 
 .button-container {
@@ -478,14 +480,14 @@ section.reviews {
 
 .hide-for-mobile {
   // hide for tablet and mobile
-  @include breakpoint-down(medium) {
+  @include breakpoint-down("medium") {
     display: none;
   }
 }
 
 .hide-for-desktop {
   // hide for desktop viewport widths
-  @include breakpoint-up(large) {
+  @include breakpoint-up("large") {
     display: none;
   }
 }

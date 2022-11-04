@@ -25,9 +25,16 @@
   --color-tertiary: hsl(262, 87%, 94%);
   --color-tertiary-dark: hsl(263, 100%, 92%);
 
-  //* accent brand colors *//
-  --color-accent: #f8c236;
-  --color-text-on-accent: #43330b;
+  //* accent colors *//
+  --color-accent: hsl(43, 93%, 59%);
+
+  //* cta colors *//
+  --color-cta-bg: var(--color-accent);
+  --color-cta-border: hsl(43, 72%, 15%);
+  --color-cta-text: hsl(43, 72%, 15%);
+
+  //* link colors *//
+  --color-link: hsl(260.9, 89.8%, 46.3%);
 
   //* Newsletter form *//
   --color-error-background: #f4afaf;
@@ -36,6 +43,5 @@
   --color-success-border: #139115;
   --color-response-text: rgba(0, 0, 0, 0.71);
   --color-notecard-bg: #c34900;
-
   --color-red: #d93939;
 }

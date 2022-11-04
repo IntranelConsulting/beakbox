@@ -1,4 +1,4 @@
-console.clear();
+//* Image gallery *//
 
 var app = function () {
   let leftButton;

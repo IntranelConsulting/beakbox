@@ -1,4 +1,9 @@
 .page-help {
+  main a {
+    color: var(--color-link);
+    text-decoration: underline;
+  }
+
   section {
     ul.quick-links {
       list-style: none;

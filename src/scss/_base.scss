@@ -19,8 +19,8 @@ body {
   overflow-x: hidden;
 }
 
-img:not(.dark-bg *, .footer *, .blog-posts *),
-svg:not(.dark-bg *, .footer *, .blog-posts *) {
+img:not(.main-nav *, .footer *, .blog-posts *),
+svg:not(.main-nav *, .footer *, .blog-posts *) {
   display: block;
   max-width: 100%;
 }
@@ -37,22 +37,15 @@ main {
   flex-grow: 1;
 }
 
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 %center-column {
   max-width: 100%;
   margin: 0 auto;
   padding: 0 1em;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-  font-weight: 700;
-  position: relative;
-  display: inline-block;
-}
-
-a:hover {
-  opacity: 0.7;
 }
 
 p,
@@ -73,7 +66,44 @@ li + li {
   color: var(--color-red);
 }
 
-*:focus {
-  outline: 3px dashed #000;
-  outline-offset: 2px;
+//* Focus set up *//
+
+:is(a, button, input, textarea, summary) {
+  --outline-size: max(2px, 0.08em);
+  --outline-style: dashed;
+  --outline-color: currentColor;
+  --outline-offset: 0.5em;
+}
+
+:is(a, button, input, textarea, summary):focus {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+:is(a, button, input, textarea, summary, [type="submit"]):focus-visible {
+  outline: var(--outline-size) var(--outline-style) var(--outline-color);
+  outline-offset: var(--outline-offset, var(--outline-size));
+}
+
+//* Focus customisations *//
+
+header a,
+header .button,
+.newsletter input,
+footer a {
+  --outline-color: white;
+}
+
+.newsletter button[type="submit"] {
+  --outline-color: black;
+  --outline-offset: 0.2em;
+  --outline-size: 2px;
+}
+
+//* Reduce motion styles *//
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none;
+  }
 }

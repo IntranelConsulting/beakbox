@@ -18,14 +18,13 @@
       text-align: left;
     }
   }
-  .button {
+  button {
     position: absolute;
     top: 5.8rem;
     right: 0.8rem;
     bottom: 0.8rem;
     margin: 0;
     padding: 0;
-    border: none;
     width: 30%;
   }
   &__wrapper {
@@ -39,9 +38,6 @@
     position: relative;
     margin-bottom: 3rem;
     margin-top: 3rem;
-    input:focus {
-      outline-color: white;
-    }
 
     #mce-EMAIL {
       background-color: white;
