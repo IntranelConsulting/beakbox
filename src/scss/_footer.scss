@@ -14,6 +14,7 @@
     grid-template-areas:
       "logo links1 links2 copyright"
       "socials links1 links2 copyright";
+    justify-items: center;
   }
 
   img {
@@ -54,6 +55,11 @@
 
     @include breakpoint-up("large") {
       grid-area: socials;
+    }
+
+    a {
+      display: inline-block;
+      height: 4rem;
     }
 
     img {
