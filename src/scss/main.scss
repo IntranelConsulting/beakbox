@@ -14,6 +14,7 @@
 @import "footer";
 @import "products";
 @import "mixins";
+@import "layout";
 
 /* Pages */
 // @import "pages/home";
@@ -24,6 +25,38 @@
 @import "pages/about-us";
 
 /* ---------------------------------------------------- */
+
+.card-component {
+  --img-ratio: 3/2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  outline: 1px red solid;
+}
+
+.card-component > ul {
+  padding-left: 1rem;
+}
+.card-component > img {
+  aspect-ratio: var(--img-ratio);
+  object-fit: cover;
+  width: 100%;
+}
+
+.card-component > li:nth-last-child(-n + 3) {
+  background-color: red;
+}
+
+.card-component > :last-of-type:not(img, h2, h3, h4, span) {
+  margin-bottom: 1rem;
+}
+
+.benefits img {
+  width: 8rem;
+}
 
 // Position //
 
@@ -37,10 +70,10 @@
 
 // Spacing
 
-.container {
-  max-width: 93.375rem;
-  margin: 0 auto;
-}
+// .container {
+//   max-width: 93.375rem;
+//   margin: 0 auto;
+// }
 
 .container--padding-all {
   padding-top: 4.375rem;
@@ -113,232 +146,6 @@ input[type="email"] {
 
 .clickable:hover {
   opacity: 1;
-}
-
-//* Styles for main element on each page *//
-
-main {
-  section {
-    display: flex;
-    flex-direction: column;
-    width: 80rem;
-    max-width: 100%;
-    margin: 5rem auto;
-
-    .hidden {
-      height: 0 !important;
-      padding: 0;
-      margin: 0;
-    }
-
-    .show-overflow {
-      overflow: visible;
-    }
-
-    div.image-container {
-      background-repeat: no-repeat;
-      background-size: contain;
-      width: 100%;
-    }
-
-    //* Instruction gif tiles *//
-
-    div.instructions {
-      display: flex;
-      justify-content: center;
-      margin: 2rem 0;
-
-      > div {
-        margin: 0 3rem;
-        width: 10rem;
-        height: 10rem;
-        background-position: center bottom;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: var(--color-tertiary);
-        border-radius: 9rem;
-      }
-
-      @media only screen and (max-width: 640px) {
-        h3 {
-          margin: 4.2rem auto 0 auto;
-        }
-        > div {
-          width: 5rem;
-          height: 5rem;
-        }
-      }
-    }
-
-    @media only screen and (max-width: 854px) {
-      width: 60rem;
-
-      iframe {
-        height: 33rem;
-      }
-    }
-
-    @media only screen and (max-width: 640px) {
-      width: 40rem;
-      margin: 1rem auto;
-      padding: 2.1rem;
-
-      iframe {
-        height: 20rem;
-      }
-    }
-  }
-
-  section.full-width {
-    min-width: 100%;
-    padding: 0;
-  }
-}
-
-//* Tiled images and text *//
-
-.tiled-content {
-  @include breakpoint-up("large") {
-    width: 70%;
-  }
-
-  @include breakpoint-up("xlarge") {
-    width: 40%;
-  }
-
-  .flex-row,
-  .flex-reverse-row {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .text-container {
-    padding: 3rem;
-  }
-
-  .flex-row {
-    @include breakpoint-up("large") {
-      flex-direction: row;
-    }
-  }
-
-  .flex-reverse-row {
-    @include breakpoint-up("large") {
-      flex-direction: row-reverse;
-      margin: 8rem 0;
-    }
-  }
-
-  img {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-
-    @include breakpoint-up("large") {
-      max-height: 26rem;
-      max-width: 42rem;
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    margin: 3rem auto;
-    padding: 0;
-  }
-}
-
-//* Element for text next to large image *//
-
-.half-screen-image-background {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  margin: 0 auto;
-  max-width: 100%;
-
-  > div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 60%;
-    padding: 0 2rem 0 6rem;
-  }
-
-  > div.image-container {
-    background-position: center;
-    background-repeat: no-repeat;
-    max-width: 25rem;
-    height: 25rem;
-  }
-
-  @media only screen and (max-width: 854px) {
-    width: 60rem;
-
-    > div {
-      max-width: 100%;
-      padding: 0;
-    }
-
-    > div.image-container {
-      min-width: 18rem;
-      height: 18rem;
-    }
-  }
-
-  @media only screen and (max-width: 640px) {
-    width: 40rem;
-  }
-}
-
-//* Home Page *//
-
-.page-home {
-  main {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    .half-screen-image-background {
-      .image-container {
-        background-image: url(/imgs/bbx3.jpg);
-      }
-    }
-
-    > section:first-of-type {
-      h2 {
-        text-align: left;
-      }
-
-      > p {
-        max-width: 100%;
-
-        @include breakpoint-up("large") {
-          max-width: 60%;
-        }
-      }
-
-      .button-container {
-        justify-content: center;
-
-        @include breakpoint-up("large") {
-          justify-content: flex-start;
-        }
-      }
-
-      @include breakpoint-up("large") {
-        background: url("/imgs/bbx3.jpg");
-        background-repeat: no-repeat;
-        background-size: 38rem;
-        background-position-x: right;
-        background-position-y: top;
-      }
-    }
-  }
 }
 
 // Testimonials

@@ -109,7 +109,6 @@ header {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding: 2rem;
 
     @include breakpoint-up("large") {
       flex-direction: row;

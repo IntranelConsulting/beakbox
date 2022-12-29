@@ -90,7 +90,7 @@ subheading: Transform your bird's cage into an enriched and interactive playgrou
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
-      <nav class="main-nav">
+      <nav class="main-nav container">
         <input id="menu-toggle" type="checkbox" />
         <a href="/" class="main-nav__logo">
           <img src="/imgs/logo.svg" alt="Logo" />
@@ -116,7 +116,7 @@ subheading: Transform your bird's cage into an enriched and interactive playgrou
       {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif page.fileSlug =="404"%} {% else %} {% include header.html %} {% endif %}
     </header>
 
-    <main>{{ content | safe }}</main>
+    <main class="container">{{ content | safe }}</main>
     <footer class="footer">
       <a class="footer__logo" href="/">
         <img src="/imgs/logo-no-text.png" alt="BeakBox mascot" />
