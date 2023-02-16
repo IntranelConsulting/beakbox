@@ -1,4 +1,10 @@
 .page-help {
+  article {
+    margin-bottom: 2vh;
+  }
+  p {
+    font-weight: var(--font-weight-bold);
+  }
   main a {
     color: var(--color-link);
     text-decoration: underline;
@@ -48,5 +54,56 @@
 
   details {
     margin-bottom: 1.5rem;
+    border-bottom: 1px solid #e1d8ef;
+  }
+}
+
+.popular-questions {
+  background-color: #f4effd;
+  border-radius: 1rem;
+  padding: 5rem;
+
+  h2 {
+    color: #614d87;
+  }
+
+  p {
+    color: #82749a;
+    font-weight: var(--font-weight-light);
+    padding: 2rem;
+  }
+
+  summary p {
+    color: #3f286e;
+    font-weight: var(--font-weight-bold);
+  }
+}
+
+.shipping-info {
+  details {
+    border-bottom: 1px solid #efd2c7;
+  }
+
+  ::marker {
+    color: #924d33;
+  }
+
+  border-radius: 1rem;
+  background-color: #ffeae2;
+  padding: 5rem;
+
+  h2 {
+    color: #a36851;
+  }
+
+  p {
+    color: #7d6157;
+    font-weight: var(--font-weight-light);
+    padding: 5rem;
+  }
+
+  summary p {
+    color: #5f3626;
+    font-weight: var(--font-weight-bold);
   }
 }

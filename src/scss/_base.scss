@@ -8,11 +8,6 @@
   box-sizing: border-box;
 }
 
-// html,
-// body {
-//   height: 100%;
-// }
-
 body,
 html {
   overflow-x: hidden;
@@ -38,14 +33,19 @@ select {
   font: inherit;
 }
 
-main {
-  margin-top: 8vh;
-  margin-bottom: 8vh;
-}
-
 a {
   text-decoration: none;
   color: inherit;
+}
+
+blockquote,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
 %center-column {
@@ -64,46 +64,8 @@ h6 {
   overflow-wrap: break-word;
 }
 
-li + li {
-  margin-top: 2rem;
-}
-
 ::marker {
-  color: var(--color-red);
-}
-
-//* Focus set up *//
-
-:is(a, button, input, textarea, summary) {
-  --outline-size: max(2px, 0.08em);
-  --outline-style: dashed;
-  --outline-color: currentColor;
-  --outline-offset: 0.5em;
-}
-
-:is(a, button, input, textarea, summary):focus {
-  outline: var(--outline-size) var(--outline-style) var(--outline-color);
-  outline-offset: var(--outline-offset, var(--outline-size));
-}
-
-:is(a, button, input, textarea, summary, [type="submit"]):focus-visible {
-  outline: var(--outline-size) var(--outline-style) var(--outline-color);
-  outline-offset: var(--outline-offset, var(--outline-size));
-}
-
-//* Focus customisations *//
-
-header a,
-header .button,
-.newsletter input,
-footer a {
-  --outline-color: white;
-}
-
-.newsletter button[type="submit"] {
-  --outline-color: black;
-  --outline-offset: 0.2em;
-  --outline-size: 2px;
+  color: #6454b1;
 }
 
 //* Reduce motion styles *//

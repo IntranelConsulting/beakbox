@@ -1,4 +1,6 @@
 body {
+  --layout-spacing: max(3vh, 3rem);
+
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -7,14 +9,23 @@ body {
   min-height: 100vh;
 }
 
-.container {
+.main-container {
   --container-width: 115ch;
   --container-gutter: 2rem;
   --container-padding: 1rem;
 
   width: min(var(--container-width), 100% - var(--container-gutter));
-  padding-block: var(--container-padding);
   margin-inline: auto;
+  padding-top: 3vh;
+  padding-bottom: 3vh;
+
+  &--narrow {
+    --container-width: 80ch;
+  }
+}
+
+main.main-container {
+  padding-bottom: 0;
 }
 
 .layout-grid {
@@ -25,10 +36,28 @@ body {
   grid-gap: var(--gap);
   //* min() with 100% prevents overflow in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+
+  li {
+    list-style: none;
+  }
 }
 
-ul.layout-grid {
+ul.layout-grid,
+ul.flexbox-grid {
   padding-left: 0;
+}
+
+.flexbox-grid {
+  --min: 10ch;
+  --gap: 1rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--gap);
+}
+
+.flexbox-grid > * {
+  flex: 2 1 var(--min);
 }
 
 .flex-container {
@@ -37,6 +66,21 @@ ul.layout-grid {
   display: flex;
   flex-direction: column;
   gap: var(--gap);
+
+  &--center-content {
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.row {
+  --gap: 0.5rem;
+  --justify-content: center;
+
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: var(--justify-content);
 }
 
 .grid-container {
@@ -47,4 +91,98 @@ ul.layout-grid {
   grid-gap: var(--gap);
   //* min() with 100% prevents overflow in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
+}
+
+.hero {
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+
+  p {
+    color: #d9d1ff;
+  }
+
+  &--blog {
+    max-width: 65ch;
+    margin-inline: auto;
+  }
+}
+
+section {
+  padding: var(--layout-spacing);
+}
+
+section:not(.newsletter, .hero) {
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+}
+
+.centering {
+  display: grid;
+  place-content: center;
+}
+
+.gallery-grid {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(5, 1fr);
+  width: min(95%, 70rem);
+
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+
+  img {
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 1.75rem;
+  }
+}
+
+.blockquote-box {
+  --color-light: #e0d4f6;
+  --color-dark: #675883;
+
+  margin: 2rem auto;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-size: 1.15rem;
+  border-radius: 1.75rem;
+  /* Smol Responsive Padding FTW! */
+  padding: clamp(0.75rem, 3%, 2rem);
+  /* Provide a max-width and prevent overflow */
+  width: min(50ch, 90%);
+  /* Help prevent overflow of long words/names/URLs */
+  word-break: break-word;
+  /* Optional, not supported for all languages */
+  hyphens: auto;
+
+  footer {
+    padding: 0.25em 0.5em;
+    margin-top: 1.5rem;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    /* Creates a visual box shrunk to `max-content` */
+    width: fit-content;
+  }
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+
+.auto-horizontal-margin {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.width-50 {
+  width: 50%;
 }
