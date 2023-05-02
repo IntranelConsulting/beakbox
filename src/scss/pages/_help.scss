@@ -1,109 +1,20 @@
-.page-help {
-  article {
-    margin-bottom: 2vh;
-  }
-  p {
-    font-weight: var(--font-weight-bold);
-  }
-  main a {
-    color: var(--color-link);
-    text-decoration: underline;
-  }
-
-  section {
-    ul.quick-links {
-      list-style: none;
-      li {
-        margin-left: 0;
-      }
-    }
-  }
-
-  .notecard {
-    padding: 0.5rem 1.5rem;
-    margin: 2rem 0;
-    border-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary)) 1;
-    border-width: 0 0 0 7px;
-    border-style: solid;
-    background-color: var(--color-secondary-light);
-    position: relative;
-
-    p {
-      color: var(--color-text-on-secondary-light);
-    }
-  }
-
-  details summary > * {
-    display: inline;
-  }
-
-  details > summary {
-    cursor: pointer;
-    padding: 1.2rem 1rem;
-  }
-
-  details > div {
-    border: 2px solid #fdb;
-    margin-top: 0;
-    padding: 1rem;
-  }
-
-  summary {
-    padding-bottom: 1em;
-  }
-
-  details {
-    margin-bottom: 1.5rem;
-    border-bottom: 1px solid #e1d8ef;
-  }
+.page-help article > img {
+  height: auto;
+  max-width: 100%;
 }
 
-.popular-questions {
-  background-color: #f4effd;
-  border-radius: 1rem;
-  padding: 5rem;
-
-  h2 {
-    color: #614d87;
-  }
-
-  p {
-    color: #82749a;
-    font-weight: var(--font-weight-light);
-    padding: 2rem;
-  }
-
-  summary p {
-    color: #3f286e;
-    font-weight: var(--font-weight-bold);
-  }
-}
-
+.popular-questions,
 .shipping-info {
-  details {
-    border-bottom: 1px solid #efd2c7;
-  }
-
-  ::marker {
-    color: #924d33;
-  }
-
   border-radius: 1rem;
-  background-color: #ffeae2;
-  padding: 5rem;
+  padding: clamp(3rem, 1rem + 5vw, 5rem);
+}
 
-  h2 {
-    color: #a36851;
+.page-help {
+  .layout-grid li {
+    list-style: disk;
   }
 
-  p {
-    color: #7d6157;
-    font-weight: var(--font-weight-light);
-    padding: 5rem;
-  }
-
-  summary p {
-    color: #5f3626;
-    font-weight: var(--font-weight-bold);
+  aerticle li > img {
+    margin: 2rem auto;
   }
 }

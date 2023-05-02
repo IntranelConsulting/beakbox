@@ -1,9 +1,8 @@
 ---
 layout: page.html
 title: Blog
-description: Read our latest blogs on all things parrots - bird health, behaviour, food recipes for parrots, tips and tricks, training, safety, fun facts, bird toys.
-heading: BeakBox
-boldedHeading: Blog
+text: Read our latest blogs on all things parrots - bird health, behaviour, food recipes for parrots, tips and tricks, training, safety, fun facts, bird toys.
+
 pagination:
   data: collections.blog
   size: 10
@@ -18,12 +17,11 @@ pagination:
       <div class="article-header">
         <img src="{{ post.data.thumbnail }}" alt="{{ post.data.alt }}" />
         <div class="date">{{ post.date | formatDate }}</div>
-        <h2>
+        <div class="article-title">
           <a href="{{ post.url }}">{{ post.data.title }}</a>
-        </h2>
+        </div>
       </div>
       <p>{{ post.data.description }}</p>
-      <a href="{{ post.url }}">Read more</a>
     </article>
   </li>
   {%- endfor -%}

@@ -2,9 +2,6 @@ body {
   --layout-spacing: max(3vh, 3rem);
 
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100vh;
 }
@@ -22,15 +19,15 @@ body {
   &--narrow {
     --container-width: 80ch;
   }
-}
 
-main.main-container {
-  padding-bottom: 0;
+  &--align-center {
+    align-items: center;
+  }
 }
 
 .layout-grid {
   --min: 25ch;
-  --gap: 1rem;
+  --gap: 4rem;
 
   display: grid;
   grid-gap: var(--gap);
@@ -42,26 +39,12 @@ main.main-container {
   }
 }
 
-ul.layout-grid,
-ul.flexbox-grid {
+ul.layout-grid {
   padding-left: 0;
 }
 
-.flexbox-grid {
-  --min: 10ch;
-  --gap: 1rem;
-
-  display: flex;
-  flex-wrap: wrap;
-  gap: var(--gap);
-}
-
-.flexbox-grid > * {
-  flex: 2 1 var(--min);
-}
-
 .flex-container {
-  --gap: 1rem;
+  --gap: 3rem;
 
   display: flex;
   flex-direction: column;
@@ -71,94 +54,38 @@ ul.flexbox-grid {
     align-items: center;
     justify-content: center;
   }
-}
 
-.row {
-  --gap: 0.5rem;
-  --justify-content: center;
-
-  flex-direction: row;
-  align-items: center;
-  flex-wrap: wrap;
-  justify-content: var(--justify-content);
-}
-
-.grid-container {
-  --min: 15ch;
-  --gap: 1rem;
-
-  display: grid;
-  grid-gap: var(--gap);
-  //* min() with 100% prevents overflow in extra narrow spaces */
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-}
-
-.hero {
-  padding-top: 10vh;
-  padding-bottom: 10vh;
-
-  p {
-    color: #d9d1ff;
+  &--row {
+    flex-direction: row;
   }
 
-  &--blog {
-    max-width: 65ch;
-    margin-inline: auto;
+  &--row-gap {
+    --gap: 6rem;
   }
 }
 
-section {
-  padding: var(--layout-spacing);
-}
-
-section:not(.newsletter, .hero) {
-  padding-top: 4vh;
-  padding-bottom: 4vh;
-}
-
-.centering {
-  display: grid;
-  place-content: center;
-}
-
-.gallery-grid {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  display: grid;
-  gap: 2rem;
-  grid-template-columns: repeat(5, 1fr);
-  width: min(95%, 70rem);
-
-  .grid-col-span-2 {
-    grid-column: span 2;
-  }
-
-  img {
-    display: block;
-    object-fit: cover;
-    width: 100%;
-    height: 100%;
-    border-radius: 1.75rem;
-  }
+section:not(.newsletter, .hero, .blog-posts) {
+  padding: 4vh 1rem;
 }
 
 .blockquote-box {
-  --color-light: #e0d4f6;
-  --color-dark: #675883;
+  --color-light: #463889;
+  --color-dark: #ccc5ee;
+  --color-border: #9d90d8;
 
   margin: 2rem auto;
   color: var(--color-dark);
   background-color: var(--color-light);
   font-size: 1.15rem;
+  border: 2px dashed var(--color-border);
   border-radius: 1.75rem;
-  /* Smol Responsive Padding FTW! */
-  padding: clamp(0.75rem, 3%, 2rem);
-  /* Provide a max-width and prevent overflow */
-  width: min(50ch, 90%);
-  /* Help prevent overflow of long words/names/URLs */
+  //* Smol Responsive Padding FTW! *//
+  padding: clamp(0.75rem, 7%, 2rem);
+  //* Provide a max-width and prevent overflow *//
+  width: min(60ch, 95%);
+  //* Help prevent overflow of long words/names/URLs *//
   word-break: break-word;
-  /* Optional, not supported for all languages */
+  //* Optional, not supported for all languages *//
   hyphens: auto;
 
   footer {
@@ -168,7 +95,7 @@ section:not(.newsletter, .hero) {
     background-color: var(--color-dark);
     border-radius: 0.5rem;
     font-size: 1.5rem;
-    /* Creates a visual box shrunk to `max-content` */
+    //* Creates a visual box shrunk to `max-content` *//
     width: fit-content;
   }
 }
@@ -176,6 +103,10 @@ section:not(.newsletter, .hero) {
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
+
+  &--centered {
+    align-self: center;
+  }
 }
 
 .auto-horizontal-margin {
@@ -185,4 +116,19 @@ section:not(.newsletter, .hero) {
 
 .width-50 {
   width: 50%;
+}
+
+.reviews .layout-grid {
+  --min: 30ch;
+}
+
+.full-bleed {
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  margin-left: -50vw;
+}
+
+.no-gap {
+  --gap: 0;
 }

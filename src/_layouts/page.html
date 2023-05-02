@@ -3,8 +3,7 @@ title: Interactive and Safe Musical Parrot Toys
 metaTitle: "BeakBox: "
 description: Keep your parrots entertained with 100% safe, fun, and easy-to-use musical toys for pet parrots. Made for parrots of all sizes - from Budgies to Macaws.
 thumbnail: /imgs/webpage.png
-heading: Interactive and Fun
-boldedHeading: Musical Bird Toy
+
 subheading: BeakBox is a unique musical bird toy that gives your birds freedom to listen to music whenever they want.
 ---
 
@@ -13,7 +12,7 @@ subheading: BeakBox is a unique musical bird toy that gives your birds freedom t
   <head>
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
+      s(function (w, d, s, l, i) {
         w[l] = w[l] || [];
         w[l].push({
           "gtm.start": new Date().getTime(),
@@ -80,7 +79,8 @@ subheading: BeakBox is a unique musical bird toy that gives your birds freedom t
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
     {% if page.fileSlug == "help" %} {% include faq-schema.html %} {% endif %}
   </head>
 
@@ -112,10 +112,11 @@ subheading: BeakBox is a unique musical bird toy that gives your birds freedom t
         </div>
       </nav>
 
-      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif page.fileSlug =="404"%} {% else %} {% include header.html %} {% endif %}
+      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug != "404" %} {% include header.html %} {% endif
+      %}
     </header>
 
-    <main class="main-container">{{ content | safe }}</main>
+    <main>{{ content | safe }}</main>
 
     {% include footer.html %}
 

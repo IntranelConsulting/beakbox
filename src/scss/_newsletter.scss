@@ -1,22 +1,34 @@
-@import "mixins";
-@import "_variables.scss";
+.newsletter {
+  padding: 8rem 0;
+  border-bottom: 2px dashed #6f61b8;
 
-.email-container {
+  img {
+    width: 3rem;
+  }
+}
+
+#mc_embed_signup {
   background-color: #463889;
   border-radius: 14px;
-  justify-content: center;
   padding: 4rem;
+}
 
-  p {
-    font-size: var(--font-size-sm);
+.email-container {
+  justify-content: center;
+
+  .clear span {
+    display: block;
+    color: var(--color-on-primary);
+    font-size: 14px;
+    margin-top: 3rem;
   }
 
   label {
-    color: var(--color-text-on-primary);
+    color: var(--color-on-primary);
   }
 
   input[type="email"] {
-    background-color: var(--color-text-on-primary);
+    background-color: var(--color-on-primary);
   }
 
   #mc_embed_signup .mc-field-group {
@@ -36,35 +48,5 @@
   .response #mce-success-response {
     color: #62b750;
     border-left: 3px solid #62b750;
-  }
-}
-
-.newsletter {
-  padding: 8rem 0;
-  background-color: var(--color-primary-darker);
-  border-bottom: 1px solid var(--color-primary-lighter);
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-
-  .main-container {
-    --container-gutter: 3rem;
-  }
-
-  .layout-grid {
-    --gap: 7rem;
-  }
-
-  img {
-    width: 3rem;
-  }
-
-  h2 {
-    color: white;
-  }
-
-  p {
-    color: var(--color-text-on-primary);
   }
 }

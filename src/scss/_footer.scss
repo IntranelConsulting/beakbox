@@ -1,8 +1,6 @@
 @import "mixins";
 
 .footer {
-  background-color: var(--color-primary-darker);
-  color: white;
   padding: 4rem 0;
 
   .layout-grid {
@@ -11,6 +9,7 @@
 
   ul li p {
     text-transform: uppercase;
+    color: white;
   }
 
   img {
@@ -18,12 +17,8 @@
   }
 
   a,
-  .copyright {
-    color: #c1b8eb;
-  }
-
-  .row {
-    --gap: 9.5rem;
+  .copyright p {
+    color: var(--color-on-primary);
   }
 
   .copyright a,
@@ -40,6 +35,4 @@
     --gap: 2rem;
     --justify-content: flex-start;
   }
-
-
 }
