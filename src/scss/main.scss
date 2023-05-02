@@ -157,6 +157,19 @@ input[type="email"] {
   }
 }
 
+.safety-icons {
+  align-items: center;
+  p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  img {
+    width: 5rem;
+  }
+}
+
 // * Blog post section *//
 
 .blog-posts {
