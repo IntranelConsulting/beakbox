@@ -1,5 +1,6 @@
+button,
 .button,
-button {
+input[type="button"] {
   --button-background: var(--color-secondary);
   --button-color: var(--color-on-secondary);
 
