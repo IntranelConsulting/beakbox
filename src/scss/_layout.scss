@@ -31,14 +31,14 @@ body {
   grid-gap: var(--gap);
   //* min() with 100% prevents overflow in extra narrow spaces */
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
-
-  li {
-    list-style: none;
-  }
 }
 
 ul.layout-grid {
   padding-left: 0;
+
+  li {
+    list-style: none;
+  }
 }
 
 .flex-container {
