@@ -259,6 +259,39 @@ input[type="email"] {
   }
 }
 
+//* Blockquote //*
+.blockquote-box {
+  --color-light: #463889;
+  --color-dark: #ccc5ee;
+  --color-border: #9d90d8;
+
+  margin: 2rem auto;
+  color: var(--color-dark);
+  background-color: var(--color-light);
+  font-size: 1.15rem;
+  border: 2px dashed var(--color-border);
+  border-radius: 1.75rem;
+  //* Smol Responsive Padding FTW! *//
+  padding: clamp(0.75rem, 7%, 2rem);
+  //* Provide a max-width and prevent overflow *//
+  width: min(60ch, 95%);
+  //* Help prevent overflow of long words/names/URLs *//
+  word-break: break-word;
+  //* Optional, not supported for all languages *//
+  hyphens: auto;
+
+  footer {
+    padding: 0.25em 0.5em;
+    margin-top: 1.5rem;
+    color: var(--color-light);
+    background-color: var(--color-dark);
+    border-radius: 0.5rem;
+    font-size: 1.5rem;
+    //* Creates a visual box shrunk to `max-content` *//
+    width: fit-content;
+  }
+}
+
 //* 404 page //*
 
 .not-found-page {
