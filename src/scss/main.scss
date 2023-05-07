@@ -207,9 +207,8 @@ input[type="email"] {
     color: #7d6157;
   }
 
-  summary p {
-    color: #5f3626;
-    font-weight: 600;
+  summary {
+    --color-summary: #5f3626;
   }
 
   details p {
@@ -236,9 +235,8 @@ input[type="email"] {
     color: #82749a;
   }
 
-  summary p {
-    color: #3f286e;
-    font-weight: 600;
+  summary {
+    --color-summary: #3f286e;
   }
 }
 
