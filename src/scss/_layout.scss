@@ -122,13 +122,6 @@ section:not(.newsletter, .hero, .blog-posts) {
   --min: 30ch;
 }
 
-.full-bleed {
-  width: 100vw;
-  position: relative;
-  left: 50%;
-  margin-left: -50vw;
-}
-
 .no-gap {
   --gap: 0;
 }
