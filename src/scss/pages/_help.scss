@@ -1,14 +1,3 @@
-.page-help article > img {
-  height: auto;
-  max-width: 100%;
-}
-
-.popular-questions,
-.shipping-info {
-  border-radius: 1rem;
-  padding: clamp(3rem, 1rem + 5vw, 5rem);
-}
-
 .page-help {
   .layout-grid li {
     list-style: disk;
@@ -17,4 +6,15 @@
   article li > img {
     margin: 2rem auto;
   }
+
+  article > img {
+    height: auto;
+    max-width: 100%;
+  }
+}
+
+.popular-questions,
+.shipping-info {
+  border-radius: 1rem;
+  padding: clamp(3rem, 1rem + 5vw, 5rem);
 }
