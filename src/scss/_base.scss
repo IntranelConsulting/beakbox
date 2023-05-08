@@ -15,39 +15,6 @@ body {
   font-size: var(--font-size-text);
 }
 
-img:not(.main-nav *, .icons, .footer *, .blog-posts *),
-svg:not(.main-nav *, .icons, .footer *, .blog-posts *) {
-  display: block;
-  max-width: 100%;
-  border-radius: 1rem;
-}
-
-//* Inherit fonts for inputs and buttons *//
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-a:not(.button, .main-nav, .hero, .footer) {
-  color: currentColor;
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.2em;
-}
-
-.main-nav a,
-.footer a {
-  text-decoration: none;
-}
-
-.main-nav a:hover:not(.button),
-.footer a:hover:not(.button) {
-  text-decoration: underline;
-  text-decoration-thickness: 0.08em;
-  text-underline-offset: 0.2em;
-}
-
 //* Prevent default margin *//
 blockquote,
 body,
@@ -70,8 +37,53 @@ h6 {
   overflow-wrap: break-word;
 }
 
+//* Inherit fonts for inputs and buttons *//
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+//* Images, video *//
+img:not(.main-nav *, .icons, .footer *, .blog-posts *),
+svg:not(.main-nav *, .icons, .footer *, .blog-posts *) {
+  display: block;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+video {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+//* Links *//
+a:not(.button, .main-nav, .hero, .footer) {
+  color: currentColor;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.main-nav a,
+.footer a {
+  text-decoration: none;
+}
+
+.main-nav a:hover:not(.button),
+.footer a:hover:not(.button) {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+//* Markers *//
 ::marker {
   color: var(--color-marker);
+}
+
+ul li::marker {
+  content: "—";
 }
 
 //* Reduce motion styles *//
