@@ -12,27 +12,27 @@
     color: white;
   }
 
-  img {
-    width: 3rem;
+  .socials {
+    --gap: 2rem;
+    --justify-content: flex-start;
+
+    img {
+      width: 3rem;
+    }
+  }
+
+  .copyright {
+    margin-top: 4rem;
+
+    a,
+    p {
+      font-size: 14px;
+      margin-bottom: 0;
+    }
   }
 
   a,
   .copyright p {
     color: var(--color-on-primary);
-  }
-
-  .copyright a,
-  .copyright p {
-    font-size: 14px;
-    margin-bottom: 0;
-  }
-
-  .copyright {
-    margin-top: 4rem;
-  }
-
-  .socials {
-    --gap: 2rem;
-    --justify-content: flex-start;
   }
 }
