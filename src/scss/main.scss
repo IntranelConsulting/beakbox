@@ -21,55 +21,8 @@
 @import "pages/help";
 @import "pages/about-us";
 
-.border {
-  padding-bottom: 5vh;
-  border-bottom: 2px dashed var(--border-color);
-
-  &--on-light {
-    --border-color: #f7d5c9;
-  }
-}
-
-//* Product section *//
-
-.products {
-  .main-container {
-    --container-width: 130ch;
-  }
-
-  .layout-grid {
-    --gap: 2rem;
-    --min: 20ch;
-  }
-
-  ul:nth-child(2) {
-    align-items: center;
-    justify-content: center;
-  }
-
-  .button {
-    width: 100%;
-    margin-top: 2rem;
-  }
-}
-
-//* Position *//
-
-.text-align-center {
-  text-align: center;
-}
-
-.text-align-right {
-  text-align: right;
-}
-
-.centering {
-  display: grid;
-  place-content: center;
-}
 
 //* Inputs *//
-
 input {
   display: block;
 }
@@ -84,100 +37,50 @@ input[type="email"] {
   font-size: inherit;
 }
 
-//YouTube videos
+//* Utilities *//
 
-.youtube-player {
-  position: relative;
-  padding-bottom: 56%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  border-radius: 1rem;
+.text-align-center {
+  text-align: center;
 }
 
-.youtube-player iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 95%;
-  z-index: 100;
-  background: transparent;
+.text-align-right {
+  text-align: right;
 }
 
-.youtube-player img {
-  object-fit: cover;
-  display: block;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  max-width: 100%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  height: auto;
-  cursor: pointer;
-  -webkit-transition: 0.4s all;
-  -moz-transition: 0.4s all;
-  transition: 0.4s all;
+.centering {
+  display: grid;
+  place-content: center;
 }
 
-.youtube-player img:hover {
-  -webkit-filter: brightness(75%);
+.auto-horizontal-margin {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.youtube-player .play {
-  height: 8rem;
+//* Borders *//
+.border {
+  padding-bottom: 5vh;
+  border-bottom: 2px dashed var(--border-color);
+
+  &--on-light {
+    --border-color: #f7d5c9;
+  }
+}
+
+//* Icons *//
+.icons {
   width: 8rem;
-  left: 50%;
-  top: 50%;
-  margin-left: -3.6rem;
-  margin-top: -3.6rem;
-  position: absolute;
-  background: url("/imgs/play.png") no-repeat;
-  cursor: pointer;
-}
+  height: 8rem;
+  padding: 1rem;
+  border-radius: 50%;
 
-// * Safety section *//
-
-.safety {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-
-  .flex-container {
-    --gap: 2rem;
-  }
-
-  .item1 {
-    flex-basis: 30rem;
+  &--on-dark {
+    background-color: #4937a2;
   }
 }
 
-.safety-icons {
-  align-items: center;
-  p {
-    text-transform: uppercase;
-    font-weight: 600;
-    font-size: 14px;
-  }
-
-  img {
-    width: 5rem;
-  }
-}
-
-// * Blog post section *//
-
-.blog-posts {
-  padding-top: 0;
-}
 
 // * Backgrounds *//
-
 .dark-background {
   background-color: var(--color-background-dark);
 
@@ -240,26 +143,126 @@ input[type="email"] {
   }
 }
 
-.icons {
-  width: 8rem;
-  height: 8rem;
-  padding: 1rem;
-  border-radius: 50%;
+//* YouTube videos *//
+.youtube-player {
+  position: relative;
+  padding-bottom: 56%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  border-radius: 1rem;
+}
 
-  &--on-dark {
-    background-color: #4937a2;
+.youtube-player iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95%;
+  height: 95%;
+  z-index: 100;
+  background: transparent;
+}
+
+.youtube-player img {
+  object-fit: cover;
+  display: block;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+  max-width: 100%;
+  width: 100%;
+  position: absolute;
+  right: 0;
+  top: 0;
+  border: none;
+  height: auto;
+  cursor: pointer;
+  -webkit-transition: 0.4s all;
+  -moz-transition: 0.4s all;
+  transition: 0.4s all;
+}
+
+.youtube-player img:hover {
+  -webkit-filter: brightness(75%);
+}
+
+.youtube-player .play {
+  height: 8rem;
+  width: 8rem;
+  left: 50%;
+  top: 50%;
+  margin-left: -3.6rem;
+  margin-top: -3.6rem;
+  position: absolute;
+  background: url("/imgs/play.png") no-repeat;
+  cursor: pointer;
+}
+
+//* HOME PAGE SECTIONS //*
+//* Product section *//
+.products {
+  .main-container {
+    --container-width: 130ch;
+  }
+
+  .layout-grid {
+    --gap: 2rem;
+    --min: 20ch;
+  }
+
+  ul:nth-child(2) {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .button {
+    width: 100%;
+    margin-top: 2rem;
   }
 }
 
+//* Safety section *//
+.safety {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  .flex-container {
+    --gap: 2rem;
+  }
+
+  .item1 {
+    flex-basis: 30rem;
+  }
+}
+
+.safety-icons {
+  align-items: center;
+  p {
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+  }
+
+  img {
+    width: 5rem;
+  }
+}
+
+//* Testimonial section *//
 .reviews {
   --content-max: 80ch;
+
+  .layout-grid {
+    --min: 30ch;
+  }
 
   .centering img {
     width: 15rem;
   }
 }
 
-//* Blockquote //*
 .blockquote-box {
   --color-light: #463889;
   --color-dark: #ccc5ee;
@@ -292,8 +295,13 @@ input[type="email"] {
   }
 }
 
-//* 404 page //*
+//* Latest blog posts section *//
+.blog-posts {
+  padding-top: 0;
+}
 
+//* PAGES *//
+//* 404 page //*
 .not-found-page {
   margin-left: auto;
   margin-right: auto;
