@@ -13,7 +13,7 @@ pagination:
 <ul class="layout-grid main-container blog">
   {%- for post in pagination.items -%}
   <li class="flex-container">
-    <article class="auto-horizontal-margin">
+    <article>
       <div class="article-header">
         <img src="{{ post.data.thumbnail }}" alt="{{ post.data.alt }}" />
         <div class="date">{{ post.date | formatDate }}</div>
