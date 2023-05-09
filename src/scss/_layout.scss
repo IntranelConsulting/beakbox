@@ -7,7 +7,6 @@ body {
 .main-container {
   --container-width: 115ch;
   --container-gutter: 2rem;
-  --container-padding: 1rem;
 
   width: min(var(--container-width), 100% - var(--container-gutter));
   margin-inline: auto;
