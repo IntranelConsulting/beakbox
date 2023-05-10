@@ -6,6 +6,9 @@
   --font-size-h3: 2.6rem;
   --font-size-h4: 1.6rem;
   --font-size-text: 1.8rem;
+
+  --font-weight-normal: 500;
+  --font-weight-bold: 600;
 }
 
 html {
@@ -33,7 +36,7 @@ h4 {
 
 h3,
 h4 {
-  font-weight: 600;
+  font-weight: var(--font-weight-bold);
 }
 
 p,
@@ -48,5 +51,3 @@ p {
 ul li {
   padding-left: 1rem;
 }
-
-

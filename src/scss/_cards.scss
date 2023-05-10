@@ -30,7 +30,7 @@
     }
     > p:first-of-type {
       font-size: 14px;
-      font-weight: 600;
+      font-weight: var(--font-weight-bold);
       margin-top: 2rem;
     }
 

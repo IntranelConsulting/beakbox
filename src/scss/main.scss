@@ -134,7 +134,7 @@ input[type="email"] {
   align-items: center;
   p {
     text-transform: uppercase;
-    font-weight: 600;
+    font-weight: var(--font-weight-bold);
     font-size: 14px;
   }
 
@@ -162,13 +162,12 @@ input[type="email"] {
 }
 
 .blockquote-box {
-  --color-light: #463889;
-  --color-dark: #ccc5ee;
+  --color-dark: #463889;
+  --color-light: #ccc5ee;
   --color-border: #9d90d8;
 
   margin: 2rem auto;
-  color: var(--color-dark);
-  background-color: var(--color-light);
+  background-color: var(--color-dark);
   font-size: 1.15rem;
   border: 2px dashed var(--color-border);
   border-radius: 1.75rem;
@@ -181,11 +180,12 @@ input[type="email"] {
   //* Optional, not supported for all languages *//
   hyphens: auto;
 
-  footer {
+  cite {
+    display: inline-block;
     padding: 0.25em 0.5em;
     margin-top: 1.5rem;
-    color: var(--color-light);
-    background-color: var(--color-dark);
+    color: var(--color-dark);
+    background-color: var(--color-light);
     border-radius: 0.5rem;
     font-size: 1.5rem;
     //* Creates a visual box shrunk to `max-content` *//
