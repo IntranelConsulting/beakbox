@@ -117,16 +117,21 @@ input[type="email"] {
 //* Safety section *//
 .safety {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  div + div {
+    margin-bottom: 5rem;
+  }
 
   .flex-container {
     --gap: 2rem;
   }
 
   .item1 {
-    flex-basis: 30rem;
+    flex-basis: 0;
+    margin-bottom: 2rem;
   }
 }
 
@@ -302,18 +307,14 @@ input[type="email"] {
   }
 }
 
-//* Media queries *//
-@media (max-width: 764px) {
-  .safety {
-    flex-direction: column;
+//* Mobile styles *//
 
-    div + div {
-      margin-bottom: 5rem;
-    }
+@include breakpoint-up("large") {
+  .safety .item1 {
+    flex-basis: 30rem;
   }
 
-  .safety .item1 {
-    flex-basis: 0;
-    margin-bottom: 2rem;
+  .safety {
+    flex-direction: row;
   }
 }
