@@ -59,19 +59,19 @@ video {
 }
 
 //* Links *//
-a:not(.button, .main-nav, .hero, .footer) {
+a:not(.button, .main-nav, .hero, .page-footer) {
   color: currentColor;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
 }
 
 .main-nav a,
-.footer a {
+.page-footer a {
   text-decoration: none;
 }
 
 .main-nav a:hover:not(.button),
-.footer a:hover:not(.button) {
+.page-footer a:hover:not(.button) {
   text-decoration: underline;
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
