@@ -5,7 +5,8 @@
   --font-size-h2: 5.2rem;
   --font-size-h3: 2.6rem;
   --font-size-h4: 1.6rem;
-  --font-size-text: 1.8rem;
+  --font-size-text-default: 1.8rem;
+  --font-size-text-small: 1.4rem;
   --font-weight-normal: 500;
   --font-weight-bold: 600;
 }
@@ -40,7 +41,7 @@ h4 {
 
 p,
 li {
-  font-size: var(--font-size-text);
+  font-size: var(--font-size-text-default);
 }
 
 p {

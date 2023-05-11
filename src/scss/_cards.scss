@@ -19,17 +19,17 @@
   }
 
   &__title {
-    font-size: 18px;
+    font-size: var(--font-size-text-default);
     margin-bottom: 1rem;
   }
 
   &__content {
     > span {
-      font-size: 18px;
+      font-size: var(--font-size-text-default);
       color: var(--color-span);
     }
     > p:first-of-type {
-      font-size: 14px;
+      font-size: var(--font-size-text-small);
       font-weight: var(--font-weight-bold);
       margin-top: 2rem;
     }
@@ -40,7 +40,7 @@
       margin-bottom: 4vh;
       margin-left: 1vh;
       > li {
-        font-size: 12px;
+        font-size: var(--font-size-text-small);
         padding-left: 0.5em;
       }
       > li::marker {

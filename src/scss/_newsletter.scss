@@ -9,7 +9,7 @@
 
 #mc_embed_signup {
   background-color: var(--purple-600);
-  border-radius: 14px;
+  border-radius: var(--font-size-text-small);
   padding: 4rem;
 }
 
@@ -19,7 +19,7 @@
   .clear span {
     display: block;
     color: var(--purple-300);
-    font-size: 14px;
+    font-size: var(--font-size-text-small);
     margin-top: 3rem;
   }
 
