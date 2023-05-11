@@ -162,14 +162,10 @@ input[type="email"] {
 }
 
 .blockquote-box {
-  --color-dark: #463889;
-  --color-light: #ccc5ee;
-  --color-border: #9d90d8;
-
   margin: 2rem auto;
-  background-color: var(--color-dark);
+  background-color: var(--purple-600);
   font-size: 1.15rem;
-  border: 2px dashed var(--color-border);
+  border: 2px dashed var(--purple-300);
   border-radius: 1.75rem;
   //* Smol Responsive Padding FTW! *//
   padding: clamp(0.75rem, 7%, 2rem);
@@ -184,8 +180,8 @@ input[type="email"] {
     display: inline-block;
     padding: 0.25em 0.5em;
     margin-top: 1.5rem;
-    color: var(--color-dark);
-    background-color: var(--color-light);
+    color: var(--color-primary);
+    background-color: var(--purple-200);
     border-radius: 0.5rem;
     font-size: 1.5rem;
     //* Creates a visual box shrunk to `max-content` *//
@@ -231,7 +227,7 @@ input[type="email"] {
   border-bottom: 2px dashed var(--border-color);
 
   &--on-light {
-    --border-color: #f7d5c9;
+    --border-color: var(--color-border-on-light-bg);
   }
 }
 
@@ -243,70 +239,66 @@ input[type="email"] {
   border-radius: 50%;
 
   &--on-dark {
-    background-color: #4937a2;
+    background-color: var(--purple-600);
   }
 }
 
 // * Backgrounds *//
 .dark-background {
-  background-color: var(--color-background-dark);
+  background-color: var(--color-bg-dark);
 
   h2,
   h3 {
-    color: white;
+    color: var(--color-heading-on-dark-bg);
   }
 
   p {
-    color: var(--color-on-primary);
+    color: var(--color-text-on-dark-bg);
   }
 }
 
 .light-background {
   ::marker {
-    color: #b33c0f;
+    color: var(--color-marker-on-light-bg);
   }
 
-  background-color: var(--color-background-light);
+  background-color: var(--color-bg-light);
 
   h2,
   h3 {
-    color: #d45525;
+    color: var(--color-heading-on-light-bg);
   }
 
   p {
-    color: #7d6157;
+    color: var(--color-text-on-light-bg);
   }
 
   summary {
-    --color-summary: #5f3626;
-  }
-
-  details p {
-    color: #7d6157;
+    --color-summary: var(--color-summary-on-light-bg);
   }
 
   details {
-    --color-border: #f7d5c9;
+    --color-border: var(--color-border-on-light-bg);
   }
 }
 
 .light-background-alt {
-  background-color: #f4effd;
+  background-color: var(--color-bg-alt);
 
   h2 {
-    color: #614d87;
+    color: var(--color-heading-on-light-bg-alt);
   }
 
-  details {
-    --color-border: #e1d8ef;
-  }
-
-  details p {
-    color: #82749a;
+  p {
+    color: var(--color-text-on-light-bg-alt);
   }
 
   summary {
-    --color-summary: #3f286e;
+    --color-summary: var(--color-summary-on-light-bg-alt);
+  }
+
+  details {
+    --color-border: var(--color-border-on-light-bg-alt);
   }
 }
 

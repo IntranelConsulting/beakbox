@@ -36,12 +36,12 @@
   max-width: 70ch;
 
   blockquote {
-    background: #ededff;
+    background: var(--color-bg-notecard);
     padding: 3rem 2rem;
     border-radius: 0.5rem;
     margin: 4rem 0;
     p {
-      color: #1b1ba0;
+      color: var(--color-on-notecard);
     }
   }
 

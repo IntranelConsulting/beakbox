@@ -1,38 +1,76 @@
 :root {
-  --color-background-dark: #3a2d76;
-  --color-background-light: #feeeea;
-  --color-background-alt: #f4effd;
+  --white: hsl(0, 0%, 100%);
+  --red: #a50f0f;
+  --gren: #187604;
+  --yellow-100: #fab512;
+  --yellow-200: #513900;
 
-  //* primary brand color *//
-  --color-primary: #3a2d76;
-  --color-on-primary: #b6aaf1;
-  --color-secondary: #fab512;
-  --color-on-secondary: #513900;
-  --color-alt: #ff662b;
-  --color-on-alt: #5c1900;
+  //* Blue colors *//
+  --blue-100: #ededff;
+  --blue-200: #630cff;
+  --blue-300: #1b1ba0;
 
-  --color-primary-light: #020202;
-  --color-primary-lighter: #6f61b8;
+  //* Purple colors//*
+  --purple-100: #f4effd;
+  --purple-200: #e1d8ef;
+  --purple-300: #b6aaf1;
+  --purple-400: #9d90d8;
+  --purple-500: #746193;
+  --purple-600: #46388a;
+  --purple-700: #3a2d76;
 
-  --color-primary-dark: hsl(250, 42%, 38%);
+  //* Brown colors *//
+  --brown-100: #7d6157;
+  --brown-200: #847975;
+  --brown-300: #5f2e1b;
+  --brown-400: #5c1900;
 
-  --color-primary-darker: #3a2d76;
+  //* Orange colors *//
+  --orange-100: #fff4f0;
+  --orange-200: #feeeea;
+  --orange-300: #f7d5c9;
+  --orange-400: #ff662b;
+  --orange-500: #d45525;
 
-  //* secondary brand color *//
+  //* Primary brand colors *//
+  --color-primary: var(--purple-700);
+  --color-on-primary: var(--purple-300);
 
-  --color-secondary-light: hsl(17, 100%, 94%);
-  --color-secondary-lighter: hsl(16, 100%, 97%);
+  //* Buttons *//
+  --button-color: var(--yellow-200);
+  --button-bg: var(--yellow-100);
+  --button-color-alt: var(--brown-400);
+  --button-bg-alt: var(--orange-400);
 
-  //* tertiary brand color *//
-  --color-tertiary: hsl(262, 87%, 94%);
-  --color-tertiary-dark: hsl(263, 100%, 92%);
+  //* Dark background *//
+  --color-bg-dark: var(--purple-700);
+  --color-heading-on-dark-bg: var(--white);
+  --color-text-on-dark-bg: var(--purple-300);
+
+  //* Light background *//
+  --color-bg-light: var(--orange-200);
+  --color-heading-on-light-bg: var(--orange-500);
+  --color-text-on-light-bg: var(--brown-100);
+  --color-summary-on-light-bg: var(--brown-200);
+  --color-border-on-light-bg: var(--orange-300);
+
+  //* Alt light background *//
+  --color-bg-alt: var(--purple-100);
+  --color-heading-on-light-bg-alt: var(--purple-600);
+  --color-text-on-light-bg-alt: var(--purple-500);
+  --color-summary-on-light-bg-alt: var(--purple-600);
+  --color-border-on-light-bg-alt: var(--purple-200);
+
+  //* Cards
+  --card-color-bg-on-light: var(--orange-100);
+  --card-color-text-on-light: var(--brown-300);
+  --card-color-bg-on-dark: var(--purple-600);
+  --card-color-text-on-dark: var(--purple-300);
+  --card-color-border-on-dark: var(--purple-400);
 
   //* Elements *//
-
-  --color-marker: #630cff;
-  --color-notecard: #ededff;
-  --color-on-notecard: #1b1ba0;
-
-  //* Links *//
-  --color-default-link: #3823cb;
+  --color-marker-default: var(--blue-200);
+  --color-marker-on-light-bg: var(--orange-500);
+  --color-bg-notecard: var(--blue-100);
+  --color-on-notecard: var(--blue-300);
 }

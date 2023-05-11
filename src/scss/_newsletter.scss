@@ -1,6 +1,6 @@
 .newsletter {
   padding: 8rem 0;
-  border-bottom: 2px dashed #6f61b8;
+  border-bottom: 2px dashed var(--purple-600);
 
   img {
     width: 3rem;
@@ -8,7 +8,7 @@
 }
 
 #mc_embed_signup {
-  background-color: #463889;
+  background-color: var(--purple-600);
   border-radius: 14px;
   padding: 4rem;
 }
@@ -18,17 +18,17 @@
 
   .clear span {
     display: block;
-    color: var(--color-on-primary);
+    color: var(--purple-300);
     font-size: 14px;
     margin-top: 3rem;
   }
 
   label {
-    color: var(--color-on-primary);
+    color: var(--purple-300);
   }
 
   input[type="email"] {
-    background-color: var(--color-on-primary);
+    background-color: var(--purple-300);
   }
 
   #mc_embed_signup .mc-field-group {
@@ -39,14 +39,16 @@
 
   #mc_embed_signup div.mce_inline_error,
   .response #mce-error-response {
-    background-color: #160856;
-    color: #d12e2e;
+    background: none;
+    color: var(--purple-300);
+    font-size: 1.4rem;
+    font-weight: var(--font-weight-normal);
     padding: 1rem;
-    border-left: 3px solid #d12e2e;
+    border-left: 3px solid var(--red);
   }
 
   .response #mce-success-response {
-    color: #62b750;
-    border-left: 3px solid #62b750;
+    color: var(--purple-300);
+    border-left: 3px solid var(--green);
   }
 }

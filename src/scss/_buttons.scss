@@ -1,9 +1,6 @@
 button,
 .button,
 input[type="button"] {
-  --button-background: var(--color-secondary);
-  --button-color: var(--color-on-secondary);
-
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -12,7 +9,7 @@ input[type="button"] {
   padding: 0.8em 2em;
   border: none;
   border-radius: 3rem;
-  background-color: var(--button-background);
+  background-color: var(--button-bg);
   color: var(--button-color);
   font-weight: var(--font-weight-bold);
   line-height: 1.1;
@@ -22,8 +19,8 @@ input[type="button"] {
 }
 
 .button-alt {
-  --button-background: var(--color-alt);
-  --button-color: var(--color-on-alt);
+  --button-background: var(--button-bg-alt);
+  --button-color: var(--button-color-alt);
 }
 
 .button-container {

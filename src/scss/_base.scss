@@ -79,7 +79,7 @@ a:not(.button, .main-nav, .hero, .footer) {
 
 //* Markers *//
 ::marker {
-  color: var(--color-marker);
+  color: var(--color-marker-default);
 }
 
 ul li::marker {

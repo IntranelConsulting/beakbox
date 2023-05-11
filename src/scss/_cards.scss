@@ -51,30 +51,26 @@
   }
 
   &--on-dark {
-    background-color: #463889;
+    background-color: var(--card-color-bg-on-dark);
 
     h2,
     h3 {
-      color: white;
+      color: var(--white);
     }
 
     p,
     li {
-      color: #b8aee6;
+      color: var(--card-color-text-on-dark);
     }
   }
 
   &--on-light {
-    --color-span: #746661;
-    background-color: #fff4f0;
+    background-color: var(--card-color-bg-on-light);
 
     p,
-    li {
-      color: #5f2e1b;
-    }
-
-    li {
-      color: #381508;
+    li,
+    span {
+      color: var(--card-color-text-on-light);
     }
   }
 }
