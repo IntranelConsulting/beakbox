@@ -20,8 +20,8 @@
   --purple-700: #3a2d76;
 
   //* Brown colors *//
-  --brown-100: #7d6157;
-  --brown-200: #847975;
+  --brown-100: #7e6258;
+  --brown-200: #75615a;
   --brown-300: #5f2e1b;
   --brown-400: #5c1900;
 
@@ -51,7 +51,7 @@
   --color-bg-light: var(--orange-200);
   --color-heading-on-light-bg: var(--orange-500);
   --color-text-on-light-bg: var(--brown-100);
-  --color-summary-on-light-bg: var(--brown-200);
+  --color-summary-on-light-bg: var(--brown-300);
   --color-border-on-light-bg: var(--orange-300);
 
   //* Alt light background *//
@@ -64,6 +64,7 @@
   //* Cards
   --card-color-bg-on-light: var(--orange-100);
   --card-color-text-on-light: var(--brown-300);
+  --card-color-text-list-on-light: var(--brown-200);
   --card-color-bg-on-dark: var(--purple-600);
   --card-color-text-on-dark: var(--purple-300);
   --card-color-border-on-dark: var(--purple-400);

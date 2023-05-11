@@ -68,9 +68,12 @@
     background-color: var(--card-color-bg-on-light);
 
     p,
-    li,
     span {
       color: var(--card-color-text-on-light);
+    }
+
+    li {
+      color: var(--card-color-text-list-on-light);
     }
   }
 }
