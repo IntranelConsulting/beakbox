@@ -37,15 +37,6 @@ section:not(.newsletter, .hero, .blog-posts) {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, var(--min)), 1fr));
 }
 
-ul.layout-grid {
-  padding-left: 0;
-
-  li {
-    list-style: none;
-    padding-left: 0;
-  }
-}
-
 //* Flex layout *//
 .flex-container {
   --gap: 3rem;

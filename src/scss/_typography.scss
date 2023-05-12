@@ -48,6 +48,13 @@ p {
   margin: 0 0 1rem;
 }
 
-ul li {
+//* List styles *//
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ul li:not(.flex-container) {
   padding-left: 1rem;
 }
