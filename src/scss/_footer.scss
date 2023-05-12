@@ -1,165 +1,38 @@
 @import "mixins";
 
-.footer {
-  background-color: var(--color-primary-darker);
-  color: white;
-  padding: 10rem 0;
-  text-align: center;
-  line-height: 0;
+.page-footer {
+  padding: 4rem 0;
 
-  @include breakpoint-up("large") {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr) 2fr;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-areas:
-      "logo links1 links2 copyright"
-      "socials links1 links2 copyright";
-    justify-items: center;
+  .layout-grid {
+    --min: 20ch;
   }
 
-  img {
-    width: 4rem;
-    height: auto;
+  ul li p {
+    text-transform: uppercase;
+    color: var(--white);
   }
 
-  &__logo {
-    display: inline-block;
-    margin-bottom: 1em;
-
-    @include breakpoint-up("medium") {
-      margin-bottom: 1em;
-      align-self: end;
-    }
-
-    @include breakpoint-up("large") {
-      align-self: end;
-      grid-area: logo;
-    }
+  .socials {
+    --gap: 2rem;
+    --justify-content: flex-start;
 
     img {
-      @include breakpoint-up("large") {
-        width: 5rem;
-      }
+      width: 3rem;
     }
   }
 
-  &__socials {
-    align-self: center;
-    a:not(:last-child) {
-      margin-right: 0.8rem;
-    }
+  .copyright {
+    margin-top: 4rem;
 
-    @include breakpoint-up("medium") {
-      align-self: start;
-    }
-
-    @include breakpoint-up("large") {
-      grid-area: socials;
-    }
-
-    a {
-      display: inline-block;
-      height: 4rem;
-    }
-
-    img {
-      @include breakpoint-up("medium") {
-        width: 3rem;
-      }
-      @include breakpoint-up("large") {
-        width: 4rem;
-      }
-    }
-  }
-
-  &__links {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1rem;
-
-    @include breakpoint-up("large") {
-      align-items: start;
-    }
-
-    a {
-      font-size: var(--font-size-md);
-      color: var(--color-text-on-primary);
-      font-weight: var(--font-weight-xlight);
-      text-decoration: none;
-    }
-
-    a:hover {
-      box-shadow: 0 3px 0 0 var(--color-secondary);
-    }
-
+    a,
     p {
-      text-transform: uppercase;
-      font-weight: var(--font-weight-medium);
-    }
-
-    &.col1 {
-      @include breakpoint-up("large") {
-        grid-area: links1;
-      }
-    }
-
-    &.col2 {
-      @include breakpoint-up("large") {
-        grid-area: links2;
-      }
+      font-size: var(--font-size-text-small);
+      margin-bottom: 0;
     }
   }
 
-  &__copyright {
-    font-size: var(--font-size-md);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-    @include breakpoint-up("large") {
-      grid-area: copyright;
-    }
-
-    p {
-      text-transform: uppercase;
-      font-weight: var(--font-weight-medium);
-    }
-
-    img,
-    div {
-      margin-top: 2em;
-      @include breakpoint-up("medium") {
-        margin-top: 0;
-      }
-    }
-
-    div {
-      font-weight: var(--font-weight-xlight);
-
-      @include breakpoint-up("medium") {
-        margin-top: 1.2em;
-      }
-
-      @include breakpoint-up("large") {
-        margin-top: auto;
-      }
-    }
-
-    img {
-      @include breakpoint-up("medium") {
-        width: 10%;
-      }
-
-      @include breakpoint-up("large") {
-        width: 15%;
-        margin: auto;
-      }
-
-      @include breakpoint-up("xlarge") {
-        width: 7%;
-        margin: auto;
-      }
-    }
+  a,
+  .copyright p {
+    color: var(--color-on-primary);
   }
 }

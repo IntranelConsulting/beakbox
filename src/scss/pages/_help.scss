@@ -1,52 +1,20 @@
 .page-help {
-  main a {
-    color: var(--color-link);
-    text-decoration: underline;
+  .layout-grid li {
+    list-style: disk;
   }
 
-  section {
-    ul.quick-links {
-      list-style: none;
-      li {
-        margin-left: 0;
-      }
-    }
+  article li > img {
+    margin: 2rem auto;
   }
 
-  .notecard {
-    padding: 0.5rem 1.5rem;
-    margin: 2rem 0;
-    border-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary)) 1;
-    border-width: 0 0 0 7px;
-    border-style: solid;
-    background-color: var(--color-secondary-light);
-    position: relative;
-
-    p {
-      color: var(--color-text-on-secondary-light);
-    }
+  article > img {
+    height: auto;
+    max-width: 100%;
   }
+}
 
-  details summary > * {
-    display: inline;
-  }
-
-  details > summary {
-    cursor: pointer;
-    padding: 1.2rem 1rem;
-  }
-
-  details > div {
-    border: 2px solid #fdb;
-    margin-top: 0;
-    padding: 1rem;
-  }
-
-  summary {
-    padding-bottom: 1em;
-  }
-
-  details {
-    margin-bottom: 1.5rem;
-  }
+.popular-questions,
+.shipping-info {
+  border-radius: 1rem;
+  padding: clamp(3rem, 1rem + 5vw, 5rem);
 }

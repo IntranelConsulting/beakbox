@@ -8,46 +8,25 @@
   box-sizing: border-box;
 }
 
-html,
 body {
-  height: 100%;
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  color: var(--color-primary);
+  font-size: var(--font-size-text-default);
 }
 
-body {
-  color: var(--color-text);
-  font-size: var(--font-size-lg);
-  overflow-x: hidden;
+//* Prevent default margin *//
+blockquote,
+body,
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
 }
 
-img:not(.main-nav *, .footer *, .blog-posts *),
-svg:not(.main-nav *, .footer *, .blog-posts *) {
-  display: block;
-  max-width: 100%;
-}
-
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-main {
-  margin: 5rem 0 0;
-  flex-grow: 1;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
-}
-
-%center-column {
-  max-width: 100%;
-  margin: 0 auto;
-  padding: 0 1em;
-}
-
+//* Help prevent overflow of long words/names/URLs //
 p,
 h1,
 h2,
@@ -58,46 +37,53 @@ h6 {
   overflow-wrap: break-word;
 }
 
-li + li {
-  margin-top: 2rem;
+//* Inherit fonts for inputs and buttons *//
+input,
+button,
+textarea,
+select {
+  font: inherit;
 }
 
+//* Images, video *//
+img:not(.main-nav *, .icons, .footer *, .blog-posts *),
+svg:not(.main-nav *, .icons, .footer *, .blog-posts *) {
+  display: block;
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+video {
+  max-width: 100%;
+  border-radius: 1rem;
+}
+
+//* Links *//
+a:not(.button, .main-nav, .hero, .page-footer) {
+  color: currentColor;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+.main-nav a,
+.page-footer a {
+  text-decoration: none;
+}
+
+.main-nav a:hover:not(.button),
+.page-footer a:hover:not(.button) {
+  text-decoration: underline;
+  text-decoration-thickness: 0.08em;
+  text-underline-offset: 0.2em;
+}
+
+//* Markers *//
 ::marker {
-  color: var(--color-red);
+  color: var(--color-marker-default);
 }
 
-//* Focus set up *//
-
-:is(a, button, input, textarea, summary) {
-  --outline-size: max(2px, 0.08em);
-  --outline-style: dashed;
-  --outline-color: currentColor;
-  --outline-offset: 0.5em;
-}
-
-:is(a, button, input, textarea, summary):focus {
-  outline: var(--outline-size) var(--outline-style) var(--outline-color);
-  outline-offset: var(--outline-offset, var(--outline-size));
-}
-
-:is(a, button, input, textarea, summary, [type="submit"]):focus-visible {
-  outline: var(--outline-size) var(--outline-style) var(--outline-color);
-  outline-offset: var(--outline-offset, var(--outline-size));
-}
-
-//* Focus customisations *//
-
-header a,
-header .button,
-.newsletter input,
-footer a {
-  --outline-color: white;
-}
-
-.newsletter button[type="submit"] {
-  --outline-color: black;
-  --outline-offset: 0.2em;
-  --outline-size: 2px;
+ul li::marker {
+  content: "—";
 }
 
 //* Reduce motion styles *//

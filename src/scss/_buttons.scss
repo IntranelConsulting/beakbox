@@ -1,0 +1,35 @@
+button,
+.button,
+input[type="button"] {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 10ch;
+  min-height: 44px;
+  padding: clamp(0.8em, 7%, 0.9em);
+  border: none;
+  border-radius: 3rem;
+  background-color: var(--button-bg);
+  color: var(--button-color);
+  font-weight: var(--font-weight-bold);
+  line-height: 1.1;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.button-alt {
+  --button-background: var(--button-bg-alt);
+  --button-color: var(--button-color-alt);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 2rem 0;
+
+  a.button {
+    margin: 0 0.5rem;
+  }
+}

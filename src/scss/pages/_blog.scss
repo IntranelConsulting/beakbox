@@ -1,109 +1,51 @@
-article {
-  padding: 1rem 0;
-}
+//* Blog home page *//
+.blog {
+  --min: 30ch;
+  --gap: 5rem;
 
-.blog-post article p img {
-  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.1), 0 0 6px 0 rgba(0, 0, 0, 0.1), 0 2px 2px -2px;
-}
-
-blockquote {
-  padding: 0.5rem 1.5rem;
-  margin: 2rem 0;
-  border-image: linear-gradient(to bottom, var(--color-accent), var(--color-secondary)) 1;
-  border-width: 0 0 0 7px;
-  border-style: solid;
-  background-color: var(--color-secondary-light);
-  position: relative;
-
-  p {
-    color: var(--color-text-on-secondary-light);
+  article {
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
-.date {
-  font-size: var(--font-size-lg);
-}
-
-section.blog-posts,
-section.blog-post {
-  margin: 0 auto;
-
-  img {
-    width: 100%;
+.article-header {
+  a {
+    text-decoration: none;
+    color: inherit;
   }
 
-  .nav-and-share {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: start;
+  .date {
+    font-size: var(--font-size-text-small);
+    padding-top: 2vh;
+  }
+}
 
-    @include breakpoint-up("large") {
-      flex-direction: row;
-      align-items: center;
-    }
+.article-title {
+  font-size: var(--font-size-h3);
+  font-weight: var(--font-weight-bold);
+}
 
-    .share {
-      display: flex;
-      align-items: center;
+//* Blog articles *//
+.post-container article {
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  width: calc(100% - 2rem);
+  max-width: 70ch;
 
-      a {
-        border-bottom: none;
-      }
-
-      div {
-        margin-left: 1rem;
-        > span > iframe {
-          margin: 0 1.5rem;
-        }
-      }
-
-      img {
-        margin: 0 0.5em;
-        width: 3rem;
-      }
+  blockquote {
+    background: var(--color-bg-notecard);
+    padding: 3rem 2rem;
+    border-radius: 0.5rem;
+    margin: 4rem 0;
+    p {
+      color: var(--color-on-notecard);
     }
   }
 
-  > article {
-    margin-bottom: 4rem;
-    padding-bottom: 4rem;
-  }
-
-  &:last-child {
-    border-bottom: none;
-  }
-}
-
-nav {
-  display: flex;
-  justify-content: center;
-
-  a.button:first-of-type {
-    margin-right: 2rem;
-  }
-
-  span {
-    display: none;
-  }
-}
-
-section.blog-post {
-  padding: 0 15px;
-
-  article a {
-    color: var(--color-link);
-    text-decoration: underline;
-  }
-  .nav-and-share {
-    margin-bottom: 5rem;
-  }
-
-  > article {
-    border-bottom: none;
-  }
-
-  @include breakpoint-up("large") {
-    padding-bottom: 6rem;
+  article {
+    max-width: 65ch;
   }
 }

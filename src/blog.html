@@ -1,36 +1,38 @@
 ---
 layout: page.html
 title: Blog
-description: Read our latest blogs on all things parrots - bird health, behaviour, food recipes for parrots, tips and tricks, training, safety, fun facts, bird toys.
-heading: BeakBox
-boldedHeading: Blog
+text: Read our latest blogs on all things parrots - bird health, behaviour, food recipes for parrots, tips and tricks, training, safety, fun facts, bird toys.
+
 pagination:
   data: collections.blog
-  size: 3
+  size: 10
   alias: posts
   reverse: true
 ---
 
-<section class="blog-posts">
+<ul class="layout-grid main-container blog">
   {%- for post in pagination.items -%}
-  <article>
-    <div class="article-header">
-      <img src="{{ post.data.thumbnail }}" alt="{{ post.data.alt }}" />
-      <div class="date">{{ post.date | formatDate }}</div>
-      <h2>
-        <a href="{{ post.url }}">{{ post.data.title }}</a>
-      </h2>
-    </div>
-    <p>{{ post.data.description }}</p>
-    <a href="{{ post.url }}">Read more →</a>
-  </article>
+  <li class="flex-container">
+    <article>
+      <div class="article-header">
+        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.alt }}" />
+        <div class="date">{{ post.date | formatDate }}</div>
+        <div class="article-title">
+          <a href="{{ post.url }}">{{ post.data.title }}</a>
+        </div>
+      </div>
+      <p>{{ post.data.description }}</p>
+    </article>
+  </li>
   {%- endfor -%}
+</ul>
 
-  <nav>
-    {%- if pagination.previousPageHref -%}
-    <a class="button" href="{{ pagination.previousPageHref }}">&#x21E0; Previous</a>
-    {%- endif -%} {%- if pagination.nextPageHref -%}
-    <a href="{{ pagination.nextPageHref }}" class="next button">Next &#x21E2;</a>
-    {%- endif -%}
-  </nav>
-</section>
+<nav class="centering">
+  {%- if pagination.previousPageHref -%}
+  <a class="button" href="{{ pagination.previousPageHref }}">Previous</a>
+  {%- endif -%} {%- if pagination.nextPageHref -%}
+  <a href="{{ pagination.nextPageHref }}" class="next button">Next</a>
+  {%- endif -%}
+</nav>
+
+{% include newsletter-signup.html %}

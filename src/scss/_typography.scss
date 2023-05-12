@@ -1,21 +1,14 @@
 @import "mixins";
 
 :root {
-  --font-size-xs: 0.75rem;
-  --font-size-sm: 1.2rem;
-  --font-size-md: 1.6rem;
-  --font-size-lg: 2rem;
-  --font-size-xl: 2.369rem;
-  --font-size-2xl: 3.157rem;
-  --font-size-3xl: 4.209rem;
-  --font-size-4xl: 5.61rem;
-  --font-size-5xl: 7.478rem;
-
-  --font-weight-xbold: 800;
+  --font-size-h1: 5.5rem;
+  --font-size-h2: 5.2rem;
+  --font-size-h3: 2.6rem;
+  --font-size-h4: 1.6rem;
+  --font-size-text-default: 1.8rem;
+  --font-size-text-small: 1.4rem;
+  --font-weight-normal: 500;
   --font-weight-bold: 600;
-  --font-weight-medium: 500;
-  --font-weight-light: 400;
-  --font-weight-xlight: 300;
 }
 
 html {
@@ -24,45 +17,44 @@ html {
 }
 
 h1 {
-  font-size: var(--font-size-2xl);
-  color: white;
-
-  @include breakpoint-up("large") {
-    font-size: var(--font-size-4xl);
-  }
+  font-size: var(--font-size-h1);
+  font-size: clamp(4rem, 1rem + 5vw, var(--font-size-h1));
 }
 
 h2 {
-  font-size: var(--font-size-2xl);
+  font-size: var(--font-size-h2);
+  font-size: clamp(3.8rem, 1rem + 5vw, var(--font-size-h2));
 }
 
 h3 {
-  font-size: var(--font-size-xl);
+  font-size: var(--font-size-h3);
 }
 
 h4 {
-  font-size: var(--font-size-m);
+  font-size: var(--font-size-h4);
 }
 
-h5 {
-  font-size: var(--font-size-xs);
-
-  @include breakpoint-up("large") {
-    font-size: var(--font-size-lg);
-  }
+h3,
+h4 {
+  font-weight: var(--font-weight-bold);
 }
 
 p,
 li {
-  font-size: var(--font-size-md);
+  font-size: var(--font-size-text-default);
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-strong {
-  font-weight: var(--font-weight-bold);
+p {
+  margin: 0 0 1rem;
+}
+
+//* List styles *//
+ul,
+ol {
+  list-style: none;
+  padding: 0;
+}
+
+ul li:not(.flex-container) {
+  padding-left: 1rem;
 }

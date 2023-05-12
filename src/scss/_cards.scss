@@ -1,0 +1,79 @@
+.card-component {
+  --img-ratio: 3/2;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1.75rem;
+  padding: 2rem;
+
+  img {
+    aspect-ratio: var(--img-ratio);
+    object-fit: cover;
+    width: 100%;
+    margin-top: 3rem;
+  }
+
+  h3 {
+    margin-top: 3rem;
+  }
+
+  &__title {
+    font-size: var(--font-size-text-default);
+    margin-bottom: 1rem;
+  }
+
+  &__content {
+    > span {
+      font-size: var(--font-size-text-default);
+      color: var(--color-span);
+    }
+    > p:first-of-type {
+      font-size: var(--font-size-text-small);
+      font-weight: var(--font-weight-bold);
+      margin-top: 2rem;
+    }
+
+    > ul {
+      list-style: initial;
+      padding-left: 1rem;
+      margin-bottom: 4vh;
+      margin-left: 1vh;
+      > li {
+        font-size: var(--font-size-text-small);
+        padding-left: 0.5em;
+      }
+      > li::marker {
+        content: url("/imgs/green-tick.svg");
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &--on-dark {
+    background-color: var(--card-color-bg-on-dark);
+
+    h2,
+    h3 {
+      color: var(--white);
+    }
+
+    p,
+    li {
+      color: var(--card-color-text-on-dark);
+    }
+  }
+
+  &--on-light {
+    background-color: var(--card-color-bg-on-light);
+
+    p,
+    span {
+      color: var(--card-color-text-on-light);
+    }
+
+    li {
+      color: var(--card-color-text-list-on-light);
+    }
+  }
+}

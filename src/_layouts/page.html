@@ -1,11 +1,10 @@
 ---
-title: Interactive & Safe Musical Parrot Toys
+title: Interactive and Safe Musical Parrot Toys
 metaTitle: "BeakBox: "
 description: Keep your parrots entertained with 100% safe, fun, and easy-to-use musical toys for pet parrots. Made for parrots of all sizes - from Budgies to Macaws.
 thumbnail: /imgs/webpage.png
-heading: Interactive and Fun
-boldedHeading: Musical Bird Toy
-subheading: Transform your bird's cage into an enriched and interactive playground!
+
+subheading: BeakBox is a unique musical bird toy that gives your birds freedom to listen to music whenever they want.
 ---
 
 <!DOCTYPE html>
@@ -80,7 +79,8 @@ subheading: Transform your bird's cage into an enriched and interactive playgrou
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
+
     {% if page.fileSlug == "help" %} {% include faq-schema.html %} {% endif %}
   </head>
 
@@ -90,7 +90,7 @@ subheading: Transform your bird's cage into an enriched and interactive playgrou
     <!-- End Google Tag Manager (noscript) -->
 
     <header>
-      <nav class="main-nav">
+      <nav class="main-nav main-container">
         <input id="menu-toggle" type="checkbox" />
         <a href="/" class="main-nav__logo">
           <img src="/imgs/logo.svg" alt="Logo" />
@@ -104,53 +104,21 @@ subheading: Transform your bird's cage into an enriched and interactive playgrou
         </label>
 
         <div class="main-nav__links">
-          <a href="/about-us/">Our Story</a>
-          <a href="/how-it-works/">How It Works</a>
-          <a href="https://shop.mybeakbox.com/pages/review">Reviews</a>
-          <a href="/help/">Support</a>
+          <a href="/about-us/">Our story</a>
+          <a href="/how-it-works/">How it works</a>
+          <a href="/help/">Help</a>
           <a href="/blog/">Blog</a>
           <a href="https://shop.mybeakbox.com/" class="button">Shop</a>
         </div>
       </nav>
 
-      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif page.fileSlug =="404"%} {% else %} {% include header.html %} {% endif %}
+      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug != "404" %} {% include header.html %} {% endif
+      %}
     </header>
 
     <main>{{ content | safe }}</main>
-    <footer class="footer">
-      <a class="footer__logo" href="/">
-        <img src="/imgs/logo-no-text.png" alt="BeakBox mascot" />
-      </a>
 
-      <div class="footer__socials">
-        <a href="https://www.facebook.com/mybeakbox" aria-label="Visit us on Facebook."><img src="/imgs/fb.svg" alt="Facebook" /></a>
-        <a href="https://www.instagram.com/beak.box" aria-label="Visit us on Instagram."> <img src="/imgs/insta.svg" alt="Instagram" /></a>
-        <a href="https://www.youtube.com/channel/UC52Hn9oBjDt89ZmaHnQfnVQ" aria-label="Visit us on YouTube."> <img src="/imgs/youtube.svg" alt="YouTube" /></a>
-        <a href="https://twitter.com/mybeakbox" aria-label="Visit us on Twitter."> <img src="/imgs/twitter.svg" alt="Twitter" /></a>
-      </div>
-
-      <div class="footer__links col1">
-        <p>Support</p>
-        <a href="https://shop.mybeakbox.com/policies/shipping-policy">Shipping & Delivery</a>
-        <a href="https://shop.mybeakbox.com/pages/returns-and-refunds">Returns & Refunds</a>
-        <a href="/help/">Help & FAQ</a>
-        <a href="mailto:contact@mybeakbox.com" aria-label="Send us an email!">Contact Us</a>
-      </div>
-
-      <div class="footer__links col2">
-        <p>Discover</p>
-        <a href="/about-us/">Our Story</a>
-        <a href="https://shop.mybeakbox.com/pages/review">Reviews</a>
-        <a href="/blog/">Blog</a>
-        <a href="/policies/">Policies</a>
-      </div>
-
-      <div class="footer__copyright">
-        <p>Made in New Zealand</p>
-        <img src="/imgs/kiwi-footer.svg" alt="Kiwi bird" />
-        <div>BeakBox © 2022. All rights reserved</div>
-      </div>
-    </footer>
+    {% include footer.html %}
 
     <script src="/scripts/main.js"></script>
     <script>

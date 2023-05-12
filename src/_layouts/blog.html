@@ -9,48 +9,8 @@ heading: BeakBox
 boldedHeading: Blog Posts
 ---
 
-<section class="blog-post">
-  <article>
-    <div class="nav-and-share">
-      <span class="date">{{ page.date | formatDate }}</span>
-      <div class="share">
-        Share on:
-        <div class="email-share">
-          <a href="mailto:?subject={{ tweet }}&body={{ title | urlencode }}%20https://mybeakbox.com{{ page.url }}"><img src="/imgs/envelope-square-solid.svg" alt="Email" /></a>
-        </div>
-        <div>
-          <a
-            href="https://twitter.com/intent/tweet?text={{ tweet | urlencode }}+{{ title | urlencode }}&url=https://mybeakbox.com{{ page.url }}&hashtags={{ hashtags }}"
-            target="_blank"
-            rel="”noopener"
-            noreferrer”
-            ><img src="/imgs/twitter-round-square.svg" alt="Twitter"
-          /></a>
-        </div>
-
-        <div>
-          <a href="https://www.facebook.com/sharer/sharer.php?u=https://mybeakbox.com{{ page.url }}"><img src="/imgs/facebook.svg" alt="Facebook" /></a>
-        </div>
-      </div>
-    </div>
-    {{ content }}
-  </article>
-
-  <nav>
-    {% include adjacentItems with collection: 'blog' %} {% if previousItem %}
-    <a class="button" href="{{ previousItem.url }}">&#x21E0; Newer</a>
-    {% else %}
-    <span></span>
-    {%- endif -%}
-    <a class="button" href="/blog/">Blog Home</a>
-    {%- if nextItem -%}
-    <a class="button" href="{{ nextItem.url }}" class="next">Older &#x21E2;</a>{% else %}
-    <span></span>
-    {%- endif -%}
-  </nav>
-</section>
+<div class="post-container">
+  <article>{{ content }}</article>
+</div>
 
 {% include newsletter-signup.html %}
-
-<div id="fb-root"></div>
-<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v4.0&appId=384689504879765&autoLogAppEvents=1"></script>
