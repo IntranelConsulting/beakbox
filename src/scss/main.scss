@@ -100,7 +100,11 @@ input[type="email"] {
 
   .layout-grid {
     --gap: 2rem;
-    --min: 20ch;
+    --min: 26ch;
+  }
+
+  ul > li.card-component {
+    padding-left: 2rem;
   }
 
   ul:nth-child(2) {
