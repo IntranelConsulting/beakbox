@@ -36,61 +36,6 @@ input[type="email"] {
   font-size: inherit;
 }
 
-//* YouTube videos *//
-.youtube-player {
-  position: relative;
-  padding-bottom: 56%;
-  height: 0;
-  overflow: hidden;
-  max-width: 100%;
-  border-radius: 1rem;
-}
-
-.youtube-player iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 95%;
-  height: 95%;
-  z-index: 100;
-  background: transparent;
-}
-
-.youtube-player img {
-  object-fit: cover;
-  display: block;
-  left: 0;
-  bottom: 0;
-  margin: auto;
-  max-width: 100%;
-  width: 100%;
-  position: absolute;
-  right: 0;
-  top: 0;
-  border: none;
-  height: auto;
-  cursor: pointer;
-  -webkit-transition: 0.4s all;
-  -moz-transition: 0.4s all;
-  transition: 0.4s all;
-}
-
-.youtube-player img:hover {
-  -webkit-filter: brightness(75%);
-}
-
-.youtube-player .play {
-  height: 8rem;
-  width: 8rem;
-  left: 50%;
-  top: 50%;
-  margin-left: -3.6rem;
-  margin-top: -3.6rem;
-  position: absolute;
-  background: url("/imgs/play.png") no-repeat;
-  cursor: pointer;
-}
-
 //* HOME PAGE SECTIONS //*
 //* Product section *//
 .products {
