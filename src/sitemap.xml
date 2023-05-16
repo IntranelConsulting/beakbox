@@ -1,97 +1,73 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
-
-
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
+<!--  created with Free Online Sitemap Generator www.xml-sitemaps.com  -->
 <url>
-  <loc>https://mybeakbox.com/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>1.00</priority>
+<loc>https://mybeakbox.com/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>1.00</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/about-us/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/about-us/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/how-it-works/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/how-it-works/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/help/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/help/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/blog/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/signs-of-parrot-boredom/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/blog/signs-of-parrot-boredom/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/6-tips-to-get-the-most-out-of-your-beakbox/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/blog/6-tips-to-get-the-most-out-of-your-beakbox/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/how-to-choose-a-safe-bird-toy/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/blog/how-to-choose-a-safe-bird-toy/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/baby-toys-for-parrots/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/policies/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.80</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/policies/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.80</priority>
+<loc>https://mybeakbox.com/blog/baby-toys-for-parrots/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/1/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://mybeakbox.com/blog/healthy-cookie-recipe-for-pet-birds/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/resources/Troubleshooting_BeakBox_WiFi_Connection.pdf</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://mybeakbox.com/blog/chop-the-easiest-healthy-snack-for-your-parrot/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/chop-the-easiest-healthy-snack-for-your-parrot/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://mybeakbox.com/blog/homemade-bird-treat-recipe/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.64</priority>
 </url>
 <url>
-  <loc>https://mybeakbox.com/blog/healthy-cookie-recipe-for-pet-birds/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.64</priority>
+<loc>https://mybeakbox.com/blog/diy-your-bird-perch-easy-and-quick/</loc>
+<lastmod>2023-05-16T03:33:54+00:00</lastmod>
+<priority>0.64</priority>
 </url>
-<url>
-  <loc>https://mybeakbox.com/blog/2/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mybeakbox.com/blog/homemade-bird-treat-recipe/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.51</priority>
-</url>
-<url>
-  <loc>https://mybeakbox.com/blog/diy-your-bird-perch-easy-and-quick/</loc>
-  <lastmod>2022-03-25T04:33:25+00:00</lastmod>
-  <priority>0.41</priority>
-</url>
-
-
 </urlset>
