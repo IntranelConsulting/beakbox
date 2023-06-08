@@ -26,7 +26,7 @@ To run/test the website on a local web server first be sure to install the npm d
 ## Links
 
 - [GitHub repo](https://github.com/IntranelConsulting/BeakBox-Web-Netlify/)
-- [Website Documentation] (https://intranel.atlassian.net/wiki/spaces/BP/pages/2386133000/Website+Documentation)
+- [Website Documentation](https://intranel.atlassian.net/wiki/spaces/BP/pages/2386133000/Website+Documentation)
   - Provides an overview of the templates and utility classes used in mybeakbox.com  
 - [Azure DevOps Repo](https://intranelprojects.visualstudio.com/BeakBox/_git/BeakBox-Web)
   - Azure contains two repositories. One for the hardware's firmware and one to distribute that firmware on Firebase.
