@@ -20,6 +20,10 @@ body {
   &--align-center {
     align-items: center;
   }
+
+  &--align-flex-start {
+    align-items: flex-start;
+  }
 }
 
 section:not(.newsletter, .hero, .blog-posts) {

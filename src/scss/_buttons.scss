@@ -32,4 +32,11 @@ input[type="button"] {
   a.button {
     margin: 0 0.5rem;
   }
+
+  &--justify-flex-start {
+    justify-content: flex-start;
+    a.button {
+      margin: 0;
+    }
+  }
 }
