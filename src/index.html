@@ -366,7 +366,7 @@ pagination:
 <!-- LATEST BLOG ARTICLES -->
 
 <section class="blog-posts">
-  <article class="main-container flex-container" aria-labelledby="articles">
+  <article class="main-container flex-container">
     <h2 class="text-align-center">New on the BeakBox blog</h2>
     <div class="layout-grid">
       {% assign latest-posts = collections.blog | reverse %} {%- for post in latest-posts limit:3 -%}
