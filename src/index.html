@@ -68,23 +68,23 @@ pagination:
 </section>
 
 <section class="light-background">
-  <ul class="layout-grid main-container">
-    <li class="card-component card-component--on-light text-align-center">
+  <div class="layout-grid main-container">
+    <div class="card-component card-component--on-light text-align-center">
       <img src="imgs/safe-beakbox.png" alt="Green parrot sitting on the perch" />
       <h3>100% Safe Materials</h3>
       <p>We use only safe, non-toxic materials. No paints, dye, lead, zinc, or other toxic elements in our bird toys.</p>
-    </li>
-    <li class="card-component card-component--on-light text-align-center">
+    </div>
+    <div class="card-component card-component--on-light text-align-center">
       <img src="imgs/durable-beakbox.png" alt="Yellow parrot chewing on the BeakBox" />
       <h3>Robust and Durable</h3>
       <p>Strong, durable stainless steel protects your BeakBox from the most curious beaks!</p>
-    </li>
-    <li class="card-component card-component--on-light text-align-center">
+    </div>
+    <div class="card-component card-component--on-light text-align-center">
       <img src="imgs/wi-fi-enabled-beakbox.png" alt="BeakBox attached to the cage" />
       <h3>Wi-Fi Enabled</h3>
       <p>Connect your BeakBox bird toy to your home Wi-Fi and keep it updated with the latest features.</p>
-    </li>
-  </ul>
+    </div>
+  </div>
   <div class="centering">
     <a class="button" href="https://shop.mybeakbox.com/" aria-label="">Shop BeakBox</a>
   </div>
@@ -129,13 +129,13 @@ pagination:
 </section>
 
 <section class="light-background products">
-  <ul class="layout-grid main-container border border--on-light">
-    <li class="flex-container">
+  <div class="layout-grid main-container border border--on-light">
+    <div class="flex-container">
       <h2>One of a kind</h2>
       <p>100% safe bird-proof materials, extra durable, and interactive, BeakBox is a bird toy you've never seen before.</p>
-    </li>
+    </div>
 
-    <li class="card-component card-component--on-light">
+    <div class="card-component card-component--on-light">
       <div class="card-component__content">
         <h3 class="card-component__title">BeakBox Medium</h3>
         <span>USD $129</span>
@@ -150,9 +150,9 @@ pagination:
           <p class="text-align-center"><small>30-day money back guarantee</small></p>
         </div>
       </div>
-    </li>
+    </div>
 
-    <li class="card-component card-component--on-light">
+    <div class="card-component card-component--on-light">
       <div class="card-component__content">
         <h3 class="card-component__title">BeakBox Large</h3>
         <span>USD $149</span>
@@ -168,8 +168,8 @@ pagination:
           <p class="text-align-center"><small>30-day money back guarantee</small></p>
         </div>
       </div>
-    </li>
-  </ul>
+    </div>
+  </div>
 
   <div class="main-container safety">
     <div class="item1">
@@ -366,18 +366,18 @@ pagination:
 <!-- LATEST BLOG ARTICLES -->
 
 <section class="blog-posts">
-  <aside class="main-container" aria-labelledby="articles">
+  <article class="main-container flex-container">
     <h2 class="text-align-center">New on the BeakBox blog</h2>
-    <ul class="layout-grid section">
+    <div class="layout-grid">
       {% assign latest-posts = collections.blog | reverse %} {%- for post in latest-posts limit:3 -%}
-      <li class="flex-container light-background-alt card-component">
+      <div class="flex-container light-background-alt card-component">
         <h3>{{ post.data.title }}</h3>
         <p>{{ post.data.description }}</p>
         <div><a href="{{ post.url }}" class="button">Read this post</a></div>
-      </li>
+      </div>
       {%- endfor -%}
-    </ul>
-  </aside>
+    </div>
+  </article>
 </section>
 
 {% include newsletter-signup.html %}
