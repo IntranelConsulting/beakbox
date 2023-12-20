@@ -49,8 +49,7 @@ p {
 }
 
 //* List styles *//
-ul,
-ol {
+:where(ul, ol):where([role="list"]) {
   list-style: none;
   padding: 0;
 }
