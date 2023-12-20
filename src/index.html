@@ -68,7 +68,7 @@ pagination:
 </section>
 
 <section class="light-background">
-  <ul class="layout-grid main-container">
+  <ul class="layout-grid main-container" role="list">
     <li class="card-component card-component--on-light text-align-center">
       <img src="imgs/safe-beakbox.png" alt="Green parrot sitting on the perch" />
       <h3>100% Safe Materials</h3>
@@ -129,7 +129,7 @@ pagination:
 </section>
 
 <section class="light-background products">
-  <ul class="layout-grid main-container border border--on-light">
+  <ul class="layout-grid main-container border border--on-light" role="list">
     <li class="flex-container">
       <h2>One of a kind</h2>
       <p>100% safe bird-proof materials, extra durable, and interactive, BeakBox is a bird toy you've never seen before.</p>
@@ -368,7 +368,7 @@ pagination:
 <section class="blog-posts">
   <aside class="main-container" aria-labelledby="articles">
     <h2 class="text-align-center">New on the BeakBox blog</h2>
-    <ul class="layout-grid section">
+    <ul class="layout-grid section" role="list">
       {% assign latest-posts = collections.blog | reverse %} {%- for post in latest-posts limit:3 -%}
       <li class="flex-container light-background-alt card-component">
         <h3>{{ post.data.title }}</h3>
