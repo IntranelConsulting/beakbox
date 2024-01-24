@@ -125,3 +125,48 @@ details > summary {
   color: var(--color-summary);
   font-weight: var(--font-weight-bold);
 }
+
+//* Snippet
+
+.banner {
+  border-radius: 1rem;
+  padding: clamp(3rem, 1rem + 5vw, 5rem);
+}
+
+//* Table styles
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--purple-100);
+  padding: 2rem;
+  border-radius: 1.75rem;
+}
+
+th,
+td {
+  padding: 1rem;
+}
+
+th {
+  text-align: left;
+}
+
+table td,
+table th {
+  border: 1px solid black;
+}
+table tr:first-child th {
+  border-top: 0;
+}
+table tr:last-child td {
+  border-bottom: 0;
+}
+table tr td:first-child,
+table tr th:first-child {
+  border-left: 0;
+}
+table tr td:last-child,
+table tr th:last-child {
+  border-right: 0;
+}
