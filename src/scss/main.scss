@@ -300,3 +300,15 @@ input[type="email"] {
 }
 
 //* Sections *//
+//* Header
+
+.arrow:before {
+  content: url("/imgs/arro.svg");
+  display: block;
+  height: 30px;
+  width: 30px;
+  margin-right: 46px;
+  position: absolute;
+  left: -43px;
+  bottom: 80px;
+}
