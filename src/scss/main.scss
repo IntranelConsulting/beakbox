@@ -266,3 +266,37 @@ input[type="email"] {
     flex-direction: row;
   }
 }
+
+@include breakpoint-up("medium") {
+  .money-back {
+    position: relative;
+    max-width: 50rem;
+    img {
+      position: absolute;
+      width: 32vw;
+      max-width: 20rem;
+      top: 30%;
+      left: 90%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+@include breakpoint-down("small") {
+  .money-back {
+    --gap: 5rem;
+
+    position: relative;
+
+    img {
+      position: absolute;
+      max-width: 14rem;
+      width: 32vw;
+      bottom: 50%;
+      left: -13%;
+      transform: translateY(-50%);
+    }
+  }
+}
+
+//* Sections *//
