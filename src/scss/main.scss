@@ -303,7 +303,7 @@ input[type="email"] {
 //* Header
 
 .arrow:before {
-  content: url("/imgs/arro.svg");
+  content: url("/imgs/arrow.svg");
   display: block;
   height: 30px;
   width: 30px;
@@ -311,4 +311,14 @@ input[type="email"] {
   position: absolute;
   left: -43px;
   bottom: 80px;
+}
+
+.bird-side {
+  background-image: url("/imgs/beakbox-bird-side.png");
+  background-size: cover;
+  height: 53rem;
+
+  h2 {
+    color: var(--brown-400);
+  }
 }
