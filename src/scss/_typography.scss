@@ -26,10 +26,12 @@ h2 {
   font-size: var(--font-size-h2);
   font-size: clamp(3.8rem, 1rem + 5vw, var(--font-size-h2));
   letter-spacing: -0.1rem;
+  color: #5c1900;
 }
 
 h3 {
   font-size: var(--font-size-h3);
+  color: var(--orange-500);
 }
 
 h4 {
@@ -48,6 +50,7 @@ li {
 
 p {
   margin: 0 0 1rem;
+  color: var(--brown-400);
 }
 
 //* List styles *//

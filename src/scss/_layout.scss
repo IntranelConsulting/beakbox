@@ -63,6 +63,23 @@ section:not(.newsletter, .hero, .blog-posts) {
   }
 }
 
+//* Flex direction changes from row to column on smaller screens
+
+.flex-container-collapse {
+  --gap: 3rem;
+
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: var(--gap);
+}
+
+@include breakpoint-up("large") {
+  .flex-container-collapse {
+    flex-direction: row;
+  }
+}
+
 .flex {
   display: flex;
   gap: var(--gap, 1rem);
@@ -70,6 +87,14 @@ section:not(.newsletter, .hero, .blog-posts) {
   &--centered {
     align-self: center;
   }
+
+  &--center-items {
+    align-items: center;
+  }
+}
+
+.flex:has(.numbers) {
+  margin-bottom: 2rem;
 }
 
 .no-gap {
