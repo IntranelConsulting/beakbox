@@ -322,3 +322,28 @@ input[type="email"] {
     color: var(--brown-400);
   }
 }
+
+.why-beakbox {
+  --container-width: 95ch;
+  img {
+    width: 50%;
+    position: relative;
+    left: -14%;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  h3 {
+    font-size: 3rem;
+    color: #5c1900;
+  }
+
+  .numbers {
+    font-size: 5rem;
+
+    color: #e1baad;
+  }
+}
