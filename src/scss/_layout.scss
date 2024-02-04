@@ -50,8 +50,9 @@ section:not(.newsletter, .hero, .blog-posts) {
   gap: var(--gap);
 
   &--center-content {
+    text-align: center;
     align-items: center;
-    justify-content: center;
+    // justify-content: center;
   }
 
   &--row {
@@ -194,4 +195,8 @@ table tr th:first-child {
 table tr td:last-child,
 table tr th:last-child {
   border-right: 0;
+}
+
+.margin-bottom {
+  margin-bottom: 10rem;
 }
