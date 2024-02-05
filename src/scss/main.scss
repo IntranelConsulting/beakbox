@@ -364,12 +364,9 @@ input[type="email"] {
   }
 }
 
-.tick::after {
-  position: absolute;
-  content: "/";
-  color: red;
-  font-weight: 700;
-  font-size: 1.7em;
-  left: 7px;
-  top: -10px;
+.comparison {
+  width: 70rem;
+  border-collapse: collapse;
+  padding: 2rem;
+  border-radius: 1.75rem;
 }

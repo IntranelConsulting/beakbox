@@ -161,26 +161,25 @@ details > summary {
 
 //* Table styles
 
-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: var(--purple-100);
-  padding: 2rem;
-  border-radius: 1.75rem;
-}
-
 th,
 td {
   padding: 1rem;
+  color: var(--brown-400);
 }
 
+td,
 th {
+  text-align: center;
+}
+
+td:first-of-type {
   text-align: left;
+  padding: 1rem 2rem;
 }
 
 table td,
 table th {
-  border: 1px solid black;
+  border: 1px solid var(--orange-300);
 }
 table tr:first-child th {
   border-top: 0;
