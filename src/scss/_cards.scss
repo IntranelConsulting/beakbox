@@ -7,7 +7,7 @@
   border-radius: 1.75rem;
   padding: 2rem;
 
-  img {
+  img:not(.icons) {
     aspect-ratio: var(--img-ratio);
     object-fit: cover;
     width: 100%;
@@ -17,6 +17,7 @@
   h3 {
     margin-top: 3rem;
   }
+
 
   &__title {
     font-size: var(--font-size-text-default);
@@ -48,6 +49,10 @@
         font-size: 1rem;
       }
     }
+  }
+
+  &--align-center {
+    align-items: center;
   }
 
   &--on-dark {
