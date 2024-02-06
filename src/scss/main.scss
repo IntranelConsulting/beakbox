@@ -379,3 +379,17 @@ input[type="email"] {
   padding: 2rem;
   border-radius: 1.75rem;
 }
+
+
+//* Top Divider
+.divider-container-top {
+  position: relative;
+  top: 0.1rem; //* Prevent white line
+  transform: rotate(180deg);
+}
+
+//* Bottom Divider
+.divider-container-bottom {
+  position: relative;
+  bottom: 0.1rem; //* Prevent white line
+}
