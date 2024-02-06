@@ -100,8 +100,17 @@ input[type="email"] {
 .reviews {
   --content-max: 80ch;
 
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: var(--font-size-text-default);
+  }
+
   div:first-of-type {
-    max-width: 93.375rem;
+    max-width: 55rem;
     margin: 0 auto;
   }
 
