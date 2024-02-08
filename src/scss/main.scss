@@ -393,3 +393,14 @@ input[type="email"] {
   position: relative;
   bottom: 0.1rem; //* Prevent white line
 }
+
+
+.how-it-works {
+  img {
+    width: 12rem;
+  }
+
+  h4 {
+    color: var(--orange-400);
+  }
+}
