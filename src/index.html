@@ -391,7 +391,7 @@ pagination:
     <h2 class="text-align-center">New on the <span style="color: #ff662b">BeakBox blog</span></h2>
     <div class="layout-grid">
       {% assign latest-posts = collections.blog | reverse %} {%- for post in latest-posts limit:3 -%}
-      <div class="flex-container light-background-alt card-component">
+      <div class="flex-container light-background card-component">
         <h3>{{ post.data.title }}</h3>
         <p>{{ post.data.description }}</p>
         <div><a href="{{ post.url }}" class="button">Read this post</a></div>
