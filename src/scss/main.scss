@@ -306,7 +306,7 @@ input[type="email"] {
 //* Sections *//
 //* Header
 
-.arrow:before {
+.header-sign:before {
   content: url("/imgs/arrow.svg");
   display: block;
   height: 30px;
@@ -314,7 +314,14 @@ input[type="email"] {
   margin-right: 46px;
   position: absolute;
   left: -43px;
-  bottom: 80px;
+}
+
+.header-sign {
+  font-family: 'Sue Ellen Francisco', cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+  transform: rotate(-7.65deg);
+  width: 30rem;
 }
 
 .bird-side {
