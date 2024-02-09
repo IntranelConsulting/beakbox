@@ -316,11 +316,11 @@ input[type="email"] {
 .header-sign:before {
   content: url("/imgs/arrow.svg");
   display: block;
-  height: 30px;
-  width: 30px;
-  margin-right: 46px;
+  height: 3rem;
+  width: 3rem;
   position: absolute;
-  left: -43px;
+  left: -3rem;
+  bottom: 13rem;
 }
 
 .header-sign {
@@ -328,6 +328,7 @@ input[type="email"] {
   font-size: 2.2rem;
   letter-spacing: 0.1em;
   transform: rotate(-7.65deg);
+  margin-top: 2rem;
   width: 30rem;
 }
 
@@ -351,6 +352,18 @@ input[type="email"] {
   }
 }
 
+//* How it works 
+.how-it-works {
+  img {
+    width: 12rem;
+  }
+
+  h4 {
+    color: var(--orange-400);
+  }
+}
+
+//* Why BeakBox 
 .why-beakbox {
   --container-width: 95ch;
   img {
@@ -409,12 +422,3 @@ input[type="email"] {
 }
 
 
-.how-it-works {
-  img {
-    width: 12rem;
-  }
-
-  h4 {
-    color: var(--orange-400);
-  }
-}
