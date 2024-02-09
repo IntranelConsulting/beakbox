@@ -177,6 +177,11 @@ td:first-of-type {
   padding: 1rem 2rem;
 }
 
+td img {
+  width: 2rem;
+  margin: 0 auto;
+}
+
 table td,
 table th {
   border: 1px solid var(--orange-300);
@@ -200,8 +205,19 @@ table tr th:last-child {
   margin-bottom: 10rem;
 }
 
+.padding-bottom {
+  padding-bottom: 10rem;
+}
+
 
 //* Image spacing
 .img-margin {
   margin: 10rem 0;
+}
+
+
+.video-container {
+  position: relative;
+  left: -12rem;
+  width: 46rem;
 }
