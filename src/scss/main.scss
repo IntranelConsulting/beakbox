@@ -377,6 +377,11 @@ input[type="email"] {
   }
 }
 
+
+
+
+
+
 //* Why BeakBox 
 .why-beakbox {
   --container-width: 95ch;
@@ -401,7 +406,15 @@ input[type="email"] {
 
     color: #e1baad;
   }
+
+  .flex-container-collapse + .flex-container-collapse {
+    margin-top: 4rem;
+  }
+
+
 }
+
+
 
 .tick {
   width: 5rem;

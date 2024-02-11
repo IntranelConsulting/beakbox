@@ -73,11 +73,13 @@ section:not(.newsletter, .hero) {
   align-items: center;
   flex-direction: column;
   gap: var(--gap);
+  text-align: center;
 }
 
 @include breakpoint-up("large") {
   .flex-container-collapse {
     flex-direction: row;
+    text-align: left;
   }
 }
 
