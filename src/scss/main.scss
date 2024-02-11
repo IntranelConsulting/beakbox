@@ -332,10 +332,11 @@ input[type="email"] {
   width: 30rem;
 }
 
-.bird-side {
-  background-image: url("/imgs/beakbox-bird-side.png");
+
+.human-side, .bird-side {
   background-size: cover;
   height: 53rem;
+  background-position-x: 50%;
 
   h2 {
     color: var(--brown-400);
@@ -344,12 +345,10 @@ input[type="email"] {
 
 .human-side {
   background-image: url("/imgs/beakbox-human-side.png");
-  background-size: cover;
-  height: 53rem;
+}
 
-  h2 {
-    color: var(--brown-400);
-  }
+.bird-side {
+  background-image: url("/imgs/beakbox-bird-side.png");
 }
 
 //* How it works 
