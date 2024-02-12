@@ -378,6 +378,11 @@ input[type="email"] {
 }
 
 
+// Money back banner
+.main-container:has(.money-back) {
+ margin-top: 4rem;
+}
+
 
 
 
@@ -385,36 +390,35 @@ input[type="email"] {
 //* Why BeakBox 
 .why-beakbox {
   --container-width: 95ch;
+  
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+}
+
+.why-beakbox:has(.flex-container-collapse) {
+  .numbers {
+    font-size: 5rem;
+    color: #e1baad;
+  }
+
   img {
     width: 70%;
     position: relative;
     left: -12%;
   }
 
-  h2 {
-    margin-bottom: 5rem;
-    text-align: center;
+  .flex-container-collapse + .flex-container-collapse {
+    margin-top: 4rem;
   }
-
+  
   h3 {
     font-size: 3rem;
     color: #5c1900;
   }
-
-  .numbers {
-    font-size: 5rem;
-
-    color: #e1baad;
-  }
-
-  .flex-container-collapse + .flex-container-collapse {
-    margin-top: 4rem;
-  }
-
-
 }
-
-
 
 .tick {
   width: 5rem;
@@ -428,7 +432,7 @@ input[type="email"] {
 }
 
 .comparison {
-  width: 70rem;
+  min-width: 38rem;
   border-collapse: collapse;
   padding: 2rem;
   border-radius: 1.75rem;
