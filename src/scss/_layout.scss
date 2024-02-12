@@ -217,9 +217,14 @@ table tr th:last-child {
   margin: 10rem 0;
 }
 
-
+//Video container
 .video-container {
   position: relative;
-  left: -12rem;
-  width: 46rem;
+}
+
+@include breakpoint-up("large") {
+  .video-container {
+    left: -12rem;
+    width: 46rem;
+  }
 }
