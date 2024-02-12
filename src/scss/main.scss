@@ -21,7 +21,7 @@
 @import "pages/help";
 @import "pages/about-us";
 
-//* Inputs *//
+//* INPUTS *//
 input {
   display: block;
 }
@@ -62,7 +62,26 @@ input[type="email"] {
   }
 }
 
-//* Safety section *//
+//* BeakBox sides *//
+.human-side, .bird-side {
+  background-size: cover;
+  height: 53rem;
+  background-position-x: 50%;
+
+  h2 {
+    color: var(--brown-400);
+  }
+}
+
+.human-side {
+  background-image: url("/imgs/beakbox-human-side.png");
+}
+
+.bird-side {
+  background-image: url("/imgs/beakbox-bird-side.png");
+}
+
+//* Safety *//
 .safety {
   display: flex;
   flex-direction: column;
@@ -94,6 +113,63 @@ input[type="email"] {
   img {
     width: 5rem;
   }
+}
+
+//* How it works *//
+.how-it-works {
+  img {
+    width: 12rem;
+  }
+
+  h4 {
+    color: var(--orange-400);
+  }
+}
+
+//* Money back banner *//
+.main-container:has(.money-back) {
+ margin-top: 4rem;
+}
+
+//* Why BeakBox *//
+.why-beakbox {
+  --container-width: 95ch;
+  
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+}
+
+.why-beakbox:has(.flex-container-collapse) {
+  .numbers {
+    font-size: 5rem;
+    color: #e1baad;
+  }
+
+  img {
+    width: 70%;
+    position: relative;
+    left: -12%;
+  }
+
+  .flex-container-collapse + .flex-container-collapse {
+    margin-top: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    color: #5c1900;
+  }
+}
+
+//* BeakBox vs other toys *//
+.comparison {
+  min-width: 38rem;
+  border-collapse: collapse;
+  padding: 2rem;
+  border-radius: 1.75rem;
 }
 
 //* Testimonial section *//
@@ -160,8 +236,6 @@ input[type="email"] {
   }
 }
 
-
-
 //* PAGES *//
 //* 404 page //*
 .not-found-page {
@@ -189,7 +263,7 @@ input[type="email"] {
   place-content: center;
 }
 
-//* Borders *//
+//* BORDERS *//
 .border {
   padding-bottom: 14vh;
   border-bottom: 2px dashed var(--border-color);
@@ -199,7 +273,7 @@ input[type="email"] {
   }
 }
 
-//* Icons *//
+//* ICONS *//
 .icons {
   width: 8rem;
   height: 8rem;
@@ -211,7 +285,32 @@ input[type="email"] {
   }
 }
 
-// * Backgrounds *//
+.tick {
+  width: 5rem;
+  height: 5rem;
+}
+
+.flex-container:has(.tick) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+
+//* DIVIDERS *//
+//* Top Divider *//
+.divider-container-top {
+  position: relative;
+  top: 0.1rem; //* Prevent white line
+  transform: rotate(180deg);
+}
+
+//* Bottom Divider *//
+.divider-container-bottom {
+  position: relative;
+  bottom: 0.1rem; //* Prevent white line
+}
+
+// * BACKGROUNDS *//
 .dark-background {
   background-color: var(--color-bg-dark);
 
@@ -265,8 +364,7 @@ input[type="email"] {
   }
 }
 
-//* Mobile styles *//
-
+//* MOBILE STYLES *//
 @include breakpoint-up("large") {
   .safety .item1 {
     flex-basis: 30rem;
@@ -309,147 +407,3 @@ input[type="email"] {
     }
   }
 }
-
-//* Sections *//
-//* Header
-
-.header-sign {
-  font-family: 'Sue Ellen Francisco', cursive;
-  font-size: 2.2rem;
-  letter-spacing: 0.1em;
-  transform: rotate(-7.65deg);
-  margin-top: 4rem;
-  width: 30rem;
-}
-
-.header-sign:before {
-  content: url("/imgs/arrow.svg");
-  display: block;
-  height: 3rem;
-  width: 3rem;
-  position: absolute;
-  left: 23rem;
-  bottom: 14rem;
-  transform: scaleX(-1);
-}
-
-@media only screen and (min-width: 1259px) {
-  .header-sign:before {
-    content: url("/imgs/arrow.svg");
-    display: block;
-    height: 3rem;
-    width: 3rem;
-    position: absolute;
-    left: -3rem;
-    bottom: 13rem;
-    transform: none;
-  }
-}
-
-
-
-.human-side, .bird-side {
-  background-size: cover;
-  height: 53rem;
-  background-position-x: 50%;
-
-  h2 {
-    color: var(--brown-400);
-  }
-}
-
-.human-side {
-  background-image: url("/imgs/beakbox-human-side.png");
-}
-
-.bird-side {
-  background-image: url("/imgs/beakbox-bird-side.png");
-}
-
-//* How it works 
-.how-it-works {
-  img {
-    width: 12rem;
-  }
-
-  h4 {
-    color: var(--orange-400);
-  }
-}
-
-
-// Money back banner
-.main-container:has(.money-back) {
- margin-top: 4rem;
-}
-
-
-
-
-
-//* Why BeakBox 
-.why-beakbox {
-  --container-width: 95ch;
-  
-  h2 {
-    margin-bottom: 5rem;
-    text-align: center;
-  }
-
-}
-
-.why-beakbox:has(.flex-container-collapse) {
-  .numbers {
-    font-size: 5rem;
-    color: #e1baad;
-  }
-
-  img {
-    width: 70%;
-    position: relative;
-    left: -12%;
-  }
-
-  .flex-container-collapse + .flex-container-collapse {
-    margin-top: 4rem;
-  }
-  
-  h3 {
-    font-size: 3rem;
-    color: #5c1900;
-  }
-}
-
-.tick {
-  width: 5rem;
-  height: 5rem;
-}
-
-.flex-container:has(.tick) {
-  h3 {
-    font-size: 2.8rem;
-  }
-}
-
-.comparison {
-  min-width: 38rem;
-  border-collapse: collapse;
-  padding: 2rem;
-  border-radius: 1.75rem;
-}
-
-
-//* Top Divider
-.divider-container-top {
-  position: relative;
-  top: 0.1rem; //* Prevent white line
-  transform: rotate(180deg);
-}
-
-//* Bottom Divider
-.divider-container-bottom {
-  position: relative;
-  bottom: 0.1rem; //* Prevent white line
-}
-
-
