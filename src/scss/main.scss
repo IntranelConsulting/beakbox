@@ -140,9 +140,6 @@ input[type="email"] {
     text-align: center;
   }
 
-}
-
-.why-beakbox:has(.flex-container-collapse) {
   .numbers {
     font-size: 5rem;
     color: #e1baad;
@@ -162,7 +159,9 @@ input[type="email"] {
     font-size: 3rem;
     color: #5c1900;
   }
+
 }
+
 
 //* BeakBox vs other toys *//
 .comparison {
