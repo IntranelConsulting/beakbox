@@ -159,7 +159,7 @@ header {
   width: 30rem;
 }
 
-.header-sign:before {
+.header-sign::before {
   content: url("/imgs/arrow.svg");
   display: block;
   height: 3rem;
@@ -171,7 +171,7 @@ header {
 }
 
 @media only screen and (min-width: 1259px) {
-  .header-sign:before {
+  .header-sign::before {
     content: url("/imgs/arrow.svg");
     display: block;
     height: 3rem;
