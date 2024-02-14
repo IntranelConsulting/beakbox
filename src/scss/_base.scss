@@ -46,8 +46,8 @@ select {
 }
 
 //* Images, video *//
-img:not(.main-nav *, .icons, .footer *, .blog-posts *),
-svg:not(.main-nav *, .icons, .footer *, .blog-posts *) {
+img:not(.main-nav *, .icons, .footer *, .blog-posts *, .divider *),
+svg:not(.main-nav *, .icons, .footer *, .blog-posts *, #wave) {
   display: block;
   max-width: 100%;
   border-radius: 1rem;
@@ -94,3 +94,4 @@ ul li::marker {
     transition: none;
   }
 }
+

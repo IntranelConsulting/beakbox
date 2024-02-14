@@ -21,7 +21,7 @@
 @import "pages/help";
 @import "pages/about-us";
 
-//* Inputs *//
+//* INPUTS *//
 input {
   display: block;
 }
@@ -62,7 +62,26 @@ input[type="email"] {
   }
 }
 
-//* Safety section *//
+//* BeakBox sides *//
+.human-side, .bird-side {
+  background-size: cover;
+  height: 53rem;
+  background-position-x: 50%;
+
+  h2 {
+    color: var(--brown-400);
+  }
+}
+
+.human-side {
+  background-image: url("/imgs/beakbox-human-side.png");
+}
+
+.bird-side {
+  background-image: url("/imgs/beakbox-bird-side.png");
+}
+
+//* Safety *//
 .safety {
   display: flex;
   flex-direction: column;
@@ -96,12 +115,108 @@ input[type="email"] {
   }
 }
 
+//* How it works *//
+.how-it-works {
+  img {
+    width: 12rem;
+  }
+
+  h4 {
+    color: var(--orange-400);
+  }
+}
+
+//* Money back banner *//
+.main-container:has(.money-back) {
+ margin-top: 4rem;
+ position: relative;
+}
+
+@include breakpoint-up("medium") {
+  .money-back {
+    max-width: 50rem;
+    img {
+      position: absolute;
+      top: -2rem;
+      right: 10rem;
+    }
+  }
+}
+
+@include breakpoint-down("small") {
+  .money-back {
+    --gap: 5rem;
+
+    position: relative;
+
+    img {
+      position: absolute;
+      max-width: 7rem;
+      transform: translateY(-100%);
+    }
+  }
+}
+
+//* Why BeakBox *//
+.why-beakbox {
+  --container-width: 95ch;
+  
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+
+  .numbers {
+    font-size: 5rem;
+    color: #e1baad;
+  }
+
+  img {
+    width: 70%;
+    position: relative;
+    left: -12%;
+  }
+
+  .flex-container-collapse + .flex-container-collapse {
+    margin-top: 4rem;
+  }
+  
+  h3 {
+    font-size: 3rem;
+    color: #5c1900;
+  }
+
+}
+
+
+//* BeakBox vs other toys *//
+
+.table-container {
+  overflow-x: auto;
+}
+
+.comparison {
+  width: 100%;
+  border-collapse: collapse;
+  padding: 2rem;
+  border-radius: 1.75rem;
+}
+
 //* Testimonial section *//
 .reviews {
   --content-max: 80ch;
 
+  h3 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  p {
+    font-size: var(--font-size-text-default);
+  }
+
   div:first-of-type {
-    max-width: 93.375rem;
+    max-width: 55rem;
     margin: 0 auto;
   }
 
@@ -145,6 +260,10 @@ input[type="email"] {
 //* Latest blog posts section *//
 .blog-posts {
   padding-top: 0;
+
+  h3 {
+    font-size: 2.5rem;
+  }
 }
 
 //* PAGES *//
@@ -174,9 +293,15 @@ input[type="email"] {
   place-content: center;
 }
 
-//* Borders *//
+//* Text *//
+
+.colored-text {
+  color: var(--orange-400);
+}
+
+//* BORDERS *//
 .border {
-  padding-bottom: 5vh;
+  padding-bottom: 14vh;
   border-bottom: 2px dashed var(--border-color);
 
   &--on-light {
@@ -184,7 +309,7 @@ input[type="email"] {
   }
 }
 
-//* Icons *//
+//* ICONS *//
 .icons {
   width: 8rem;
   height: 8rem;
@@ -196,7 +321,32 @@ input[type="email"] {
   }
 }
 
-// * Backgrounds *//
+.tick {
+  width: 5rem;
+  height: 5rem;
+}
+
+.flex-container:has(.tick) {
+  h3 {
+    font-size: 2.8rem;
+  }
+}
+
+//* DIVIDERS *//
+//* Top Divider *//
+.divider-container-top {
+  position: relative;
+  top: 0.1rem; //* Prevent white line
+  transform: rotate(180deg);
+}
+
+//* Bottom Divider *//
+.divider-container-bottom {
+  position: relative;
+  bottom: 0.1rem; //* Prevent white line
+}
+
+// * BACKGROUNDS *//
 .dark-background {
   background-color: var(--color-bg-dark);
 
@@ -216,11 +366,6 @@ input[type="email"] {
   }
 
   background-color: var(--color-bg-light);
-
-  h2,
-  h3 {
-    color: var(--color-heading-on-light-bg);
-  }
 
   p {
     color: var(--color-text-on-light-bg);
@@ -255,8 +400,7 @@ input[type="email"] {
   }
 }
 
-//* Mobile styles *//
-
+//* MOBILE STYLES *//
 @include breakpoint-up("large") {
   .safety .item1 {
     flex-basis: 30rem;
@@ -264,5 +408,7 @@ input[type="email"] {
 
   .safety {
     flex-direction: row;
+    margin-top: 10rem;
   }
 }
+
