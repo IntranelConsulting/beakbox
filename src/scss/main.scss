@@ -190,8 +190,13 @@ input[type="email"] {
 
 
 //* BeakBox vs other toys *//
+
+.table-container {
+  overflow-x: auto;
+}
+
 .comparison {
-  min-width: 38rem;
+  width: 100%;
   border-collapse: collapse;
   padding: 2rem;
   border-radius: 1.75rem;
