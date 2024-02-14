@@ -129,6 +129,32 @@ input[type="email"] {
 //* Money back banner *//
 .main-container:has(.money-back) {
  margin-top: 4rem;
+ position: relative;
+}
+
+@include breakpoint-up("medium") {
+  .money-back {
+    max-width: 50rem;
+    img {
+      position: absolute;
+      top: -2rem;
+      right: 10rem;
+    }
+  }
+}
+
+@include breakpoint-down("small") {
+  .money-back {
+    --gap: 5rem;
+
+    position: relative;
+
+    img {
+      position: absolute;
+      max-width: 7rem;
+      transform: translateY(-100%);
+    }
+  }
 }
 
 //* Why BeakBox *//
@@ -381,34 +407,3 @@ input[type="email"] {
   }
 }
 
-@include breakpoint-up("medium") {
-  .money-back {
-    position: relative;
-    max-width: 50rem;
-    img {
-      position: absolute;
-      width: 32vw;
-      max-width: 20rem;
-      top: 30%;
-      left: 90%;
-      transform: translateY(-50%);
-    }
-  }
-}
-
-@include breakpoint-down("small") {
-  .money-back {
-    --gap: 5rem;
-
-    position: relative;
-
-    img {
-      position: absolute;
-      max-width: 14rem;
-      width: 32vw;
-      bottom: 50%;
-      left: -13%;
-      transform: translateY(-50%);
-    }
-  }
-}

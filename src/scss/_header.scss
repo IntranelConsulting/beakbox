@@ -170,7 +170,7 @@ header {
   transform: scaleX(-1);
 }
 
-@media only screen and (min-width: 1259px) {
+@media only screen and (min-width: 78.6875em) {
   .header-sign::before {
     content: url("/imgs/arrow.svg");
     display: block;
