@@ -55,6 +55,7 @@ p {
 }
 
 //* List styles *//
+
 ul,
 ol {
   list-style: none;
@@ -63,4 +64,12 @@ ol {
 
 ul li:not(.flex-container) {
   padding-left: 1rem;
+}
+
+li {
+  color: var(--brown-400);
+}
+
+li + li {
+  margin-top: 2rem;
 }

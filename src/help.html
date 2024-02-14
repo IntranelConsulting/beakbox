@@ -125,7 +125,7 @@ image: /imgs/beakbox-transparent.png
 </section>
 
 <section>
-  <article class="main-container layout-grid">
+  <article class="main-container main-container--narrow">
     <div class="flex-container">
       <h2>Getting started</h2>
     </div>
@@ -149,7 +149,7 @@ image: /imgs/beakbox-transparent.png
 </section>
 
 <section>
-  <article class="main-container layout-grid">
+  <article class="main-container main-container--narrow">
     <div class="flex-container">
       <h2>BeakBox web app</h2>
       <p>With our BeakBox web app you can connect your BeakBox to your home Wi-Fi to receive future updates, upload your parrots' favorite music, create playlists, and remotely control your BeakBox!</p>
@@ -164,19 +164,34 @@ image: /imgs/beakbox-transparent.png
           Open the Wi-Fi settings on your device and search for a network with the following name “MyBeakBox-NNNNNN” where NNNNNN is a set of six random numbers and characters. Use the password “boxflock“ to connect to your BeakBox.
         </li>
         <div class="notecard">
-          <p>While connected to the BeakBox Wi-Fi, your device won’t have internet access.</p>
+          While connected to the BeakBox Wi-Fi, your device won’t have internet access.
         </div>
+
         <li>Upon connecting your device to the BeakBox, the BeakBox web app page will automatically open in your default browser.</li>
+
         <div class="notecard">
-          If the page
-          <li>Select your home Wi-Fi from the list of available networks and, if necessary, enter your password. Click "Connect".</li>
-          <li>Your BeakBox should now be successfully connected to your Wi-Fi.</li>
-          <div class="notecard">
-            Please note that it may take a few moments for the BeakBox to display a connection status and an IP address. You may want to record this IP address for future use when accessing the BeakBox app.
-          </div>
-          <div class="notecard">
-            Please don’t forget to re-connect your device to your home Wi-Fi.
-          </div>
+          If the page fails to open, you can access the BeakBox web app by entering http://192.168.4.1 in your browser. Ensure to type “http” to prevent the browser from using “https” by default.
+        </div>
+
+        <img src="" alt="">
+
+        <li>
+          Select your home Wi-Fi from the list of available networks and, if necessary, enter your password. Click connect.
+        </li>
+
+
+        <li>
+          Your BeakBox should now be successfully connected to your Wi-Fi. 
+        </li>
+
+        <div class="notecard">
+          Please note that it may take a few moments for the BeakBox to display a connection status and an IP address. You may want to record this IP address for future use when accessing the BeakBox app.
+        </div>
+
+        <div class="notecard">
+          Please don’t forget to re-connect your device to your home Wi-Fi.
+        </div>
+
       </ul>
     </div>
 
@@ -220,120 +235,111 @@ image: /imgs/beakbox-transparent.png
       </ul>
       <p>Your playlist should now be renamed.</p>
     </div>
-  </article>
 
-  <div class="flex-container list-style-decimal">
-    <h3>How to copy tracks from one playlist to another</h3>
-    <p>To copy tracks from one playlist to another, follow these steps:</p>
-    <ul>
-      <li>Select the tracks you wish to move to a different playlist.</li>
-      <div class="notecard">
-        Please note that you can copy tracks from both custom and default playlists but you can copy them only to custom playlists. 
-      </div>
-      <li>From the dropdown menu, choose the playlist where you want to duplicate your selected tracks.</li>
-      <img src="" alt="">
-      <li>Click the “Copy” button.</li>
-    </ul>
-
-    <p>By following these  steps, you can manage your tracks across different playlists.</p>
-
-  </div>
-
-  <div class="flex-container list-style-decimal">
-    <h3>How to delete tracks from the playlist</h3>
-    <p>To remove tracks from a playlist, follow these simple steps:</p>
-    <ul>
-      <li>Select the playlist from which you want to delete tracks.</li>
-      <li>Choose the tracks you wish to remove. If you want to delete all tracks from the playlist, use the “Select all” option.</li>
-      <li>Click the “Delete selected” button.</li>
-
-    </ul>
-
-  </div>
-
-  <div class="flex-container list-style-decimal">
-    <h3>How to delete the playlist</h3>
-    <p>To remove a playlist, follow these steps:</p>
-    <ul>
-      <li>Select the playlist you wish to delete.</li>
-      <li>Click the "Delete" icon.</li>
-      <img src="" alt="">
-      <li>Confirm that you want to delete the playlist by clicking the "OK" button.</li>
-      <img src="" alt="">
-    </ul>
-
-    <p>The selected playlist should now be removed.</p>
-
-  </div>
-
-  <div class="flex-container list-style-decimal">
-    <h3>Managing BeakBox settings with the BeakBox web app</h3>
-    <p>Using the BeakBox web app, you have the ability to customise the following settings:</p>
-    <ul>
-      <li>Turn on/off a beep sound when changing volume.</li>
-      <li>Turn on/off a beep sound when the lever is pressed.</li>
-      <li>Turn on/off the recording of listening history.</li>
-    </ul>
-
-    <p>To change these settings for your BeakBox, go to the "Preferences" tab in the menu and toggle the desired options.</p>
-    <img src="" alt="">
-  </div>
-
-  <div class="flex-container list-style-decimal">
-    <h3>Listening history with BeakBox App</h3>
-    <p>In the BeakBox app, you have the option to enable the recording of listening history, allowing you to keep track of your bird's favorite tracks.</p>
-    <p>
-      The listening history is displayed for the selected playlist. To view the listening history for a specific playlist, go to the "Playlists" tab and select the desired playlist.
-    </p>
-    <p>
-      If you wish to clear the listening history for the selected playlist, simply click the "Delete history" link.
-    </p>
-    <div class="notecard">
-      The listening history is reset when tracks are added or removed from a playlist or when the playlist is renamed.
+    <div class="flex-container list-style-decimal">
+      <h3>How to copy tracks from one playlist to another</h3>
+      <p>To copy tracks from one playlist to another, follow these steps:</p>
+      <ul>
+        <li>Select the tracks you wish to move to a different playlist.</li>
+        <div class="notecard">
+          Please note that you can copy tracks from both custom and default playlists but you can copy them only to custom playlists. 
+        </div>
+        <li>From the dropdown menu, choose the playlist where you want to duplicate your selected tracks.</li>
+        <img src="" alt="">
+        <li>Click the “Copy” button.</li>
+      </ul>
+  
+      <p>By following these  steps, you can manage your tracks across different playlists.</p>
+  
     </div>
-    <img src="" alt="">
-  </div>
-
-  <div class="flex-container list-style-decimal">
-    <h3>How to control your BeakBox remotely</h3>
-    <p>With the BeakBox web app, you can easily control your BeakBox remotely, performing the following actions:
-    </p>
-    <ul>
-      <li>
-        Play, stop, and skip tracks on your BeakBox.
-      </li>
-      <li>
-        Adjust the volume up and down.
-      </li>
-    </ul>
-    <p>To play a specific track:</p>
-    <ul>
-      <li>Navigate to the Playlists section.</li>
-      <li>Click the "Play" button next to the track you wish to play.</li>
-    </ul>
-    <img src="" alt="">
-    <p>To stop a currently playing track, simply click the “Stop” icon in the top bar. To skip to the next track in the playlist, click the “Skip” icon.
-    </p>
-    <p>To adjust the volume on your BeakBox:</p>
-    <ul>
-      <li>Use the "Minus" icon to decrease the volume.</li>
-      <li>Use the "Plus" icon to increase the volume.</li>
-    </ul>
-    <img src="" alt="">
-  </div>
-
-
-</article>
-
-
-
+  
+    <div class="flex-container list-style-decimal">
+      <h3>How to delete tracks from the playlist</h3>
+      <p>To remove tracks from a playlist, follow these simple steps:</p>
+      <ul>
+        <li>Select the playlist from which you want to delete tracks.</li>
+        <li>Choose the tracks you wish to remove. If you want to delete all tracks from the playlist, use the “Select all” option.</li>
+        <li>Click the “Delete selected” button.</li>
+  
+      </ul>
+  
+    </div>
+  
+    <div class="flex-container list-style-decimal">
+      <h3>How to delete the playlist</h3>
+      <p>To remove a playlist, follow these steps:</p>
+      <ul>
+        <li>Select the playlist you wish to delete.</li>
+        <li>Click the "Delete" icon.</li>
+        <img src="" alt="">
+        <li>Confirm that you want to delete the playlist by clicking the "OK" button.</li>
+        <img src="" alt="">
+      </ul>
+  
+      <p>The selected playlist should now be removed.</p>
+  
+    </div>
+  
+    <div class="flex-container list-style-decimal">
+      <h3>Managing BeakBox settings with the BeakBox web app</h3>
+      <p>Using the BeakBox web app, you have the ability to customise the following settings:</p>
+      <ul>
+        <li>Turn on/off a beep sound when changing volume.</li>
+        <li>Turn on/off a beep sound when the lever is pressed.</li>
+        <li>Turn on/off the recording of listening history.</li>
+      </ul>
+  
+      <p>To change these settings for your BeakBox, go to the "Preferences" tab in the menu and toggle the desired options.</p>
+      <img src="" alt="">
+    </div>
+  
+    <div class="flex-container list-style-decimal">
+      <h3>Listening history with BeakBox App</h3>
+      <p>In the BeakBox app, you have the option to enable the recording of listening history, allowing you to keep track of your bird's favorite tracks.</p>
+      <p>
+        The listening history is displayed for the selected playlist. To view the listening history for a specific playlist, go to the "Playlists" tab and select the desired playlist.
+      </p>
+      <p>
+        If you wish to clear the listening history for the selected playlist, simply click the "Delete history" link.
+      </p>
+      <div class="notecard">
+        The listening history is reset when tracks are added or removed from a playlist or when the playlist is renamed.
+      </div>
+      <img src="" alt="">
+    </div>
+  
+    <div class="flex-container list-style-decimal">
+      <h3>How to control your BeakBox remotely</h3>
+      <p>With the BeakBox web app, you can easily control your BeakBox remotely, performing the following actions:
+      </p>
+      <ul>
+        <li>
+          Play, stop, and skip tracks on your BeakBox.
+        </li>
+        <li>
+          Adjust the volume up and down.
+        </li>
+      </ul>
+      <p>To play a specific track:</p>
+      <ul>
+        <li>Navigate to the Playlists section.</li>
+        <li>Click the "Play" button next to the track you wish to play.</li>
+      </ul>
+      <img src="" alt="">
+      <p>To stop a currently playing track, simply click the “Stop” icon in the top bar. To skip to the next track in the playlist, click the “Skip” icon.
+      </p>
+      <p>To adjust the volume on your BeakBox:</p>
+      <ul>
+        <li>Use the "Minus" icon to decrease the volume.</li>
+        <li>Use the "Plus" icon to increase the volume.</li>
+      </ul>
+      <img src="" alt="">
+    </div>
+  </article>
 </section>
 
 <section>
-  <article class="main-container layout-grid">
-
-
-
+  <article class="main-container main-container--narrow">
     <div class="flex-container">
       <h2>BeakBox Troubleshooting</h2>
     </div>
