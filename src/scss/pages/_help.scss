@@ -26,6 +26,8 @@
 .flex-container {
   --gap: 1.5rem;
 }
+
+
   
 }
 
@@ -37,4 +39,8 @@
   padding: 3rem 2rem;
   border-radius: 0.5rem;
   margin: 2rem 0;
+
+  img {
+    width: 4rem;
+  }
 }
