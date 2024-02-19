@@ -59,8 +59,12 @@ p {
 ul,
 ol {
   list-style: none;
+}
+
+ul.layout-grid {
   padding: 0;
 }
+
 
 ul li:not(.flex-container) {
   padding-left: 1rem;
