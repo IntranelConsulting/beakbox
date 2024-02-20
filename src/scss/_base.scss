@@ -61,7 +61,7 @@ iframe {
 
 //* Links *//
 a:not(.button, .main-nav, .hero, .page-footer) {
-  color: currentColor;
+  color: var(--brown-400);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
 }
@@ -94,4 +94,3 @@ ul li::marker {
     transition: none;
   }
 }
-
