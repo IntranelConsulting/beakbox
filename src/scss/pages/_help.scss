@@ -1,5 +1,4 @@
 .page-help {
-  
   .layout-grid li {
     list-style: disk;
   }
@@ -14,24 +13,19 @@
   }
 
   .popular-questions,
-.shipping-info {
-  border-radius: 1rem;
-  padding: clamp(3rem, 1rem + 5vw, 5rem);
+  .shipping-info {
+    border-radius: 1rem;
+    padding: clamp(3rem, 1rem + 5vw, 5rem);
+  }
+
+  .flex-container + .flex-container {
+    margin-top: 5rem;
+  }
+
+  .flex-container {
+    --gap: 1.5rem;
+  }
 }
-
-.flex-container + .flex-container {
-  margin-top: 5rem;
-}
-
-.flex-container {
-  --gap: 1.5rem;
-}
-
-
-  
-}
-
-
 
 .notecard {
   color: var(--brown-400);
