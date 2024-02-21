@@ -63,7 +63,8 @@ input[type="email"] {
 }
 
 //* BeakBox sides *//
-.human-side, .bird-side {
+.human-side,
+.bird-side {
   background-size: cover;
   height: 53rem;
   background-position-x: 50%;
@@ -126,10 +127,16 @@ input[type="email"] {
   }
 }
 
+//* FAQ *//
+.popular-questions {
+  border-radius: 1rem;
+  padding: clamp(3rem, 1rem + 5vw, 5rem);
+}
+
 //* Money back banner *//
 .main-container:has(.money-back) {
- margin-top: 4rem;
- position: relative;
+  margin-top: 4rem;
+  position: relative;
 }
 
 @include breakpoint-up("medium") {
@@ -160,7 +167,7 @@ input[type="email"] {
 //* Why BeakBox *//
 .why-beakbox {
   --container-width: 95ch;
-  
+
   h2 {
     margin-bottom: 5rem;
     text-align: center;
@@ -180,14 +187,12 @@ input[type="email"] {
   .flex-container-collapse + .flex-container-collapse {
     margin-top: 4rem;
   }
-  
+
   h3 {
     font-size: 3rem;
     color: #5c1900;
   }
-
 }
-
 
 //* BeakBox vs other toys *//
 
@@ -411,4 +416,3 @@ input[type="email"] {
     margin-top: 10rem;
   }
 }
-
