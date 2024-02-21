@@ -111,8 +111,8 @@ subheading: BeakBox is a unique musical bird toy that gives your birds freedom t
         </div>
       </nav>
 
-      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug != "404" %} {% include header.html %} {% endif
-      %}
+      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug == "help" %} {% include header-help.html %}{%
+      elsif page.fileSlug != "404" %} {% include header.html %} {% endif %}
     </header>
 
     <div class="divider-container-bottom">

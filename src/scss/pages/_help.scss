@@ -11,10 +11,30 @@
     height: auto;
     max-width: 100%;
   }
+
+  .popular-questions,
+  .shipping-info {
+    border-radius: 1rem;
+    padding: clamp(3rem, 1rem + 5vw, 5rem);
+  }
+
+  .flex-container + .flex-container {
+    margin-top: 5rem;
+  }
+
+  .flex-container {
+    --gap: 1.5rem;
+  }
 }
 
-.popular-questions,
-.shipping-info {
-  border-radius: 1rem;
-  padding: clamp(3rem, 1rem + 5vw, 5rem);
+.notecard {
+  color: var(--brown-400);
+  background: var(--color-bg-notecard);
+  padding: 3rem 2rem;
+  border-radius: 0.5rem;
+  margin: 2rem 0;
+
+  img {
+    width: 4rem;
+  }
 }
