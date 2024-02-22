@@ -1,0 +1,42 @@
+.page-how-it-works {
+  .sides {
+    .caption {
+      background-color: var(--orange-200);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      color: var(--orange-400);
+    }
+  }
+
+  .content {
+    img {
+      width: 4rem;
+    }
+  }
+
+  .why-beakbox {
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .testimonial {
+    img {
+      position: relative;
+      left: 17rem;
+    }
+
+    .flex-container {
+      width: 32vw;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    p {
+      font-size: 2.5rem;
+    }
+  }
+}
