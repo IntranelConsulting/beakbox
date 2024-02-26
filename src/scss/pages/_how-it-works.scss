@@ -40,7 +40,12 @@
     }
 
     .banner + .banner {
-      margin-top: 4rem;
+      margin-top: 10rem;
+    }
+
+    .banner:nth-of-type(2) {
+      position: relative;
+      right: 10rem;
     }
   }
 }
