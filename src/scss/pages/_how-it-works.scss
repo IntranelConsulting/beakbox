@@ -69,6 +69,11 @@
     width: 50%;
   }
 
+  //* Fix for the first svg image
+  .image-container {
+    width: 35rem;
+  }
+
   .sign-testimonial {
     font-family: "Sue Ellen Francisco", cursive;
     letter-spacing: 0.1em;
