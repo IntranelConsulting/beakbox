@@ -49,10 +49,61 @@
     }
   }
 
+  .testimonial + section {
+    img {
+      width: 60rem;
+    }
+  }
+
   .img-transform {
     position: relative;
     transform: translateX(50%);
     width: 50%;
+  }
+
+  .sign-testimonial {
+    font-family: "Sue Ellen Francisco", cursive;
+    letter-spacing: 0.1em;
+    position: absolute;
+
+    &--left {
+      transform: rotate(-7.65deg);
+      left: -23rem;
+      top: 6rem;
+    }
+
+    &--right {
+      transform: translate(95rem) rotate(7.65deg);
+      top: 0;
+    }
+  }
+
+  .banner:nth-of-type(2n + 1) > .sign-testimonial::before {
+    content: url("/imgs/arrow.svg");
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    transform: none;
+    transform: rotate(-48.65deg);
+    left: 10rem;
+    top: 5rem;
+  }
+
+  .banner:nth-of-type(2n) > .sign-testimonial::after {
+    content: url("/imgs/arrow.svg");
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    transform: none;
+    transform: rotate(48.65deg) scaleX(-1);
+    left: 5rem;
+    top: 5rem;
+  }
+
+  .banner {
+    position: relative;
   }
 
   @include breakpoint-up("medium") {
