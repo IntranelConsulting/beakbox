@@ -130,10 +130,6 @@ header {
       text-underline-offset: 0.2em;
     }
 
-    img {
-      width: 50%;
-    }
-
     &--home {
       img {
         width: 45rem;
@@ -151,7 +147,7 @@ header {
 //* Header sign
 
 .header-sign {
-  font-family: 'Sue Ellen Francisco', cursive;
+  font-family: "Sue Ellen Francisco", cursive;
   font-size: 2.2rem;
   letter-spacing: 0.1em;
   transform: rotate(-7.65deg);
