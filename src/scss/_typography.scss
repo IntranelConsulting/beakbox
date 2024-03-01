@@ -65,7 +65,6 @@ ul.layout-grid {
   padding: 0;
 }
 
-
 ul li:not(.flex-container) {
   padding-left: 1rem;
 }
@@ -74,6 +73,6 @@ li {
   color: var(--brown-400);
 }
 
-li + li {
+li + li:not(.flex-container) {
   margin-top: 2rem;
 }
