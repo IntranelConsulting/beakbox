@@ -59,8 +59,12 @@ iframe {
   border-radius: 1rem;
 }
 
+a {
+  color: currentColor;
+}
+
 //* Links *//
-a:not(.button, .main-nav, .hero, .page-footer) {
+a:not(.button, .main-nav, .hero *, .page-footer) {
   color: var(--brown-400);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
