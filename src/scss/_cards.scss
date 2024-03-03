@@ -7,7 +7,7 @@
   border-radius: 1.75rem;
   padding: 2rem;
 
-  img {
+  img:not(.icons) {
     aspect-ratio: var(--img-ratio);
     object-fit: cover;
     width: 100%;
@@ -26,7 +26,7 @@
   &__content {
     > span {
       font-size: var(--font-size-text-default);
-      color: var(--color-span);
+      color: var(--brown-100);
     }
     > p:first-of-type {
       font-size: var(--font-size-text-small);
@@ -50,6 +50,10 @@
     }
   }
 
+  &--align-center {
+    align-items: center;
+  }
+
   &--on-dark {
     background-color: var(--card-color-bg-on-dark);
 
@@ -67,8 +71,7 @@
   &--on-light {
     background-color: var(--card-color-bg-on-light);
 
-    p,
-    span {
+    p {
       color: var(--card-color-text-on-light);
     }
 

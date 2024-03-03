@@ -130,13 +130,9 @@ header {
       text-underline-offset: 0.2em;
     }
 
-    img {
-      width: 50%;
-    }
-
     &--home {
       img {
-        width: 100%;
+        width: 45rem;
       }
     }
 
@@ -145,5 +141,40 @@ header {
       margin-right: auto;
       max-width: 70ch;
     }
+  }
+}
+
+//* Header sign
+
+.header-sign {
+  font-family: "Sue Ellen Francisco", cursive;
+  font-size: 2.2rem;
+  letter-spacing: 0.1em;
+  transform: rotate(-7.65deg);
+  margin-top: 4rem;
+  width: 30rem;
+}
+
+.header-sign::before {
+  content: url("/imgs/arrow.svg");
+  display: block;
+  height: 3rem;
+  width: 3rem;
+  position: absolute;
+  left: 23rem;
+  bottom: 14rem;
+  transform: scaleX(-1);
+}
+
+@media only screen and (min-width: 78.6875em) {
+  .header-sign::before {
+    content: url("/imgs/arrow.svg");
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    left: -3rem;
+    bottom: 13rem;
+    transform: none;
   }
 }

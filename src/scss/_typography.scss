@@ -2,8 +2,8 @@
 
 :root {
   --font-size-h1: 5.5rem;
-  --font-size-h2: 5.2rem;
-  --font-size-h3: 2.6rem;
+  --font-size-h2: 3.5rem;
+  --font-size-h3: 3.2rem;
   --font-size-h4: 1.6rem;
   --font-size-text-default: 1.8rem;
   --font-size-text-small: 1.4rem;
@@ -19,15 +19,19 @@ html {
 h1 {
   font-size: var(--font-size-h1);
   font-size: clamp(4rem, 1rem + 5vw, var(--font-size-h1));
+  letter-spacing: -0.1rem;
 }
 
 h2 {
   font-size: var(--font-size-h2);
   font-size: clamp(3.8rem, 1rem + 5vw, var(--font-size-h2));
+  letter-spacing: -0.1rem;
+  color: #5c1900;
 }
 
 h3 {
   font-size: var(--font-size-h3);
+  color: #5c1900;
 }
 
 h4 {
@@ -46,15 +50,29 @@ li {
 
 p {
   margin: 0 0 1rem;
+  color: var(--brown-400);
+  font-size: 2rem;
 }
 
 //* List styles *//
+
 ul,
 ol {
   list-style: none;
+}
+
+ul.layout-grid {
   padding: 0;
 }
 
 ul li:not(.flex-container) {
   padding-left: 1rem;
+}
+
+li {
+  color: var(--brown-400);
+}
+
+li + li:not(.flex-container) {
+  margin-top: 2rem;
 }

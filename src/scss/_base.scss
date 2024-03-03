@@ -46,8 +46,8 @@ select {
 }
 
 //* Images, video *//
-img:not(.main-nav *, .icons, .footer *, .blog-posts *),
-svg:not(.main-nav *, .icons, .footer *, .blog-posts *) {
+img:not(.main-nav *, .notecard *, .icons, .footer *, .blog-posts *, .divider *),
+svg:not(.main-nav *, .notecard *, .icons, .footer *, .blog-posts *, #wave) {
   display: block;
   max-width: 100%;
   border-radius: 1rem;
@@ -59,9 +59,13 @@ iframe {
   border-radius: 1rem;
 }
 
-//* Links *//
-a:not(.button, .main-nav, .hero, .page-footer) {
+a {
   color: currentColor;
+}
+
+//* Links *//
+a:not(.button, .main-nav, .hero *, .page-footer) {
+  color: var(--brown-400);
   text-decoration-thickness: 0.08em;
   text-underline-offset: 0.2em;
 }

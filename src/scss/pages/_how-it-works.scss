@@ -1,0 +1,133 @@
+.page-how-it-works {
+  .sides {
+    .caption {
+      background-color: var(--orange-200);
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      color: var(--orange-400);
+    }
+  }
+
+  .content {
+    img {
+      width: 4rem;
+    }
+  }
+
+  .why-beakbox {
+    h3 {
+      font-size: 2.5rem;
+    }
+  }
+
+  .testimonial {
+    img {
+      position: relative;
+      left: 17rem;
+
+      @media only screen and (max-width: 1072px) {
+        left: 0;
+      }
+    }
+
+    .flex-container {
+      min-width: 32vw;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 5rem;
+    }
+
+    p {
+      font-size: 2.5rem;
+    }
+
+    .banner + .banner {
+      margin-top: 10rem;
+    }
+
+    .banner:nth-of-type(2) {
+      position: relative;
+      right: 10rem;
+
+      @media only screen and (max-width: 1072px) {
+        right: 0;
+      }
+    }
+  }
+
+  .testimonial + section {
+    img {
+      width: 60rem;
+    }
+  }
+
+  .img-transform {
+    position: relative;
+    transform: translateX(50%);
+    width: 50%;
+  }
+
+  //* Fix for the first svg image
+  .image-container {
+    width: 35rem;
+  }
+
+  .sign-testimonial {
+    font-family: "Sue Ellen Francisco", cursive;
+    letter-spacing: 0.1em;
+    position: absolute;
+
+    &--left {
+      transform: rotate(-7.65deg);
+      left: -23rem;
+      top: 6rem;
+    }
+
+    &--right {
+      transform: translate(95rem) rotate(7.65deg);
+      top: 0;
+    }
+
+    @media only screen and (max-width: 1298px) {
+      display: none;
+    }
+  }
+
+  .banner:nth-of-type(2n + 1) > .sign-testimonial::before {
+    content: url("/imgs/arrow.svg");
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    transform: none;
+    transform: rotate(-48.65deg);
+    left: 10rem;
+    top: 5rem;
+  }
+
+  .banner:nth-of-type(2n) > .sign-testimonial::after {
+    content: url("/imgs/arrow.svg");
+    display: block;
+    height: 3rem;
+    width: 3rem;
+    position: absolute;
+    transform: none;
+    transform: rotate(48.65deg) scaleX(-1);
+    left: 5rem;
+    top: 5rem;
+  }
+
+  .banner {
+    position: relative;
+  }
+
+  //* Mobile Styles *//
+
+  @include breakpoint-up("medium") {
+    .money-back img {
+      right: 2rem;
+    }
+  }
+}

@@ -79,8 +79,7 @@ subheading: BeakBox is a unique musical bird toy that gives your birds freedom t
     <link rel="stylesheet" type="text/css" href="/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet" />
-
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Sue+Ellen+Francisco&display=swap" rel="stylesheet" />
     {% if page.fileSlug == "help" %} {% include faq-schema.html %} {% endif %}
   </head>
 
@@ -112,9 +111,18 @@ subheading: BeakBox is a unique musical bird toy that gives your birds freedom t
         </div>
       </nav>
 
-      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug != "404" %} {% include header.html %} {% endif
-      %}
+      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug == "help" %} {% include header-help.html %}{%
+      elsif page.fileSlug != "404" %} {% include header.html %} {% endif %}
     </header>
+
+    <div class="divider-container-bottom">
+      <svg id="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2678.5 180">
+        <path
+          d="M0,0H2678.5V180l-18.64-6c-18.14-6-55.82-18-92.69-42-37.28-24-74.76-60-111.84-72-37.28-12-74.46,0-111.84,0s-74.25-12-111.84-21c-37.28-9-74.05-15-110.83-15s-74.76,6-111.84,12c-37.28,6-74.56,12-111.84,15s-74.36,3-111.84,21c-37.28,18-74.05,54-110.83,72-37.28,18-74.86,18-111.84,9-37.28-9-74.66-27-111.84-45-37.28-18-74.36-36-111.84-36s-74.15,18-111.84,39c-36.27,21-73.95,45-110.83,48-37.28,3-74.76-15-111.84-15s-74.46,18-111.84,3c-37.28-15-74.25-63-111.84-63s-74.05,48-110.83,48-74.76-48-111.84-75c-37.28-27-74.56-33-111.84-9-37.28,24-74.36,78-111.84,99-37.28,21-74.05,9-110.83,0-37.28-9-74.86-15-111.84-24-37.28-9-74.66-21-93.2-27L0,90V0Z"
+          fill="#3a2d76"
+        />
+      </svg>
+    </div>
 
     <main>{{ content | safe }}</main>
 
