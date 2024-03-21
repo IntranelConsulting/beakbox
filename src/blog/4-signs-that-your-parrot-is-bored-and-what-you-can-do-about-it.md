@@ -45,6 +45,8 @@ The emphasis is on the word *“excessive”* because screaming is a natural beh
 
 Conversely, your pet parrots most likely scream because they want your undivided attention. That is their way of telling you “scratch me, play with me, give me seed!”. The best thing you can do is to … ignore them.
 
+![](/blog/imgs/two-green-parrots.jpg)
+
 Yes, you read it right. During these scream sessions, make sure no one gives your parrots any attention. Otherwise, they will quickly figure out that the more they scream, the more attention they get and will keep doing that.
 
 When your parrots start screaming, completely ignore them. Turn your back and keep doing what you are doing or just leave the room. No eye contact, no talking, no sign of attention whatsoever! We know it is super hard (because they are your babies and they need you!) but trust me, this is the only way to stop the naughty screaming habit.
@@ -61,6 +63,8 @@ Boredom and aggression are two different behavioural issues, and boredom by itse
 
 Apart from boredom, parrots can bite for a variety of reasons. They might be scared, they are forced to do something that they don’t want to do, they might be protecting their territory, and many other reasons. Learn how to read your parrot’s body language and you might save all of your fingers(😁).
 
+![](/blog/imgs/parrot-gif.gif)
+
 Whenever your parrot bites you, try to analyse the situation and figure out what happened *before the bite* that could have caused it and what happened right *after the bite*. This will help avoid reinforcing the biting behaviour.
 
 > ⚠️ Don’t punish your parrots for biting! It might make them more scared and aggressive, and they will never trust you.
@@ -70,6 +74,8 @@ Whenever your parrot bites you, try to analyse the situation and figure out what
 As with any other changes in parrot behaviour, it is always worth checking with your vet first to rule out any health-related issues as birds are notoriously good at hiding how they feel.
 
 Those of you who've had parrots for a long time should have a good understanding of the behavioral patterns of your flock—what is normal and what is not.
+
+
 
 If your parrot is typically very active and bouncing around like an Energizer Bunny but then suddenly stops playing with the toys and starts sitting all the time in the cage, not doing much, this is a sign that *your parrot might be bored* and it’s time to ruffle their boredom up.
 
@@ -103,6 +109,8 @@ There are some guidelines out there for the minimum amount of out-of-cage time f
 
 They might be spending 15 hours out of the cage each day but still be bored if they don’t get enough stimulation and entertainment.
 
+![](/blog/imgs/macaw-on-baseball-field.gif)
+
 Try to keep the out-of-cage time between you and your parrot interactive—parrots do miss their owners! There is a myriad of ways to do so but here are some suggestions:
 
 * If you are cooking, let your parrots “help” you in the kitchen
@@ -135,6 +143,12 @@ You should always get a cage of the proper size to keep your parrots happy and h
 
 Parrot training will require *a lot* of your time, dedication, and patience. No one says this is going to be easy but it will help keep your parrots occupied. Spend some time teaching your parrots new tricks, e.g., target training when you teach them to touch a stick with their beaks.
 
+![](/blog/imgs/hannah_and_saro.png)
+
+
+
+[Watch how Hannah trained her parrot Saro to use BeakBox.](https://www.youtube.com/watch?v=CpAaNyHDu2s)
+
 Parrots are naturally curious so put a stick in front of your parrot and as soon as their natural curiosity overcomes their fear of strange objects and they beak it, click your clicker. Using a clicker will instantly let your flock know if their behaviour was correct. You’ll be surprised to see how quickly they can pick this trick up (😊).
 
 If you are looking for some good parrot training resources, [Bird Tricks](https://birdtricksstore.com/) have a few good target training videos and tips.
@@ -158,6 +172,8 @@ Spend some time getting to know your parrots and their behavioural patterns or h
 * When you don't see any toy debris on the bottom of the cage at the end of the day – it’s time to get new toys.
 * When they don’t scarf down their food like usual but rather pick through it – it's time to change up the food routine and offer more variety.
 * When they get snappy when they are out – it's time to teach them something new or start a new activity.
+
+![](/blog/imgs/parrots-dancing.gif)
 
 Sometimes your parrots might be suspiciously quiet – and you know it is not really boredom but the opposite – they are just chilling to avoid over-stimulation.
 
