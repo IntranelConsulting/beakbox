@@ -79,7 +79,7 @@ Let's go over a few tips that might help your flock avoid and cope with boredom.
 
 ### Rotate parrot toys
 
-Rotating and re-arranging a few parrot toys each week is a good way to keep your flock occupied and stimulated. You can find lots of interactive parrot toys out there like puzzles, wooden foraging toys with bird-safe ropes, or [BeakBox](https://mybeakbox.com/). Keep in mind [safety tips when choosing a new parrot](https://mybeakbox.com/blog/how-to-choose-a-safe-bird-toy/) toy for your flock.
+Rotating and re-arranging a few parrot toys each week is a good way to keep your flock occupied and stimulated. You can find lots of interactive parrot toys out there like puzzles, wooden foraging toys with bird-safe ropes, or [brain-stimulating toys like BeakBox](https://mybeakbox.com/). Keep in mind [safety tips when choosing a new parrot](https://mybeakbox.com/blog/how-to-choose-a-safe-bird-toy/) toy for your flock.
 
 Introducing new toys to your parrots might be a nightmare for you and your bird. You buy all these fancy toys, put them in your parrot’s cage and the next thing you know, your parrot is bursting out of the cage squawking in fear.
 
