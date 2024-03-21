@@ -83,6 +83,8 @@ Rotating and re-arranging a few parrot toys each week is a good way to keep your
 
 Introducing new toys to your parrots might be a nightmare for you and your bird. You buy all these fancy toys, put them in your parrot’s cage and the next thing you know, your parrot is bursting out of the cage squawking in fear.
 
+![](/blog/imgs/budgie-on-tennis-ball.gif)
+
 Parrots are often afraid of new things and that is completely normal behavior for them. Just imagine if someone brought a huge scary-looking alien-like object to your house and told you to play with it...you would be squawking too(😁)!
 
 > ⚠️ All parrots are different and some might not be happy about drastic changes in their cage so start making small changes here and there and see how your parrot reacts.
