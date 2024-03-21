@@ -75,7 +75,7 @@ As with any other changes in parrot behaviour, it is always worth checking with 
 
 Those of you who've had parrots for a long time should have a good understanding of the behavioral patterns of your flock—what is normal and what is not.
 
-
+![](/blog/imgs/bird-with-legs.jpg)
 
 If your parrot is typically very active and bouncing around like an Energizer Bunny but then suddenly stops playing with the toys and starts sitting all the time in the cage, not doing much, this is a sign that *your parrot might be bored* and it’s time to ruffle their boredom up.
 
