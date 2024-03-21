@@ -40,9 +40,7 @@
     padding: 3rem 2rem;
     border-radius: 0.5rem;
     margin: 4rem 0;
-    p {
-      color: var(--color-on-notecard);
-    }
+    border: 2px dashed var(--orange-400);
   }
 
   article {
