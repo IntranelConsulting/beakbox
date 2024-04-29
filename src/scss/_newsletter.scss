@@ -8,15 +8,34 @@
   }
 }
 
-#mc_embed_signup {
+.email-container #mc_embed_signup {
   background-color: var(--purple-600);
   border-radius: var(--font-size-text-small);
   padding: 4rem;
   border: 2px dashed var(--purple-300);
 }
 
+.sticky-footer {
+  display: flex;
+  flex-direction: row;
+  background: #f2f2f3;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 20;
+  padding: 2rem;
+
+  &--blog-sign-up {
+  }
+}
+
 .email-container {
   justify-content: center;
+
+  h2 {
+    color: white;
+  }
 
   .clear span {
     display: block;
