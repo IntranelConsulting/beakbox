@@ -7,11 +7,12 @@ image: /blog/imgs/parrot-boredom.png
 thumbnail: /blog/imgs/parrot-boredom.png
 alt: Yellow bird getting bored
 ---
-*"Do birds get bored in cages?"*
+
+_"Do birds get bored in cages?"_
 
 Parrot boredom is a topic that is not talked enough about. Pet parrots do get bored, lonely, and even depressed. They need lots of enrichment, mental stimulation, exercise, and (of course) fun. In the wild, parrots get this experience through social interaction or foraging for food. Did you know that wild parrots can spend up to [18 hours a day](https://www.dailymail.co.uk/sciencetech/article-10065317/Smarter-birds-like-parrots-cockatoos-need-mental-stimulation-suffer-psychologically.html) looking for food?
 
-**18 hours is 75% of the day!** 
+**18 hours is 75% of the day!**
 
 Unlike their cousins in the wild, pet parrots spend only 1 hour...😲
 
@@ -39,9 +40,9 @@ In the wild, parrots spend the whole day moving around, socialising, and searchi
 
 ### Screaming 😱
 
-If you've ever wondered why your parrot screams when you leave the room, then you should know that the first thing many parrots turn to when they are bored is *excessive* screaming.
+If you've ever wondered why your parrot screams when you leave the room, then you should know that the first thing many parrots turn to when they are bored is _excessive_ screaming.
 
-The emphasis is on the word *“excessive”* because screaming is a natural behaviour for parrots. They scream when they are playing, fighting for their territory, or just chatting to their fellow parrots from the flock. No doubt, this makes them challenging pets.
+The emphasis is on the word _“excessive”_ because screaming is a natural behaviour for parrots. They scream when they are playing, fighting for their territory, or just chatting to their fellow parrots from the flock. No doubt, this makes them challenging pets.
 
 Conversely, your pet parrots most likely scream because they want your undivided attention. That is their way of telling you “scratch me, play with me, give me seed!”. The best thing you can do is to … ignore them.
 
@@ -65,7 +66,7 @@ Apart from boredom, parrots can bite for a variety of reasons. They might be sca
 
 ![](/blog/imgs/parrot-gif.gif)
 
-Whenever your parrot bites you, try to analyse the situation and figure out what happened *before the bite* that could have caused it and what happened right *after the bite*. This will help avoid reinforcing the biting behaviour.
+Whenever your parrot bites you, try to analyse the situation and figure out what happened _before the bite_ that could have caused it and what happened right _after the bite_. This will help avoid reinforcing the biting behaviour.
 
 > ⚠️ Don’t punish your parrots for biting! It might make them more scared and aggressive, and they will never trust you.
 
@@ -77,7 +78,7 @@ Those of you who've had parrots for a long time should have a good understanding
 
 ![](/blog/imgs/bird-with-legs.jpg)
 
-If your parrot is typically very active and bouncing around like an Energizer Bunny but then suddenly stops playing with the toys and starts sitting all the time in the cage, not doing much, this is a sign that *your parrot might be bored* and it’s time to ruffle their boredom up.
+If your parrot is typically very active and bouncing around like an Energizer Bunny but then suddenly stops playing with the toys and starts sitting all the time in the cage, not doing much, this is a sign that _your parrot might be bored_ and it’s time to ruffle their boredom up.
 
 ## **What can you do about it?**
 
@@ -97,15 +98,15 @@ Parrots are often afraid of new things and that is completely normal behavior fo
 
 The best way to encourage your parrots to play with the new toy is to show them how fun this toy is. The next time you bring a new parrot toy home, play with it in front of your parrots first.
 
-Pretend (or not if the toy is *really* fun) you are having heaps of fun and let them see you interacting with the toy. Your parrots will be more likely to give it a try to find out what all the fuss is about.
+Pretend (or not if the toy is _really_ fun) you are having heaps of fun and let them see you interacting with the toy. Your parrots will be more likely to give it a try to find out what all the fuss is about.
 
-### Give your parrots out-of-cage time *every day*
+### Give your parrots out-of-cage time _every day_
 
-*“How much out-of-cage time should I give?”*
+_“How much out-of-cage time should I give?”_
 
 It is hard to give a definitive answer.
 
-There are some guidelines out there for the minimum amount of out-of-cage time for different parrot species. But they are only guidelines and what matters more is *how* your parrots spend their time out of the cage and what amount of positive reinforcement, physical and cognitive stimulation, or exercise they get.
+There are some guidelines out there for the minimum amount of out-of-cage time for different parrot species. But they are only guidelines and what matters more is _how_ your parrots spend their time out of the cage and what amount of positive reinforcement, physical and cognitive stimulation, or exercise they get.
 
 They might be spending 15 hours out of the cage each day but still be bored if they don’t get enough stimulation and entertainment.
 
@@ -113,23 +114,23 @@ They might be spending 15 hours out of the cage each day but still be bored if t
 
 Try to keep the out-of-cage time between you and your parrot interactive—parrots do miss their owners! There is a myriad of ways to do so but here are some suggestions:
 
-* If you are cooking, let your parrots “help” you in the kitchen
-* If you are doing some chores like emptying the dishwasher or folding laundry, let them join you and watch what you do
-* Read books to your parrots
-* Sit on the couch and watch movies together
-* Or sometimes just let your parrots decide what they want to do
+- If you are cooking, let your parrots “help” you in the kitchen
+- If you are doing some chores like emptying the dishwasher or folding laundry, let them join you and watch what you do
+- Read books to your parrots
+- Sit on the couch and watch movies together
+- Or sometimes just let your parrots decide what they want to do
 
 > ⚠️ Don’t force your parrots to get out of the cage if they really don’t want to be out.
 
 ### Give them something to chew on
 
-Parrots are *chewers*.
+Parrots are _chewers_.
 
 It means things will get destroyed and you will need lots of toys to keep their need to chew and shred things satisfied. Giving your flock something to chew on will keep them away from boredom and anything else you don’t want them to chew on like cables, keyboards, or your fingers.
 
-Wooden blocks are a good parrot toy option. Just make sure that the wood is safe and not treated or painted. One of the safest materials for wood chew toys is *pine* but some parrots might find it a little bit hard to chew on.
+Wooden blocks are a good parrot toy option. Just make sure that the wood is safe and not treated or painted. One of the safest materials for wood chew toys is _pine_ but some parrots might find it a little bit hard to chew on.
 
-If your flock doesn’t seem to be enthused by pine toys, you could try parrot toys made of softer *balsa wood* or *yucca wood* that is very shreddable.
+If your flock doesn’t seem to be enthused by pine toys, you could try parrot toys made of softer _balsa wood_ or _yucca wood_ that is very shreddable.
 
 ### Get a bigger cage or aviary
 
@@ -141,11 +142,9 @@ You should always get a cage of the proper size to keep your parrots happy and h
 
 ### Parrot training
 
-Parrot training will require *a lot* of your time, dedication, and patience. No one says this is going to be easy but it will help keep your parrots occupied. Spend some time teaching your parrots new tricks, e.g., target training when you teach them to touch a stick with their beaks.
+Parrot training will require _a lot_ of your time, dedication, and patience. No one says this is going to be easy but it will help keep your parrots occupied. Spend some time teaching your parrots new tricks, e.g., target training when you teach them to touch a stick with their beaks.
 
 ![](/blog/imgs/hannah_and_saro.png)
-
-
 
 [Watch how Hannah trained her parrot Saro to use BeakBox.](https://www.youtube.com/watch?v=CpAaNyHDu2s)
 
@@ -169,9 +168,9 @@ Parrots love foraging (that is what they do in their natural environment) so you
 
 Spend some time getting to know your parrots and their behavioural patterns or habits. For example, you might know that your parrot is bored:
 
-* When you don't see any toy debris on the bottom of the cage at the end of the day – it’s time to get new toys.
-* When they don’t scarf down their food like usual but rather pick through it – it's time to change up the food routine and offer more variety.
-* When they get snappy when they are out – it's time to teach them something new or start a new activity.
+- When you don't see any toy debris on the bottom of the cage at the end of the day – it’s time to get new toys.
+- When they don’t scarf down their food like usual but rather pick through it – it's time to change up the food routine and offer more variety.
+- When they get snappy when they are out – it's time to teach them something new or start a new activity.
 
 ![](/blog/imgs/parrots-dancing.gif)
 
