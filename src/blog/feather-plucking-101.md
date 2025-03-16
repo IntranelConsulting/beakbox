@@ -1,7 +1,7 @@
 ---
 title: Feather Plucking 101 - What You Need to Know and How to Help Your Bird
 permalink: /blog/feather-plucking/
-date: 2022-02-18T01:37:49.056Z
+date: 2025-03-17T01:37:49.056Z
 description: Feather plucking is a common problem among pet birds, but it doesn't have to be! In this article, we'll explore the causes of feather plucking and provide practical tips for preventing and reducing this behavior.
 image: /blog/imgs/feather-plucking.png
 thumbnail: /blog/imgs/feather-plucking.png
