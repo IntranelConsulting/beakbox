@@ -1,6 +1,6 @@
 ---
 title: Common signs your bird may be sick
-date: 2024-05-23
+date: 2025-09-02
 description: Your bird might be trying to tell you they're not feeling well. Learn to read the signs!
 thumbnail: /blog/imgs/signs-your-bird-is-sick.png
 alt: "A bird who might be sick"
@@ -30,14 +30,10 @@ Other reasons your bird may not be eating include ‘food fatigue’ (maybe your
 
 Feather plucking is sign of mental distress and often associated with boredom, loneliness, and lack of enrichment. This is a very serious and destructive habit that is difficult to unlearn. You should spend time observing your bird to understand what triggers this behaviour and work to remove these triggers from provoking your bird. Possible triggers could be
 
--   Lack of stimulus to chew and grind the beak on
-    
--   Depression or mental illness (often observed with lack of appetite)
-    
--   Loneliness (perhaps after the departure of a flock member, or from lack of contact time with their humans)
-    
--   Boredom
-    
+- Lack of stimulus to chew and grind the beak on
+- Depression or mental illness (often observed with lack of appetite)
+- Loneliness (perhaps after the departure of a flock member, or from lack of contact time with their humans)
+- Boredom
 
 These triggers can usually be addressed with additional cognitive and physical enrichment. Keep your bird distracted from plucking and preening using interesting and fun toys that allow for chewing and biting. In addition, keep their mental wellbeing tip-top by spending plenty of quality time together and using foragers, BeakBox, and other cognitive enrichment tools to challenge their birdy brains.
 
