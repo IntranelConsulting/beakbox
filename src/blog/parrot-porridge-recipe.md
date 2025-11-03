@@ -6,7 +6,7 @@ thumbnail: /blog/imgs/porridge1.png
 alt: "Two cute birds sitting next to each other "
 ---
 
-As the temperatures drop, your feathered friend might appreciate something a little more comforting than the usual fruit and seed mix. This parrot-safe porridge is a warm, nutritious, and easy-to-make treat your bird will love - especially on chilly mornings.
+As the temperatures drop in the northern hemisphere, your feathered friend might appreciate something a little more comforting than the usual fruit and seed mix. This parrot-safe porridge is a warm, nutritious, and easy-to-make treat your bird will love - especially on chilly mornings.
 
 Packed with fiber, this recipe is a great way to use up leftover veggies and keep your parrot’s meals interesting.
 
