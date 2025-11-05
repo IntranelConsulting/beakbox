@@ -1,6 +1,6 @@
 ---
 title: Feather Plucking 101
-permalink: /blog/feather-plucking
+permalink: /blog/feather-plucking/
 date: 2025-11-06
 description: In this article, we'll explore the causes of feather plucking and provide practical tips for preventing and reducing this behavior.
 image: /blog/imgs/feather-plucking.png
