@@ -54,7 +54,7 @@ function encode(str) {
  * @example {% email "me@example.com", true %}
  * @see https://spencermortensen.com/articles/email-obfuscation/#text-display
  */
-export const emailShortcode = (email, forceNoCss = false) =>
+const emailShortcode = (email, forceNoCss = false) =>
 	emailObfuscater(email, forceNoCss);
 
 /**
@@ -68,5 +68,7 @@ export const emailShortcode = (email, forceNoCss = false) =>
  * @example {% emailPair "me+site@example.com", true %} me@example.com {% endemailPair %}
  * @see https://spencermortensen.com/articles/email-obfuscation/#text-display
  */
-export const emailPairedShortcode = (content, email, forceNoCss = false) =>
+const emailPairedShortcode = (content, email, forceNoCss = false) =>
 	emailObfuscater(email, forceNoCss, content);
+
+module.exports = {emailShortcode, emailPairedShortcode}
