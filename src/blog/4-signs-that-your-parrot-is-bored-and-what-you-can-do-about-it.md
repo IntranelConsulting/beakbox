@@ -188,4 +188,4 @@ All parrots are different and show different signs of boredom. Some pull out fea
 
 There is no one-size-fits-all solution to keeping your parrots stimulated. Be patient, think of it as a challenge, try different things and figure out what your parrots' preferences are. When you see your parrot happy and healthy again, it will be the most rewarding feeling in the world.
 
-Have other tips on how to keep your parrots away from boredom? Drop us a message at [contact@mybeakbox.com](mailto:contact@mybeakbox.com) and we will add them here! Happy chirping (😊).
+Have other tips on how to keep your parrots away from boredom? Drop us a message at {% email "contact@mybeakbox.com" %} and we will add them here! Happy chirping (😊).

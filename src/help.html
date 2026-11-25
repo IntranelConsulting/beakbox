@@ -3,9 +3,11 @@ layout: page.html
 title: Help Centre
 description: Have questions about the BeakBox? We've got answers! Find tutorials, how-to guides & tips and tricks to make the most out of your parrot toy, Beakbox.
 header-title: Help Centre
-header-paragraph: Everything you need to know about BeakBox. Can't find the answer you're looking for? Please <a href="mailto:contact@mybeakbox.com">chat</a> to our friendly team.
+
 image: /imgs/beakbox-front-v2-transparent.png
 image-alt: Front view of the BeakBox
+eleventyComputed:
+  header-paragraph: Everything you need to know about BeakBox. Can't find the answer you're looking for? Please {% emailPair "contact@mybeakbox.com" %}chat{% endemailPair %} to our friendly team.
 ---
 
 <section>
@@ -118,7 +120,7 @@ image-alt: Front view of the BeakBox
         <summary>Can I change my delivery address?</summary>
         <p>
           Yes, you can change your delivery address if your order has not been shipped yet. Please contact our team at
-          <a href="mailto:contact@mybeakbox.com">contact@mybeakbox.com</a> as soon as possible with your order number and the updated delivery address.
+          {% email "contact@mybeakbox.com" %} as soon as possible with your order number and the updated delivery address.
         </p>
       </details>
 
@@ -451,14 +453,14 @@ image-alt: Front view of the BeakBox
       <p>If the battery is already fully charged the indicator may not come on.</p>
       <p>If you think the battery is not fully charged, your BeakBox may not be receiving power; please ensure that your USB-C cable is functioning properly and the power adaptor is functional.</p>
       <p>
-        If the cable and adaptor are in working order, but the light remains off, please reach out to us at <a href="mailto:contact@mybeakbox.com">contact@mybeakbox.com</a>, and include your order
+        If the cable and adaptor are in working order, but the light remains off, please reach out to us at {% email "contact@mybeakbox.com" %}, and include your order
         number in your message.
       </p>
     </div>
 
     <div class="flex-container">
       <h3>POWER LED INDICATOR is flashing red</h3>
-      <p>Your BeakBox has encountered an internal error. Please message us at <a href="mailto:contact@mybeakbox.com">contact@mybeakbox.com</a> and include your order number.</p>
+      <p>Your BeakBox has encountered an internal error. Please message us at {% email "contact@mybeakbox.com" %} and include your order number.</p>
     </div>
 
     <div class="flex-container">
@@ -473,7 +475,7 @@ image-alt: Front view of the BeakBox
       <p>To factory reset your BeakBox, ensure it is turned off. Then, press the POWER button while holding down the VOLUME UP button.</p>
     </div>
 
-    <h3>If you tried all the troubleshooting tips above and your BeakBox still doesn’t work, please send us an email at <a href="mailto:contact@mybeakbox.com">contact@mybeakbox.com</a>.</h3>
+    <h3>If you tried all the troubleshooting tips above and your BeakBox still doesn’t work, please send us an email at {% email "contact@mybeakbox.com" %}.</h3>
   </article>
 </section>
 
