@@ -109,7 +109,7 @@ thumbnail: /imgs/webpage.png
         </div>
       </nav>
 
-      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug == "help" %} {% include header-help.html %}{%
+      {% if page.fileSlug == "" %} {% include header-home.html %} {% elsif layout == "blog.html" %} {% include header-blog.html %} {% elsif page.fileSlug == "help" %} {% include header-help.html %}{% elsif page.fileSlug == "shop" %} {% include header-shop.html %}{%
       elsif page.fileSlug != "404" %} {% include header.html %} {% endif %}
     </header>
 

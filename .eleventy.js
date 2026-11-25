@@ -1,6 +1,7 @@
 const moment = require('moment');
 const mdIt = require('markdown-it')('commonmark');
 const renderScss = require("./config/sass")
+const { emailPairedShortcode, emailShortcode } = require("./config/email.js");
 
 module.exports = function(eleventyConfig) {
   // Process SCSS
@@ -27,6 +28,9 @@ module.exports = function(eleventyConfig) {
     const suffix = slug.length ? slug : "home";
     return `page-${suffix}`;
   });
+
+	eleventyConfig.addShortcode("email", emailShortcode);
+	eleventyConfig.addPairedShortcode("emailPair", emailPairedShortcode);
 
   // Filters
   eleventyConfig.addFilter("formatDate", function(value, format) {
